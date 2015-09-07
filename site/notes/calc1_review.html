@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="review-of-calculus-1-concepts">Review of Calculus 1 Concepts</h1>
+<p>This will be a review of topics and concepts from Calculus 1, along with a list of suggested problems.</p>
+<h2 id="practice-problems">Practice Problems</h2>
+<ul>
+<li>2.4 4, 2.8 7</li>
+<li>3.1 26, 3.2 17, 3.3 18, 3.5 26, 3.6 28, 3.7 44</li>
+<li>4.1 19, 4.2 8, 4.2 32, 4.4 38, 4.6 9, 4.8 17</li>
+<li>5.2 9, 5.2 44, 5.3 11, 5.3 38, 5.4 13, 5.4 16, 5.6 30, 5.6 71</li>
+</ul>
+<h2 id="limits-and-continuity">Limits and Continuity</h2>
+<blockquote>
+<p>The <strong>limit</strong> of a function <span class="math">\(f(x)\)</span> at a point <span class="math">\(a\)</span>, denoted: <span class="math">\[\lim_{x\to a}f(x)\]</span> is the number that the values <span class="math">\(f(x)\)</span> approach as the points <span class="math">\(x\)</span> get closer and closer to (but are distinct from) the point <span class="math">\(a\)</span>.</p>
+</blockquote>
+<p>This is the important thing to remember, that the limit talks about the behavior of the function <em>near a point</em>, and <em>not at the point</em>.</p>
+<p>When the behavior near a point agrees with the value at the point, we have continuity:</p>
+<blockquote>
+<p>The function <span class="math">\(f(x)\)</span> is <strong>continuous</strong> at the point <span class="math">\(a\)</span> exactly when the limit at <span class="math">\(a\)</span> agrees with the value there: <span class="math">\[\lim_{x\to a}f(x) = f(a)\]</span></p>
+</blockquote>
+<p>Intuitively, the value at the point <span class="math">\(a\)</span> is what is <em>expected</em> by looking at the behavior of the function nearby.</p>
+<blockquote>
+<p>Various types of discontinuities:</p>
+<ul>
+<li>Removable discontinuity: The value <span class="math">\(f(a)\)</span> is simply not defined, but the limit exists. We can fix the discontinuity by defining the value <span class="math">\(f(a)\)</span> via the limit.</li>
+<li>Jump discontinuity: The <em>left limit</em> and the <em>right limit</em> both exist but differ.</li>
+<li>Infinite discontinuity: The left limit and/or right limit are infinite.</li>
+</ul>
+</blockquote>
+<p>An important property of continuous functions is the <strong>intermediate value theorem</strong>:</p>
+<blockquote>
+<p>If <span class="math">\(f(x)\)</span> is a continuous function on an interval <span class="math">\([a,b]\)</span>, and <span class="math">\(L\)</span> is a value anywhere between <span class="math">\(f(a)\)</span> and <span class="math">\(f(b)\)</span>, then <span class="math">\(L\)</span> can be obtained from <span class="math">\(f\)</span>, i.e. there is a value <span class="math">\(c\in[a,b]\)</span> such that <span class="math">\(f(c) = L\)</span>.</p>
+</blockquote>
+<p>This has tremendous consequences, amongst them the fact that the square roots of numbers exist, by applying the intermediate value theorem on power functions.</p>
+<div class="figure">
+<img src="images/squareroot2.png" alt="Proof that square root of 2 exists (IVT)" />
+<p class="caption">Proof that square root of 2 exists (IVT)</p>
+</div>
+<h2 id="derivatives">Derivatives</h2>
+<blockquote>
+<p>The <strong>derivative</strong> of a function <span class="math">\(f(x)\)</span> at a point <span class="math">\(a\)</span> is defined as a <em>limit of slopes of secant lines</em>: <span class="math">\[\frac{df}{dx} = f&#39;(x) = \lim_{x\to a} \frac{f(x) - f(a)}{x - a} = \lim_{h\to 0}\frac{f(a+h) - f(a)}{h}\]</span></p>
+</blockquote>
+<p>When computing derivatives, we typically rely on a number of rules:</p>
+<blockquote>
+<p><strong>Derivative Rules:</strong></p>
+<p><span class="math">\[(f\pm g)&#39;(a) = f&#39;(a) \pm g&#39;(a)\]</span> <span class="math">\[(cf)&#39;(a) = cf&#39;(a)\]</span> <span class="math">\[(fg)&#39;(a) = f&#39;(a)g(a) + f(a)g&#39;(a)\]</span> <span class="math">\[\left(\frac{f}{g}\right)&#39;(a) = \frac{f&#39;(a)g(a) - f(a)g&#39;(a)}{g^2(a)}\]</span> <span class="math">\[\left(x^n\right)&#39; = nx^{n-1}\]</span> <span class="math">\[\sin&#39;(x) = \cos(x),\quad \cos&#39;(x) = -\sin(x)\]</span> <span class="math">\[\tan&#39;(x) = \sec^2(x),\quad \sec&#39;(x) = \sec(x)\tan(x)\]</span> <span class="math">\[\left(f(g(x))\right)&#39; = f&#39;(g(x))g&#39;(x)\]</span></p>
+</blockquote>
+<p>Derivatives tell us about the behavior of a function near a point, approximated as a line, namely the <strong>tangent line</strong>:</p>
+<blockquote>
+<p><strong>Tangent Line</strong> for <span class="math">\(f(x)\)</span> at a point <span class="math">\(x=a\)</span>: <span class="math">\[y - f(a) = f&#39;(a)(x-a)\]</span></p>
+</blockquote>
+<p>This can in particular be used to obtain an approximation for <span class="math">\(f(x)\)</span> near a point <span class="math">\(a\)</span>:</p>
+<blockquote>
+<p>Approximation for <span class="math">\(x=a\)</span>: <span class="math">\[f(x) \approx f(a) + f&#39;(a)(x-a)\]</span></p>
+</blockquote>
+<p>One of the main applications of derivatives is in locating <strong>maxima and minima for functions</strong>:</p>
+<blockquote>
+<p>If <span class="math">\(f(x)\)</span> is continuous on <span class="math">\([a,b]\)</span>, then:</p>
+<ul>
+<li>There is a maximum and a minimum for <span class="math">\(f(x)\)</span> on <span class="math">\([a, b]\)</span></li>
+<li><p>Those extremal values occur at one of the following:</p>
+<ul>
+<li>the endpoints <span class="math">\(a\)</span>, <span class="math">\(b\)</span></li>
+<li>points where <span class="math">\(f&#39;(c) = 0\)</span></li>
+<li>points, if any, where <span class="math">\(f&#39;(c)\)</span> does not exist.</li>
+</ul>
+<p>These last two categories are called <strong>critical points</strong></p></li>
+</ul>
+</blockquote>
+<p>The mean value theorem for derivatives is one of the main results, with important consequences:</p>
+<blockquote>
+<p><strong>Mean Value Theorem</strong></p>
+<p>If <span class="math">\(f\)</span> is continuous on <span class="math">\([a, b]\)</span> and differentiable on <span class="math">\((a, b)\)</span>, then there is a point <span class="math">\(c\in (a, b)\)</span> where: <span class="math">\[f&#39;(c) = \frac{f(b) - f(a)}{b - a}\]</span></p>
+</blockquote>
+<blockquote>
+<p>Consequences of MVT:</p>
+<ul>
+<li>If <span class="math">\(f&#39;(x) &gt; 0\)</span> on an open interval, then <span class="math">\(f\)</span> is increasing there</li>
+<li>If <span class="math">\(f&#39;(x) &lt; 0\)</span> on an open interval, then <span class="math">\(f\)</span> is decreasing there</li>
+<li>If <span class="math">\(f&#39;(x) = 0\)</span> on an open interval, then <span class="math">\(f\)</span> is constant there</li>
+</ul>
+</blockquote>
+<h3 id="integrals">Integrals</h3>
+<p>The <strong>integral</strong> of a continuous function <span class="math">\(f(x)\)</span> on an interval <span class="math">\([a, b]\)</span> is intuitively defined as the area between the x-axis and the function. A formal equation usually looks something like this:</p>
+<blockquote>
+<p><span class="math">\[\int_a^b f(x)dx = \lim_{n\to\infty}\sum_{i=1}^n f(x_i^*)\Delta x_i\]</span></p>
+</blockquote>
+<p>Integrals are often computed via the <strong>antiderivatives</strong>, based on the fundamental theorem of Calculus:</p>
+<blockquote>
+<p><strong>Fundamental Theorem of Calculus</strong></p>
+<ol style="list-style-type: decimal">
+<li>If <span class="math">\(f(x)\)</span> is continuous on <span class="math">\([a, b]\)</span>, and <span class="math">\(F(x)\)</span> is a function such that <span class="math">\(F&#39;(x) = f(x)\)</span>, then: <span class="math">\[\int_a^b f(x) dx = F(b) - F(a)\]</span></li>
+<li>If <span class="math">\(f(x)\)</span> is continuous on <span class="math">\([a, b]\)</span> and we defined the integral function: <span class="math">\[F(x) = \int_a^x f(t)dt\]</span> is differentiable and <span class="math">\(F&#39;(x) = f(x)\)</span>.</li>
+</ol>
+</blockquote>
+<p>One of the key techniques for computing integrals, and antiderivatives, is the substitution method:</p>
+<blockquote>
+<p><strong>Substitution Method</strong>:</p>
+<ul>
+<li>If <span class="math">\(F&#39;(x) = f(x)\)</span>, then <span class="math">\(F(g(u))\)</span> is an antiderivative for <span class="math">\(f(g(u))g&#39;(u)\)</span>.</li>
+<li><span class="math">\(\displaystyle\int_a^b f(g(u))g&#39;(u)du = \int_{g(a)}^{g(b)}f(u)du\)</span>.</li>
+</ul>
+</blockquote>
+</body>
+</html>
