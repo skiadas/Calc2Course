@@ -8,10 +8,12 @@ Day 1
   ~ [Review of Calc 1](notes/calc1_review.md)
 
 Day 2
-  ~ Area between graphs (6.1)
+  ~ [Review of Calc 1 (cont)](notes/calc1_review.md)
+
+    [Area between graphs (6.1)](notes/area_graphs.md)
 
 Day 3
-  ~ Mean Value Theorem for integrals (6.2)
+  ~ [Volumes and Mean Value Theorem for integrals (6.2)](notes/volumes.md)
 
 Day 4
   ~ Volumes of revolution (6.3)
