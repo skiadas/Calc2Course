@@ -8,7 +8,7 @@ Section 6.1. Pay particular attention to the difference between integrating alon
 
 Practice Exercises: 6.1 1, 3, 6, 16, 19, 21, 28, 33, 59 (will do this one in class)
 
-Exercises to turn in (on Monday along with those from Thursday): 6.1 14, 20
+Exercises to turn in (on Monday along with those from 6.2): 6.1 14, 20
 
 ## Area between Graphs
 

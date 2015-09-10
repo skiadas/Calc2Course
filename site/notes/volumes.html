@@ -15,9 +15,60 @@
 <body>
 <h1 id="volumes">Volumes</h1>
 <h2 id="reading">Reading</h2>
+<p>6.2 Sections on Volume and Average Value (the sections on Density and Flow Rate are optional).</p>
 <h2 id="problems">Problems</h2>
-<p>Practice Exercises:</p>
-<p>Exercises to turn in (on Monday along with those from Wednesday):</p>
+<p>Practice Exercises: 6.2 3, 4, 6, 7, 9, 13, 16, 55, 57</p>
+<p>Exercises to turn in (on Monday along with those from 6.1): 6.2 10, 56</p>
 <h2 id="volumes-via-integrals">Volumes via integrals</h2>
+<p>Suppose we have a solid object, whose cross-sections along an axis we can understand. For example in a pyramid, the cross-sections are all rectangles (or trinagles depending on the pyramid), in a sphere the cross-sections are all circles.</p>
+<p>Then we can express this as an integral, that looks something like this:</p>
+<blockquote>
+<p><span class="math">\[V = \int_a^b A(y) dy\]</span></p>
+</blockquote>
+<p>where <span class="math">\(A(y)\)</span> is the area of the cross section. This is possible because we can imagine the solid cut into smaller an smaller “cylinders”, whose areas equal the height times the area of the base. We then add all these “volumes”, and imagine cutting into finer and finer pieces. This process can always be seen as an integral.</p>
+<p>Example: Use this to compute the volume of a square-based pyramid with height <span class="math">\(h\)</span> and base side <span class="math">\(a\)</span>.</p>
+<ol style="list-style-type: decimal">
+<li>Set up coordinates with <span class="math">\(y\)</span> axis going down the center of the pyramid, and <span class="math">\(x\)</span> axis parallel to a side. At <span class="math">\(y=0\)</span> the pyramid’s base has side length <span class="math">\(a\)</span>.</li>
+<li>At a height <span class="math">\(y\)</span>, so still <span class="math">\(h - y\)</span> away from the top, the side the cross-section can be computed by similar triangles as: <span class="math">\(s(y) = (h - y) \times \frac{a}{h}\)</span></li>
+<li><p>We integrate:</p>
+<p><span class="math">\[V = \int_0^h s(y)^2 dy = \int_0^h \left(a\frac{h-y}{h}\right)^2dy\]</span></p></li>
+<li>First result: <span class="math">\(V = a^2 \int_0^h \left(1 - \frac{y}{h}\right)^2dy\)</span></li>
+<li><p>To make computation easier, change coordinates: <span class="math">\(u = 1 - \frac{y}{h}\)</span>. Then <span class="math">\(dy = -hdu\)</span> and the integral becomes:</p>
+<p><span class="math">\[V = a^2 \int_1^0u^2 (-h) du = a^2 h \int_0^1 u^2 du = \frac{1}{3} h a^2\]</span></p></li>
+</ol>
+<p>Example 2: Find the volume of a sphere of radius <span class="math">\(R\)</span>. (Answer: <span class="math">\(\frac{4}{3}\pi R^2\)</span>)</p>
+<h2 id="the-average-value">The Average Value</h2>
+<p>Our goal here is to obtain a formula for the “average value” of a function <span class="math">\(f(x)\)</span> on an interval <span class="math">\([a,b]\)</span>.</p>
+<p>There are different ways to approach this problem. A simple approach is this:</p>
+<ol style="list-style-type: decimal">
+<li>Imagine the interval <span class="math">\([a, b]\)</span> split into <span class="math">\(N\)</span> equal pieces via points <span class="math">\(a = x_0 &lt; x_1 &lt; ... &lt; x_N = b\)</span>, exactly like we do for partitions.</li>
+<li>Then it would be meaningful to consider the average of the function at these values (and for simplicity of the argument we remove the point <span class="math">\(x_0\)</span>; the final result turns out to be unaffected).</li>
+<li><p>That average would therefore equal:</p>
+<p><span class="math">\[\frac{1}{N}\left(f(x_1) + f(x_2) + \cdots + f(x_N)\right)\]</span></p></li>
+<li><p>Recall that <span class="math">\(\frac{b-a}{N} = \Delta x\)</span>, so we can write that above average as:</p>
+<p><span class="math">\[\frac{\Delta x}{b-a} \left(f(x_1) + f(x_2) + \cdots + f(x_N)\right) = \frac{1}{b-a}\sum_{i=1}^N f(x_i)\Delta x\]</span></p></li>
+<li>Taking this process to the limit gives us an integral.</li>
+<li><p>It is therefore reasonable to define the integral of the function on the whole region <span class="math">\([a,b]\)</span> as:</p>
+<blockquote>
+<p><span class="math">\[\textrm{Avg} = \frac{1}{b-a}\int_a^b f(x)dx\]</span></p>
+</blockquote></li>
+</ol>
+<p>Practice problem: What is the average value of the function <span class="math">\(f(x) = x^2\)</span> on the interval <span class="math">\([0, 1]\)</span>?</p>
+<p>One important result about the average value of an integral is the so-called <em>mean value theorem for integrals</em>:</p>
+<blockquote>
+<p><strong>Mean Value Theorem for Integrals</strong></p>
+<p>If <span class="math">\(f(x)\)</span> is continuous on <span class="math">\([a, b]\)</span>, then there exists a value <span class="math">\(c\in[a, b]\)</span> such that: <span class="math">\[f(c) = \frac{1}{b-a}\int_a^b f(x) dx\]</span></p>
+<p>In other words the average value of a continuous function on an interval is always achieved as a value of the function somewhere in that interval.</p>
+</blockquote>
+<p>Proof:</p>
+<ul>
+<li>Let us denote the average value by <span class="math">\(A = \frac{1}{b-a}\int_a^b f(x) dx\)</span>.</li>
+<li><p>As a continuous function, <span class="math">\(f\)</span> achieves both a maximum (<span class="math">\(M\)</span>) and a minimum (<span class="math">\(m\)</span>) somewhere on the interval <span class="math">\([a, b]\)</span>. So we have <span class="math">\(m\)</span> and <span class="math">\(M\)</span>, which are values of <span class="math">\(f\)</span> for some points <span class="math">\(c\)</span>, <span class="math">\(d\)</span> inside <span class="math">\([a, b]\)</span>, and such that for all <span class="math">\(x\)</span> we have:</p>
+<p><span class="math">\[m \leq f(x) \leq M\]</span></p></li>
+<li><p>Integrating the inequality from <span class="math">\(a\)</span> to <span class="math">\(b\)</span> we obtain:</p>
+<p><span class="math">\[m ( b-a) \leq \int_a^b f(x) dx \leq M (b-a)\]</span></p></li>
+<li>But then this means that <span class="math">\(m \leq A \leq M\)</span>.</li>
+<li><p>Since <span class="math">\(m\)</span> and <span class="math">\(M\)</span> are actually the function values <span class="math">\(f(c)\)</span> and <span class="math">\(f(d)\)</span>, and since <span class="math">\(f\)</span> is continuous, the Intermediate Value Theorem guarantees for us that <span class="math">\(A\)</span> is also equal to a value <span class="math">\(f(t)\)</span> for some <span class="math">\(t\)</span> between <span class="math">\(c\)</span> and <span class="math">\(d\)</span>, and hence some <span class="math">\(t\)</span> in <span class="math">\([a, b]\)</span>.</p></li>
+</ul>
 </body>
 </html>

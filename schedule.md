@@ -10,55 +10,57 @@ Day 1
 Day 2
   ~ [Review of Calc 1 (cont)](notes/calc1_review.md)
 
-    [Area between graphs (6.1)](notes/area_graphs.md)
 
 Day 3
-  ~ [Volumes and Mean Value Theorem for integrals (6.2)](notes/volumes.md)
+  ~ [Review of Calc 1 (cont 2)](notes/calc1_review.md)
+
+    [Area between graphs (6.1)](notes/area_graphs.md)
 
 Day 4
-  ~ Volumes of revolution (6.3)
+  ~ [Volumes and Mean Value Theorem for integrals (6.2)](notes/volumes.md)
+
 
 ## Week  2 (09/14-09/18)
 
 Day 1
-  ~ Shell method (6.4)
+  ~ Volumes of revolution (6.3)
 
 Day 2
-  ~ The exponential function (7.1)
+  ~ Shell method (6.4)
 
 Day 3
-  ~ The exponential function (cont) (7.1)
+  ~ The exponential function (7.1)
 
 Day 4
-  ~ Inverse functions (7.2)
+  ~ The exponential function (cont) (7.1)
 
 ## Week  3 (09/21-09/25)
 
 Day 1
-  ~ Logarithms (7.3)
+  ~ Inverse functions (7.2)
 
 Day 2
-  ~ Logarithms (cont) (7.3)
+  ~ Logarithms (7.3)
 
 Day 3
-  ~ Defining logarithm as an integral
+  ~ Logarithms (cont) (7.3)
 
 Day 4
-  ~ Defining exponential as inverse of logarithm
+  ~ Defining logarithm as an integral
 
 ## Week  4 (09/28-10/02)
 
 Day 1
-  ~ Exponential Growth and Decay (7.4)
+  ~ Defining exponential as inverse of logarithm
 
 Day 2
-  ~ Compound Interest (7.5)
+  ~ Exponential Growth and Decay (7.4)
 
 Day 3
-  ~ L'Hospital's Rule (7.7)
+  ~ Compound Interest (7.5)
 
 Day 4
-  ~ Comparative growth of functions (7.7)
+  ~ L'Hospital's Rule (7.7)
 
 ## Week  5 (10/05-10/09)
 
@@ -69,24 +71,24 @@ Day 2
   ~ **MIDTERM**
 
 Day 3
-  ~ Inverse Trigonometric Functions (7.8)
+  ~ Comparative growth of functions (7.7)
 
 Day 4
-  ~ Hyperbolic Functions (7.9)
+  ~ Inverse Trigonometric Functions (7.8)
 
 ## Week  6 (10/12-10/16)
 
 Day 1
-  ~ Integration by parts (8.1)
+  ~ Hyperbolic Functions (7.9)
 
 Day 2
-  ~ Trigonometric Integrals (8.2)
+  ~ Integration by parts (8.1)
 
 Day 3
-  ~ Trigonometric Substitution (8.3)
+  ~ Trigonometric Integrals (8.2)
 
 Day 4
-  ~ Method of Partial Fractions (8.5)
+  ~ Trigonometric Substitution (8.3)
 
 ## Week  7 (10/19-10/23)
 
@@ -94,38 +96,38 @@ Day 1
   ~ Fall Break
 
 Day 2
-  ~ Improper Integrals (8.6)
+  ~ Method of Partial Fractions (8.5)
 
 Day 3
-  ~ Improper Integrals (cont) (8.6)
+  ~ Improper Integrals (8.6)
 
 Day 4
-  ~ Special functions: Gamma
+  ~ Improper Integrals (cont) (8.6)
 
 ## Week  8 (10/26-10/30)
 
 Day 1
-  ~ Special functions: Beta?
+  ~ Special functions: Gamma
 
 Day 2
-  ~ Numerical Integration (8.8)
+  ~ Special functions: Beta?
 
 Day 3
-  ~ Taylor Polynomials (9.4)
+  ~ Numerical Integration (8.8)
 
 Day 4
-  ~ Arc Length (9.1)
+  ~ Taylor Polynomials (9.4)
 
 ## Week  9 (11/02-11/06)
 
 Day 1
-  ~ Parametric Equations (12.1)
+  ~ Arc Length (9.1)
 
 Day 2
-  ~ Arc Length and Area (12.2)
+  ~ Parametric Equations (12.1)
 
 Day 3
-  ~ Polar Coordinates (12.3)
+  ~ Arc Length and Area (12.2)
 
 Day 4
   ~ Review
@@ -136,18 +138,18 @@ Day 1
   ~ **MIDTERM**
 
 Day 2
-  ~ Area and Arch Length in polar coordinates (12.4)
+  ~ Polar Coordinates (12.3)
 
 Day 3
-  ~ Conic sections (12.5)
+  ~ Area and Arc Length in polar coordinates (12.4)
 
 Day 4
-  ~ Conic sections (cont) (12.5)
+  ~ Conic sections (12.5)
 
 ## Week 11 (11/16-11/20)
 
 Day 1
-  ~ TBA
+  ~ Conic sections (cont) (12.5)
 
 Day 2
   ~ TBA
