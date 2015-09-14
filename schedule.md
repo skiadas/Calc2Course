@@ -25,10 +25,11 @@ Day 4
 Day 1
   ~ [Volumes and Mean Value Theorem for integrals (6.2 cont)](notes/volumes.md)
 
-    [Volumes of revolution (6.3)](notes/volumes_revolution.md)
 
 Day 2
-  ~ Shell method (6.4)
+  ~ [Volumes of revolution (6.3)](notes/volumes_revolution.md)
+
+    Shell method (6.4)
 
 Day 3
   ~ The exponential function (7.1)
