@@ -25,6 +25,8 @@ Volumes of Revolution follow a similar idea, but they are used in a more special
 >
 > $$V = \pi \int_a^b f(x)^2dx$$
 
+This follows directly from the methods in the previous section, as the region of the cross-section in this case will be a circle with radius $\left|f(x)\right|$ and therefore its area would be $\pi f(x)^2$.
+
 For example, the sphere of radius $R$ can be thought of as a solid of revolution, where the function $f(x)$ is $\sqrt{R^2 - x^2}$. So we can compute the volume of the sphere via the integral:
 
 $$\pi\int_{-R}^{R}\left(\sqrt{R^2 - x^2}\right)^2 dx = \pi \int_{-R}^R R^2 - x^2 dx$$

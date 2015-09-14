@@ -23,7 +23,9 @@ Day 4
 ## Week  2 (09/14-09/18)
 
 Day 1
-  ~ [Volumes of revolution (6.3)](notes/volumes_revolution.md)
+  ~ [Volumes and Mean Value Theorem for integrals (6.2 cont)](notes/volumes.md)
+
+    [Volumes of revolution (6.3)](notes/volumes_revolution.md)
 
 Day 2
   ~ Shell method (6.4)
