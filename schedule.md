@@ -23,7 +23,7 @@ Day 4
 ## Week  2 (09/14-09/18)
 
 Day 1
-  ~ Volumes of revolution (6.3)
+  ~ [Volumes of revolution (6.3)](notes/volumes_revolution.md)
 
 Day 2
   ~ Shell method (6.4)
