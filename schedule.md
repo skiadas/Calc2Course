@@ -31,15 +31,15 @@ Day 2
 
 
 Day 3
-  ~ [Shell method (6.4)](notes/volumes_shell.md)
+  ~ [Volumes of revolution (6.3 cont)](notes/volumes_revolution.md)
 
 Day 4
-  ~ The exponential function (7.1)
+  ~ [Shell method (6.4)](notes/volumes_shell.md)
 
 ## Week  3 (09/21-09/25)
 
 Day 1
-  ~ The exponential function (cont) (7.1)
+  ~ The exponential function (7.1)
 
 Day 2
   ~ Inverse functions (7.2)
