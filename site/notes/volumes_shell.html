@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="the-shell-method">The Shell Method</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 6.4</p>
+<h2 id="problems">Problems</h2>
+<p>Practice Exercises: 7, 9, 10, 15, 16, 21, 22, 23, 39, 41, 42</p>
+<p>Exercises to turn in (along with those from 6.3): 6.4 8, 40</p>
+<h2 id="the-shell-method-1">The Shell Method</h2>
+<p>The Shell Method, like the Disc Method, deals with solids created by the revolution of some curve/function around some axis. But it works in sort of the opposite direction. Let’s explain.</p>
+<p>Consider the triangle formed by <span class="math">\(x+y=1\)</span>, <span class="math">\(y=0\)</span> and <span class="math">\(x=0\)</span>. Say we rotate this region around the <span class="math">\(y\)</span>-axis and we want to find out the area of the resulting solid.</p>
+<p>With the disc method, we need to write our curve, <span class="math">\(x+y=1\)</span>, as a function of <span class="math">\(y\)</span>, the variable that we are rotating around. So we have the function <span class="math">\(x=1-y\)</span>. Then the cross-sections perpendicular to the <span class="math">\(y\)</span> axis are circles with radius <span class="math">\(1-y\)</span>, so we can write the integral, using the disc method, as:</p>
+<p><span class="math">\[\pi\int_0^1 (1-y)^2 dy\]</span> which we can compute to equal <span class="math">\(\frac{\pi}{3}\)</span>.</p>
+<p>Now the Shell method is different. It will try to integrating along <span class="math">\(x\)</span> instead. To do that, imagine cutting the interval in <span class="math">\(x\)</span> into many tiny segments. One such segment would be going from say <span class="math">\(x\)</span> to <span class="math">\(x+\Delta x\)</span>. The solid we are after that corresponds to this segment is the little area above this segment and below the <span class="math">\(y=1-x\)</span> line, which is roughly a rectangle with base <span class="math">\(\Delta x\)</span> and height <span class="math">\(1-x\)</span>, but rotated around the <span class="math">\(y\)</span> axis. This results in effect in two cylinders, the outer and the inner, and we look at their differences:</p>
+<p><span class="math">\[\pi (x+\Delta x)^2 (1-x) - \pi x^2 (1-x) = \pi(1-x)\left((x+\Delta x)^2-x^2\right)\]</span></p>
+<p>We need to understand the quantity <span class="math">\((x+\Delta x)^2 - x^2\)</span> more. Let’s expand it out, as it is a difference of squares:</p>
+<p><span class="math">\[(x+\Delta x)^2 - x^2 = (x+\Delta x +x)(x+\Delta x - x) = (2x +\Delta x)\Delta x\]</span></p>
+<p>Now here we are thinking of the <span class="math">\(\Delta x\)</span> as a tiny, infinitesimal quantity. In which case <span class="math">\(2x+\Delta x\)</span> is really the same as <span class="math">\(2x\)</span>. So at the end of the day the volume of the cylinder for that particular <span class="math">\(x\)</span> is:</p>
+<p><span class="math">\[2\pi (1-x) x \Delta x\]</span></p>
+<p>We then add up all these little cylinders and integrate:</p>
+<p><span class="math">\[V = 2\pi \int_0^1 x(1-x)dx = 2\pi\int_0^1 x - x^2dx = \frac{\pi}{3}\]</span></p>
+<p>Good, we get the same answer, as we should.</p>
+<p>In general, the formula for the Shell method would read:</p>
+<blockquote>
+<p>Volume of the solid produced by rotating the area under <span class="math">\(y=f(x)\)</span> around the <span class="math">\(y\)</span> axis. <span class="math">\[V = 2\pi \int_a^b x f(x)dx\]</span></p>
+</blockquote>
+<h3 id="shell-vs-disc">Shell vs Disc</h3>
+<p>So when to use which method? That depends on which way of the function is easier. In general:</p>
+<blockquote>
+<p>You can compute a solid of revolution around the <span class="math">\(y\)</span> axis either via the Shell method if you have the boundary as a function <span class="math">\(y=f(x)\)</span> or via the disc method if you have the boundary as a function <span class="math">\(x=g(y)\)</span>.</p>
+<p>The Disc method uses the same variable of integration as the axis of rotation, the Shell method does the opposite.</p>
+</blockquote>
+</body>
+</html>
