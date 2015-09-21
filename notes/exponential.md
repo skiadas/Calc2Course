@@ -37,7 +37,7 @@ Our goal is simple: Define the exponential function in other values while mainta
 > - agrees with the normal "multiply $n$ times" meaning of $b^n$ when $n$ is a natural number
 > - satisfies the key property $b^{x+y} = b^x b^y$ for all real numbers $x$ and $y$
 
-It should be emphasized that the notation $b^x$ is really just that, a notation, for any value of $x$ that is not a natural number. We could just as well have written $f_b(x)$ for that function, and expected $f_b(x+y)=f_b(x)f_b(y)$. It is customary to denote that function in this manner, but it is important to keep in mind that the only meaning of $b^x$ as a "power" is only when $x$ is a natural number.
+It should be emphasized that the notation $b^x$ is really just that, a notation, for any value of $x$ that is not a natural number. We could just as well have written $f_b(x)$ for that function, and expected $f_b(x+y)=f_b(x)f_b(y)$. It is customary to denote the exponential function as a power, but it is important to keep in mind that the only meaning of $b^x$ as a "power" is only when $x$ is a natural number.
 
 ### Exponential for the integers
 
