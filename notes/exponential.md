@@ -147,7 +147,7 @@ So we have the relation:
 
 $$m\left(b^y\right) = y m(b)$$
 
-If you know about the logarithm function, this might seem familiar.
+If you know about the logarithm function, this might seem familiar. We also can easily say that $m(1) = 0$, thinking of its definition as a limit and the fact that $1^x=1$ for all $x$.
 
 ### The natural exponential function
 
