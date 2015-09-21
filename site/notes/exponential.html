@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="the-exponential-function">The exponential function</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 7.1</p>
+<h2 id="problems">Problems</h2>
+<p>Practice Exercises: 7.1 1, 2, 5, 6, 7, 15, 16, 19, 23, 25, 47, 53, 71, 75, 76, 77, 93</p>
+<p>Optional, highly recommended: 7.1 94, 97, 99</p>
+<p>Exercises to turn in (along with those from 7.2): 7.1 26, 48</p>
+<h2 id="the-exponential-function-1">The exponential function</h2>
+<p>The exponential function is an extension of the notion of raising a value to a power. Let us start from this idea.</p>
+<p>If <span class="math">\(n\)</span> is a natural number, then we can define <span class="math">\(b^n\)</span> as the product of exactly <span class="math">\(n\)</span> copies of <span class="math">\(b\)</span>. It is immediate to see that this satisfies a key property:</p>
+<blockquote>
+<p>Key property of the exponential function: <span class="math">\[b^{x+y} = b^x b^y\]</span></p>
+</blockquote>
+<p>For now we can only make sense of this formula for <span class="math">\(x,y\)</span> both being natural numbers, <span class="math">\(1, 2,\ldots\)</span>. And then it is straightforward: If we multiply <span class="math">\(3\)</span> copies of <span class="math">\(b\)</span> and <span class="math">\(4\)</span> copies of <span class="math">\(b\)</span>, this is the same as if we had multiplied <span class="math">\(3+4=7\)</span> copies of <span class="math">\(b\)</span>. Our goal is simple: Define the exponential function in other values while maintaining the above property. In fact the following is true:</p>
+<blockquote>
+<p>The exponential function <span class="math">\(b^x\)</span> is the unique function that:</p>
+<ul>
+<li>is defined for all real numbers <span class="math">\(x\)</span></li>
+<li>is differentiable everywhere</li>
+<li>agrees with the normal “multiply <span class="math">\(n\)</span> times” meaning of <span class="math">\(b^n\)</span> when <span class="math">\(n\)</span> is a natural number</li>
+<li>satisfies the key property <span class="math">\(b^{x+y} = b^x b^y\)</span> for all real numbers <span class="math">\(x\)</span> and <span class="math">\(y\)</span></li>
+</ul>
+</blockquote>
+<p>It should be emphasized that the notation <span class="math">\(b^x\)</span> is really just that, a notation, for any value of <span class="math">\(x\)</span> that is not a natural number. We could just as well have written <span class="math">\(f_b(x)\)</span> for that function, and expected <span class="math">\(f_b(x+y)=f_b(x)f_b(y)\)</span>. It is customary to denote that function in this manner, but it is important to keep in mind that the only meaning of <span class="math">\(b^x\)</span> as a “power” is only when <span class="math">\(x\)</span> is a natural number.</p>
+<h3 id="exponential-for-the-integers">Exponential for the integers</h3>
+<p>As I mentioned earlier, the key property of the exponential function is that it turns multiplication into addition: <span class="math">\[b^{x+y} = b^x b^y\]</span></p>
+<p>We will now explore the consequences of this property, which we assumed holds for all real numbers <span class="math">\(x, y\)</span>. It should therefore hold when <span class="math">\(y=0\)</span> and <span class="math">\(x\)</span> is any number, and then it reads:</p>
+<p><span class="math">\[b^x = b^x b^0\]</span></p>
+<p>This can only happen if either all the <span class="math">\(b^x\)</span> are equal to <span class="math">\(0\)</span>, which only happens if <span class="math">\(b=0\)</span>, or if instead <span class="math">\(b^0=1\)</span>. Therefore, except for the trivial case of <span class="math">\(b=0\)</span>, we are <em>forced</em> to defined <span class="math">\(b^0\)</span> as:</p>
+<p><span class="math">\[b^0 = 1\]</span></p>
+<p>Next we consider what happens when <span class="math">\(x\)</span> is any number but <span class="math">\(y=-x\)</span> is its negative. Then the formula becomes:</p>
+<p><span class="math">\[1 = b^0 = b^{x-x} = b^x b^{-x}\]</span></p>
+<p>This again forces us to define:</p>
+<p><span class="math">\[b^{-x} = \frac{1}{b^x}\]</span></p>
+<p>and an easy consequence of that is that:</p>
+<p><span class="math">\[b^{x-y} = \frac{b^x}{b^y}\]</span></p>
+<p>So now, based on these “derived” properties, we have definitions of <span class="math">\(b^x\)</span> for all <em>integers</em> <span class="math">\(0, \pm 1, \pm 2, \ldots\)</span>.</p>
+<p>Next up we want to consider what we should do for rational numbers. Before we do that, let us derive one more property:</p>
+<p><span class="math">\[b^{xy} = \left(b^x\right)^y\]</span></p>
+<p>For now we will only derive this property for <span class="math">\(y\)</span> a natural number. It is easy to see how it would work for small values <span class="math">\(y=1,2,3, 4\)</span>:</p>
+<p><span class="math">\[b^{x\cdot 1} = \left(b^x\right)^1\]</span></p>
+<p><span class="math">\[b^{x\cdot 2} = b^{x + x} = b^x b^x = \left(b^x\right)^2\]</span></p>
+<p><span class="math">\[b^{x\cdot 3} = b^{2x + x} = b^{2x} b^x = \left(b^x\right)^2 b^x = \left(b^x\right)^3\]</span></p>
+<p><span class="math">\[b^{x\cdot 4} = b^{3x + x} = b^{3x} b^x = \left(b^x\right)^3 b^x = \left(b^x\right)^4\]</span></p>
+<p>It is easy to imagine that this could continue for all natural numbers: For each new natural number <span class="math">\(n+1\)</span> we use the fact that we know it for the previous one (i.e. <span class="math">\(n\)</span>) and use that information to prove it for <span class="math">\(n+1\)</span>. The formal way of saying that is known as the <em>principle of mathematical induction</em>.</p>
+<blockquote>
+<p><strong>Principle of Mathematical Induction</strong></p>
+<p>If we want a property <span class="math">\(L(n)\)</span> to be true for all natural numbers <span class="math">\(n\)</span>, it is enough to:</p>
+<ol style="list-style-type: decimal">
+<li>Show it to be true for <span class="math">\(n=1\)</span>, i.e. “<span class="math">\(L(1)\)</span> is true”</li>
+<li>Show how knowing it to be true for a specific <span class="math">\(n\)</span> would allow us to also show it for <span class="math">\(n+1\)</span>, or in other words proving that “<span class="math">\(L(n)\)</span> true implies <span class="math">\(L(n+1)\)</span> true”</li>
+</ol>
+</blockquote>
+<h3 id="exponential-for-the-rational-numbers">Exponential for the rational numbers</h3>
+<p>Now we show how the definition of the exponential for rational numbers is forced upon us. Because of the formula for <span class="math">\(b^{-x}\)</span>, it is enough for us to consider positive rational numbers. So say <span class="math">\(x=\frac{p}{q}\)</span>, where <span class="math">\(p\)</span>, <span class="math">\(q\)</span> are both natural numbers. Then <span class="math">\(p = xq\)</span>, and the property we just proved forces the following steps:</p>
+<p><span class="math">\[b^p = b^{xq} = \left(b^x\right)^q\]</span></p>
+<p>Therefore we have no choice: <span class="math">\(b^x\)</span> must be the <span class="math">\(q\)</span>-th square root of <span class="math">\(b^p\)</span>:</p>
+<p><span class="math">\[b^{p/q} = \sqrt[q]{b^p}\]</span></p>
+<p>and as a special case:</p>
+<p><span class="math">\[b^{1/n} = \sqrt[n]{b}\]</span></p>
+<p>With this in mind, we have defined, in a unique and unavoidable way, the function <span class="math">\(b^x\)</span> for all rational numbers. If we had some more tools at our disposal, we could literally define <span class="math">\(b^x\)</span> as:</p>
+<p><span class="math">\[b^x = \lim_{m/n\to x}b^{m/n}\]</span></p>
+<p>And another cool consequence of all this is that the exponential function needs to always be positive:</p>
+<p><span class="math">\[b^x = \left(b^{x/2}\right)^2\]</span></p>
+<h3 id="the-derivative-of-the-exponential">The derivative of the exponential</h3>
+<p>Let us now see what we can say about the derivative of the exponential function, if such derivative is to exist. We know the limit definition:</p>
+<p><span class="math">\[\frac{d}{dx}b^x = \lim_{h\to 0}\frac{b^{x+h} - b^x}{h} = \lim_{h\to 0}\frac{b^x b^h - b^x}{h}\]</span></p>
+<p>Notice that <span class="math">\(b^x\)</span> is a constant that is a common factor in the numerator, so we can take it all the way out of the integral:</p>
+<p><span class="math">\[\frac{d}{dx}b^x = b^x\lim_{h\to 0}\frac{b^h-1}{h}\]</span></p>
+<p>So it all hinges on the integral:</p>
+<p><span class="math">\[m(b) = \lim_{h\to 0}\frac{b^h-1}{h}\]</span></p>
+<p>For now we don’t have a way to find this number (which depends on <span class="math">\(b\)</span>), other than experimentally computing the limit, but one thing we can say for sure is that the derivative of <span class="math">\(b^x\)</span> is a constant multiple of <span class="math">\(b^x\)</span>:</p>
+<p><span class="math">\[\frac{d}{dx}b^x = m(b) b^x\]</span></p>
+<blockquote>
+<p>The derivative of the function <span class="math">\(b^x\)</span> is a constant multiple of <span class="math">\(b^x\)</span>.</p>
+<p>Because <span class="math">\(b^x\)</span> is always positive, the derivative of <span class="math">\(b^x\)</span> is either always negative or always positive, depending on the sign of <span class="math">\(m(b)\)</span>. So <span class="math">\(b^x\)</span> is either always increasing or always decreasing.</p>
+</blockquote>
+<h3 id="exploring-mb">Exploring <span class="math">\(m(b)\)</span></h3>
+<p>Let us see what, if anything, we can say about <span class="math">\(m(b)\)</span>. The chain rule can help us there:</p>
+<p><span class="math">\[\frac{d}{dx}b^{xy} = m(b) b^{xy} \frac{d}{dx}(xy) = m(b) y b^{xy}\]</span></p>
+<p>But at the same time:</p>
+<p><span class="math">\[\frac{d}{dx}b^{xy} = \frac{d}{dx}\left(\left(b^y\right)^x\right) = m(b^y) b^{xy}\]</span></p>
+<p>So we have the relation:</p>
+<p><span class="math">\[m\left(b^y\right) = y m(b)\]</span></p>
+<p>If you know about the logarithm function, this might seem familiar.</p>
+<h3 id="the-natural-exponential-function">The natural exponential function</h3>
+<p>It turns out that amongst all the possible bases <span class="math">\(b\)</span>, there is a special one for which <span class="math">\(m(b)=1\)</span>. This base is denoted by <span class="math">\(e\)</span>, and gives rise to the familiar exponential function <span class="math">\(e^x\)</span>. In that case we have that the exponential is its own derivative:</p>
+<p><span class="math">\[\frac{d}{dx} e^x = e^x\]</span></p>
+<p>Also note that the previous formula for <span class="math">\(m(b)\)</span> becomes:</p>
+<p><span class="math">\[m\left(e^y\right) = y\]</span></p>
+<p>So the exponential and the “function” <span class="math">\(m\)</span> are what we will later refer to as <em>inverse</em> functions.</p>
+<h3 id="solving-the-differential-equation">Solving the differential equation</h3>
+<p>The function <span class="math">\(b^x\)</span> solves the differential equation <span class="math">\[\frac{d}{dx}b^x = m(b) b^x\]</span> with <span class="math">\(b^0 = 1\)</span>. In fact it is the only function that has this property:</p>
+<blockquote>
+<p>If <span class="math">\(f(x)\)</span> is a differentiable function with <span class="math">\(f(0)=1\)</span> and such that <span class="math">\[\frac{d}{dx}f(x) = m(b)f(x)\]</span> then it must be the case that <span class="math">\(f(x) = b^x\)</span>.</p>
+</blockquote>
+<p>In general solving differential equations, i.e. equations involving the derivatives of functions, is not so easy. But in this case it is. Let us prove the above claim:</p>
+<p>Consider the function: <span class="math">\[h(x) = \frac{f(x)}{b^x}\]</span> We will compute its derivative, using the quotient rule: <span class="math">\[h&#39;(x) = \frac{f&#39;(x)b^x - f(x) \left(b^x\right)&#39;}{\left(b^x\right)^2} = \frac{m(b)f(x)b^x - f(x)m(b)b^x}{b^{2x}} = 0\]</span></p>
+<p>So we obtain the remarkable fact that <span class="math">\(h\)</span> must be a constant function. And since <span class="math">\(h(0) = 1\)</span>, this constant must be <span class="math">\(1\)</span>. Therefore we have that <span class="math">\[\frac{f(x)}{b^x}=1\]</span> or <span class="math">\[f(x) = b^x\]</span></p>
+<p>And this proves our claim.</p>
+<p>Here is one remarkable consequence of this result: <span class="math">\[b^x = e^{m(b)x}\]</span> and in particular <span class="math">\[e^{m(b)} = b\]</span> reinforcing the idea that <span class="math">\(m\)</span> and the exponential are inverse functions of each other.</p>
+<p>Why is this last result true? We can compute the derivative of <span class="math">\(e^{m(b)x}\)</span> using the chain rule, and from that deduce that it is the kind of function <span class="math">\(f\)</span> described in the above result.</p>
+<h3 id="summary">Summary</h3>
+<blockquote>
+<p>The exponential function <span class="math">\(b^x\)</span>:</p>
+<ul>
+<li>defined for all real numbers <span class="math">\(x\)</span></li>
+<li>satisfies <span class="math">\[b^{x+y} = b^x b^y\]</span></li>
+<li>satisfies <span class="math">\[b^{xy} = \left(b^x\right)^y\]</span></li>
+<li>satisfies <span class="math">\[b^{x-y} = \frac{b^x}{b^y}\]</span></li>
+<li>satisfies <span class="math">\[b^{1/n} = \sqrt[n]{b}\]</span></li>
+<li>is differentiable with derivative <span class="math">\[\frac{d}{dx} b^x = m(b) b^x\]</span> where <span class="math">\(m(b)\)</span> is a constant that depends on <span class="math">\(b\)</span></li>
+</ul>
+<p>There is a value <span class="math">\(e\)</span> such that <span class="math">\(m(e) = 1\)</span>. For this value the function equals its own derivative: <span class="math">\[\frac{d}{dx} e^x = e^x\]</span></p>
+<p>The natural exponential and the function <span class="math">\(m\)</span> are inverse functions of each other: <span class="math">\[e^{m(b)} = b\]</span> <span class="math">\[m\left(e^x\right) = x\]</span></p>
+</blockquote>
+</body>
+</html>

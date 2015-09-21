@@ -39,7 +39,7 @@ Day 4
 ## Week  3 (09/21-09/25)
 
 Day 1
-  ~ The exponential function (7.1)
+  ~ [The exponential function (7.1)](notes/exponential.md)
 
 Day 2
   ~ Inverse functions (7.2)
