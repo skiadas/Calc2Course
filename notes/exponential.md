@@ -21,7 +21,14 @@ If $n$ is a natural number, then we can define $b^n$ as the product of exactly $
 > Key property of the exponential function:
 > $$b^{x+y} = b^x b^y$$
 
-For now we can only make sense of this formula for $x,y$ both being natural numbers, $1, 2,\ldots$. And then it is straightforward: If we multiply $3$ copies of $b$ and $4$ copies of $b$, this is the same as if we had multiplied $3+4=7$ copies of $b$. Our goal is simple: Define the exponential function in other values while maintaining the above property. In fact the following is true:
+For now we can only make sense of this formula for $x,y$ both being natural numbers, $1, 2,\ldots$. And then it is straightforward: If we multiply $3$ copies of $b$ and $4$ copies of $b$, this is the same as if we had multiplied $3+4=7$ copies of $b$. In fact that same property forces this on us. For example:
+
+$$b^2 = b^{1+1} = b^1 b^1$$
+$$b^3 = b^{2+1} = b^2 b^2 = (b^1 b^1) b^1$$
+
+So even if we don't identify $b^1$ with $b$, the above property still leads us to the result that $b^n$ is the product of $n$ copies of $b^1$.
+
+Our goal is simple: Define the exponential function in other values while maintaining the above property. In fact the following is true:
 
 > The exponential function $b^x$ is the unique function that:
 >
