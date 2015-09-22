@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="the-exponential-function">The exponential function</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 7.2</p>
+<h2 id="problems">Problems</h2>
+<p>Practice Exercises: 7.2 1, 2, 3, 5, 6, 8, 10, 13, 23, 28, 29, 30</p>
+<p>Exercises to turn in (along with those from 7.1): 7.2 4, 40</p>
+<h2 id="inverse-functions">Inverse functions</h2>
+<h3 id="domains-and-ranges">Domains and Ranges</h3>
+<p>Before we discuss the idea of inverse functions, let us review what a function is to begin with:</p>
+<blockquote>
+<p>A <strong>function</strong> consists of 3 things:</p>
+<ul>
+<li>A set <span class="math">\(D\)</span> called the <strong>domain</strong></li>
+<li>A set <span class="math">\(R\)</span> called the <strong>range</strong></li>
+<li>A rule that tells us how for any value <span class="math">\(x\)</span> in the domain <span class="math">\(D\)</span> we can produce a corresponding value <span class="math">\(f(x)\)</span> in the range <span class="math">\(R\)</span>.</li>
+</ul>
+<p>We usually indicate the domains of the function by writing something like <span class="math">\[f\colon D \to R\]</span></p>
+</blockquote>
+<p>So a function is not just a “formula”, it is a specification of what values <span class="math">\(x\)</span> we are allowed to put in the formula, and what range we guarantee the results to be in. A requirement for something to be a function is that for every single value <span class="math">\(x\)</span> in <span class="math">\(D\)</span> it <em>must</em> produce a corresponding value <span class="math">\(f(x)\)</span> which must be in <span class="math">\(R\)</span>.</p>
+<p>Oftentimes we make allowances, and we define the domain <span class="math">\(D\)</span> implicitly by saying that <span class="math">\(D\)</span> is the set of all points where the formula makes sense. For instance for the function <span class="math">\(f(x) = \frac{1}{x}\)</span> we could say that the domain is <span class="math">\(\mathbb{R}\setminus \{0\}\)</span>, or in other words all non-zero numbers. But perhaps we want to restrict our function, and say only look at its behavior from <span class="math">\(1\)</span> to <span class="math">\(4\)</span>. Then we can talk about the function with domain the interval <span class="math">\([1, 4]\)</span> and formula <span class="math">\(f(x) = \frac{1}{x}\)</span>.</p>
+<p>Similarly we often omit the range <span class="math">\(R\)</span>, and assume it to either be the entire real line or the set of all possible values of the function (often not easy to determine that set).</p>
+<p>But for this section we will be very explicit in our domain and range specifications, and they will be part of what it means to <em>have a function</em>.</p>
+<h3 id="the-inverse-of-a-function">The inverse of a function</h3>
+<blockquote>
+<p>If we have a function <span class="math">\(f\colon D\to R\)</span> and a function <span class="math">\(g\colon R\to D\)</span> (notice the domains and ranges switched), then we say that the function <span class="math">\(g\)</span> is the <strong>inverse</strong> to <span class="math">\(f\)</span>, if:</p>
+<ul>
+<li><span class="math">\(g(f(x)) = x\)</span> for all <span class="math">\(x\in D\)</span> and</li>
+<li><span class="math">\(f(g(y)) = y\)</span> for all <span class="math">\(y\in R\)</span></li>
+</ul>
+<p>We also say that <span class="math">\(f\)</span> is invertible, and we denote <span class="math">\(g\)</span> by <span class="math">\(f^{-1}\)</span>.</p>
+<p>Another way to think about it is to say that <span class="math">\(y=f(x)\)</span> if and only if <span class="math">\(x = g(y)\)</span>.</p>
+</blockquote>
+<p><strong>Note</strong> that this is not the same as taking “one over” the function, i.e. <span class="math">\(\frac{1}{f(x)}\)</span>. This would be denoted by <span class="math">\(\left(f(x)\right)^{-1}\)</span>, this is <span class="math">\(f^{-1}(x)\)</span>.</p>
+<p>Most of the times we find the inverse by solving the equation <span class="math">\(y=f(x)\)</span> for <span class="math">\(x\)</span>. For example:</p>
+<p>Let <span class="math">\(f(x) = 2x+3\)</span>. Then we set <span class="math">\(y=2x+3\)</span>, and we solve for <span class="math">\(x\)</span> to find <span class="math">\(x=\frac{1}{2}\left(y - 3\right)\)</span>. This is the inverse function <span class="math">\(g(y) = \frac{1}{2}(y-3)\)</span>. Technically we should have included the domain and range of these functions, which would be the entire real number line.</p>
+<p>Here is another example. Consider the function <span class="math">\(f(x) = x^2\)</span>. We can try to do the same and set <span class="math">\(y=x^2\)</span>. Then to solve for <span class="math">\(x\)</span> we would have to take square roots, which as we know:</p>
+<ol style="list-style-type: decimal">
+<li>requires <span class="math">\(y\)</span> to be nonnegative,</li>
+<li>has two solutions unless we require <span class="math">\(x\)</span> to be nonnegative.</li>
+</ol>
+<p>So in this case in order to solve for <span class="math">\(x\)</span> we need to restrict <span class="math">\(x\)</span>. So even though the function <span class="math">\(f(x) = x^2\)</span> is defined for all real numbers <span class="math">\(x\)</span>, we will restrict it to the domain <span class="math">\(D=[0, +\infty)\)</span>, and similarly the range would be <span class="math">\(R=[0, +\infty)\)</span> to respect the fact that those are the allowed <span class="math">\(y\)</span> values. Then we can define the inverse <span class="math">\(g\colon R \to D\)</span> via <span class="math">\(g(y) = \sqrt{y}\)</span>.</p>
+<p>This has led us to two obstacles in having an inverse:</p>
+<ol style="list-style-type: decimal">
+<li>The equation <span class="math">\(y=f(x)\)</span> might not be solvable for some <span class="math">\(y\in R\)</span>,</li>
+<li>The equation <span class="math">\(y=f(x)\)</span> might have multiple solutions <span class="math">\(x\in D\)</span>.</li>
+</ol>
+<p>Both of these are problems if we are trying to define the inverse. And they both have names:</p>
+<blockquote>
+<p>We say a function <span class="math">\(f\colon D\to R\)</span> is <strong>one-to-one</strong>, if it cannot happen that we have <span class="math">\(x_1,x_2\in D\)</span> with <span class="math">\(x_1\neq x_2\)</span> but <span class="math">\(f(x_1) = f(x_2)\)</span>. A one-to-one function can never take the same value twice.</p>
+<p>We say that a function <span class="math">\(f\colon D\to R\)</span> is <strong>onto</strong>, if every number in <span class="math">\(R\)</span> is a value of the function, i.e. if for each <span class="math">\(y\in R\)</span> there is an <span class="math">\(x\in D\)</span> such that <span class="math">\(f(x) = y\)</span>. An onto function hits every value in the range.</p>
+</blockquote>
+<p>Note that the book does not talk about “onto” functions, and instead effectively thinks about reducing the range to only those numbers that are values of the function.</p>
+<p>A good example of these ideas is our function <span class="math">\(f(x) = x^2\)</span> earlier. If we think of it as a function <span class="math">\(f\colon (-\infty, \infty) \to (-\infty, \infty)\)</span>, then it will be neither one-to-one nor onto:</p>
+<ul>
+<li>It is not one-to-one because negative numbers have the same squares as corresponding positive numbers, so for instance <span class="math">\(f(2) = f(-2)\)</span> even though <span class="math">\(2\neq -2\)</span>.</li>
+<li>It is not onto because the squares are nonnegative. So if <span class="math">\(y=-1\in (-\infty, \infty)\)</span>, then there is no <span class="math">\(x\)</span> such that <span class="math">\(f(x) = y\)</span>.</li>
+</ul>
+<p>On the other hand, the function <span class="math">\(f:[0,+\infty)\to[0,+\infty)\)</span> is both one-to-one and onto.</p>
+<p>We can usually make a function one-to-one by restricting its domain. We can make it onto by restricting its range.</p>
+<p>The ideas of one-to-one and onto functions are closely related to that of invertible functions. In fact we have the following:</p>
+<blockquote>
+<p>If <span class="math">\(f\)</span> is an invertible function with inverse <span class="math">\(g\)</span>, then <span class="math">\(f\)</span> is both one-to-one and onto:</p>
+<ul>
+<li>The fact that <span class="math">\(g(f(x)) = x\)</span> for all <span class="math">\(x\in D\)</span> means that <span class="math">\(f\)</span> is <strong>one-to-one</strong>: If for some <span class="math">\(x_1,x_2\in D\)</span> we have <span class="math">\(f(x_1) = f(x_2)\)</span>, then we must also have <span class="math">\(g(f(x_1)) = g(f(x_2))\)</span>, and hence <span class="math">\(x_1 = x_2\)</span>. So we can’t have two different <span class="math">\(x\)</span>’s with the same values.</li>
+<li>The fact that <span class="math">\(f(g(y)) = y\)</span> for all <span class="math">\(y\in R\)</span> means that <span class="math">\(f\)</span> is <strong>onto</strong>: For every <span class="math">\(y\in R\)</span> there is an <span class="math">\(x\in D\)</span> such that <span class="math">\(f(x) = y\)</span>. That <span class="math">\(x\)</span> is in fact <span class="math">\(x=g(y)\)</span>.</li>
+</ul>
+</blockquote>
+<p>Conversely, if a function is one-to-one and onto, then it is invertible:</p>
+<blockquote>
+<p>If <span class="math">\(f\colon D\to R\)</span> is a one-to-one and onto function, we can define a function <span class="math">\(g\colon R\to D\)</span> as follows:</p>
+<ul>
+<li>If <span class="math">\(y\in R\)</span>, then because <span class="math">\(f\)</span> is onto there is an <span class="math">\(x\in D\)</span> such that <span class="math">\(f(x) = y\)</span>. We define <span class="math">\(g(y)\)</span> to be that <span class="math">\(x\)</span>.</li>
+<li>We need to show 2 things: First, that for each <span class="math">\(y\in R\)</span> we have <span class="math">\(f(g(y))=y\)</span>. This is literally how we defined <span class="math">\(g(y)\)</span>, as an <span class="math">\(x\)</span> such that <span class="math">\(f(x) = y\)</span>.</li>
+<li>Second, that for each <span class="math">\(x\in D\)</span> we have <span class="math">\(g(f(x)) = x\)</span>. Let us start by giving a name to <span class="math">\(f(x)\)</span>, let’s call it <span class="math">\(y\)</span>. So <span class="math">\(y=f(x)\)</span> and <span class="math">\(y\in R\)</span>. We defined <span class="math">\(g(y)\)</span> as the <span class="math">\(x\)</span> such that <span class="math">\(f(x) = y\)</span>. The only problem we might have is if there were two such <span class="math">\(x\)</span>’s. But the fact that <span class="math">\(f\)</span> is one-to-one means that there are not: There is a exactly one <span class="math">\(x\)</span> such that <span class="math">\(y=f(x)\)</span> and we defined <span class="math">\(g(y)\)</span> to be that <span class="math">\(x\)</span>. so if we start with an <span class="math">\(x\)</span> and compute <span class="math">\(y=f(x)\)</span>, then take <span class="math">\(g(y) = g(f(x))\)</span>, we will get back that <span class="math">\(x\)</span> as it is the only possible value for <span class="math">\(g(y)\)</span>.</li>
+</ul>
+</blockquote>
+<h3 id="derivative-of-the-inverse">Derivative of the inverse</h3>
+<p>The nice thing about inverses is that the computation of the derivative of the inverse is relatively easy to do. For this, let’s imagine that <span class="math">\(f\)</span> is differentiable, and that its inverse is also differentiable. We would like to find a formula for the derivative.</p>
+<p>We have <span class="math">\[f(g(y)) = y\]</span> and the chain rule tells us how to differentiate this equation in terms of <span class="math">\(y\)</span>: <span class="math">\[\frac{d}{dy}f(g(y)) = \frac{d}{dy} y = 1\]</span> <span class="math">\[f&#39;(g(y))g&#39;(y) = 1\]</span></p>
+<p>So we get the formula:</p>
+<blockquote>
+<p><span class="math">\[g&#39;(y) = \frac{1}{f&#39;(g(y))}\]</span></p>
+</blockquote>
+<p>So to compute the derivative of the inverse, all we have to do is take 1 over the derivative of <span class="math">\(f\)</span>, evaluated at the inverse.</p>
+<p>The question of why <span class="math">\(g\)</span> is invertible in the first place is a harder question. We will not address it at this point.</p>
+<p>Let us see an example of this. Suppose <span class="math">\(f(x) = x^2\)</span> on the domain <span class="math">\([0,\infty)\)</span>. Then <span class="math">\(f&#39;(x) = 2x\)</span> and we already said that the inverse of <span class="math">\(f\)</span> is the function <span class="math">\(g(y) = \sqrt{y}\)</span>. We already know the derivative of the square root of course, but we will now derive it as a consequence of it being the inverse function to the square function. We would have:</p>
+<p><span class="math">\[g&#39;(y) = \frac{1}{f&#39;(g(y))} = \frac{1}{2 g(y)} = \frac{1}{2 \sqrt{x}}\]</span></p>
+</body>
+</html>

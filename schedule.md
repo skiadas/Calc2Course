@@ -42,7 +42,7 @@ Day 1
   ~ [The exponential function (7.1)](notes/exponential.md)
 
 Day 2
-  ~ Inverse functions (7.2)
+  ~ [Inverse functions (7.2)](notes/inverse_functions.md)
 
 Day 3
   ~ Logarithms (7.3)
