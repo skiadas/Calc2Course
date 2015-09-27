@@ -42,21 +42,21 @@ Day 1
   ~ [The exponential function (7.1)](notes/exponential.md)
 
 Day 2
-  ~ [Inverse functions (7.2)](notes/inverse_functions.md)
+  ~ [The exponential function (cont) (7.1)](notes/exponential.md)
 
 Day 3
-  ~ Logarithms (7.3)
+  ~ [Inverse functions (7.2)](notes/inverse_functions.md)
 
 Day 4
-  ~ Logarithms (cont) (7.3)
+  ~ [Inverse functions (cont) (7.2)](notes/inverse_functions.md)
 
 ## Week  4 (09/28-10/02)
 
 Day 1
-  ~ Defining logarithm as an integral
+  ~ [Logarithms (7.3)](notes/logarithms.md)
 
 Day 2
-  ~ Defining exponential as inverse of logarithm
+  ~ [Logarithms (cont) (7.3)](notes/logarithms.md)
 
 Day 3
   ~ Exponential Growth and Decay (7.4)

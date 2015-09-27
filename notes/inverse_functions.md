@@ -1,4 +1,4 @@
-# The exponential function
+# Inverse Functions
 
 ## Reading
 
