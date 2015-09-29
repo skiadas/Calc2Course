@@ -59,10 +59,10 @@ Day 2
   ~ [Logarithms (cont) (7.3)](notes/logarithms.md)
 
 Day 3
-  ~ Exponential Growth and Decay (7.4)
+  ~ [Exponential Growth and Decay (7.4)](notes/exponential_growth.md)
 
 Day 4
-  ~ Compound Interest (7.5)
+  ~ [Compound Interest (7.5)](notes/compound_interest.md)
 
 ## Week  5 (10/05-10/09)
 

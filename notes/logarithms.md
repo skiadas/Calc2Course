@@ -77,7 +77,7 @@ $$\ln(x^n) = n\ln(x)$$
 
 Also if we put in $y=\frac{1}{x}$ in the formula above we would obtain:
 
-$$\ln(1/x) = -ln(x)$$
+$$\ln(1/x) = -\ln(x)$$
 and from it
 $$\ln(x/y) = \ln(x) - \ln(y)$$
 
