@@ -10,7 +10,7 @@ Practice Exercises: 7.3 5, 6, 7, 8, 17, 21, 23, 24, 26, 33, 38, 39, 47, 53, 67, 
 
 Optional: 7.3 118, 120
 
-Exercises to turn in: 7.3 22, 54, 98, 108
+Exercises to turn in: 7.3 22, 54, 98
 
 ## Logarithms
 
@@ -139,7 +139,7 @@ Let us establish a relation between logarithms, exponentials and actually powers
 - $\ln(b^n) = n\ln(b)$. This gives:
 - $b^n = \exp(n\ln(b))$. For $b=e$ and since $\ln(e)=1$ we have:
 - $e^n = \exp(n)$.
-- It therefore makes sense to in general define: $$b^x =\exp(\ln(b)x)$$ and $e^x = \exp(x)$$.
+- It therefore makes sense to in general define: $$b^x =\exp(\ln(b)x)$$ and $$e^x = \exp(x)$$.
 - In particular $b^x = e^{\ln(b) x}$.
 - $\log_b(x)$ is the inverse of $b^x$.
 - $y=\log_b(x)$ if and only if $x = b^y = e^{\ln(b)y}$, if and only if $\ln(b)y = \ln(x)$.
