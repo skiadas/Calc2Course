@@ -75,7 +75,7 @@ Day 2
   ~ **MIDTERM 1** ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
-  ~ L'Hospital's Rule (7.7)
+  ~ [L'Hospital's Rule (7.7)](notes/lhopital.md)
 
 Day 4
   ~ Comparative growth of functions (7.7)
