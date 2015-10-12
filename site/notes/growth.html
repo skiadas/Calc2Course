@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="growth-of-functions">Growth of Functions</h1>
+<p>This section starts off with the main ideas near the end of section 7.7 but goes on a bit further.</p>
+<p>The interest in this section is how functions behave as <span class="math">\(x\to\infty\)</span>. There are lots of functions that go to infinity: <span class="math">\(x\)</span>, <span class="math">\(x^2\)</span>, <span class="math">\(e^x\)</span>, <span class="math">\(x^x\)</span>, <span class="math">\(\ln(x)\)</span>, <span class="math">\(\ln(x)^2\)</span> and so on. The question we will focus on in this section is: <em>How fast do these functions go to infinity</em>? <em>Do some of them go to infinity “faster” than others</em>?</p>
+<p>Let us start with a definition:</p>
+<blockquote>
+<p>We say that a function <span class="math">\(g(x)\)</span> <strong>grows faster</strong> than a function <span class="math">\(f(x)\)</span>, if: <span class="math">\[\lim_{x\to\infty}\frac{g(x)}{f(x)} = \infty\]</span> We denote this by <span class="math">\[f(x) \ll g(x)\]</span></p>
+<p>We could also instead check that: <span class="math">\[\lim_{x\to\infty}\frac{f(x)}{g(x)} = 0\]</span></p>
+</blockquote>
+<p>Notice that a lot of those quotients will end up being indeterminate forms of the type <span class="math">\(\frac{\infty}{\infty}\)</span>.</p>
+<p>For example, <span class="math">\(2x\)</span> is not considered to grow faster than <span class="math">\(x\)</span>, because <span class="math">\(\lim_{x\to \infty}\frac{2x}{x} = 2\neq\infty\)</span>. On the other hand, <span class="math">\(x^2\)</span> does grow faster than <span class="math">\(x\)</span>.</p>
+<p>Here are some facts about the relative growth of functions:</p>
+<blockquote>
+<p><span class="math">\[x^n \ll x^m\textrm{ when }m &gt; n\]</span> <span class="math">\[x^n \ll e^x \ll e^{2x} \ll e^{x^n}\textrm{ for all }n\]</span> <span class="math">\[\ln(x)^n \ll x^\alpha\textrm{ for all }n,\alpha &gt; 0\]</span></p>
+</blockquote>
+<p>Let us demonstrate these various assertions. We start with the first, which is easy to see by looking at <span class="math">\(\lim_{x\to \infty}\frac{x^m}{x^n} = \lim_{x\to\infty}x^{m-n} = \infty\)</span>.</p>
+<p>The limits that compare the various exponentials follow from the formula: <span class="math">\[\frac{e^{f(x)}}{e^{g(x)}} = e^{f(x) - g(x)}\]</span> So as long as <span class="math">\(\lim_{x\to \infty}f(x)-g(x) =\infty\)</span>, then <span class="math">\(e^{f(x)} \gg e^{g(x)}\)</span>. This helps us show for example that <span class="math">\(e^x\ll e^{2x}\ll e^{x^2}\ll e^{x^3}\)</span> and so on.</p>
+<p>The hardest comparison is between <span class="math">\(x^n\)</span> and <span class="math">\(e^x\)</span>. Let us work on that now: <span class="math">\[\lim_{x\to\infty}\frac{e^x}{x^n}\]</span> As long as <span class="math">\(n&gt;0\)</span>, we have a <span class="math">\(\frac{\infty}{\infty}\)</span> form, and we can apply L’Hopital’s rule to get: <span class="math">\[\lim_{x\to\infty}\frac{e^x}{x^n} = \lim_{x\to\infty}\frac{e^x}{nx^{n-1}}\]</span></p>
+<p>This is again an indeterminate form, but where the <span class="math">\(x^n\)</span> power is now of lower degree, but the <span class="math">\(e^x\)</span> has remained unchanged. Continuing this way, we will eventually get to a point where we have <span class="math">\(e^x\)</span> on the numerator, and a number (<span class="math">\(n(n-1)(n-2)\cdots 2\cdot 1\)</span>) in the denominator. This limit would then be infinity.</p>
+<p>Let us try out some of the remaining comparisons, for instance comparing different exponentials:</p>
+<blockquote>
+<p><span class="math">\[\lim_{x\to\infty}\frac{e^{f(x)}}{e^{g(x)}} = e^{\displaystyle \lim_{x\to \infty} f(x) - g(x)}\]</span> So <span class="math">\(e^{f(x)} \ll e^{g(x)}\)</span> if <span class="math">\(\lim_{x\to\infty}f(x) - g(x) = -\infty\)</span> and <span class="math">\(e^{f(x)} \gg e^{g(x)}\)</span> if <span class="math">\(\lim_{x\to\infty}f(x) - g(x) = +\infty\)</span>.</p>
+</blockquote>
+<p>Use this to compare <span class="math">\(e^x\)</span>, <span class="math">\(e^{2x}\)</span> and <span class="math">\(e^{x^2}\)</span>.</p>
+<p>Finally, for the logarithm, we use L’Hopital’s rule:</p>
+<p><span class="math">\[\lim_{x\to\infty}\frac{\ln(x)}{x^\alpha} = \lim_{x\to\infty}\frac{1/x}{\alpha x^{\alpha-1}} = \lim_{x\to\infty}\frac{1}{\alpha x^\alpha} = 0\]</span> as long as <span class="math">\(\alpha &gt; 0\)</span>.</p>
+</body>
+</html>

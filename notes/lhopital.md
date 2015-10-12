@@ -6,9 +6,9 @@ Section 7.7
 
 ## Problems
 
-Practice Exercises: 7.7 1-4, 6-7, 9-10, 14-16, 18, 19, 25, 27, 29, 47-48, 55, 56
+Practice Exercises: 7.7 1-4, 6-7, 9-10, 14-16, 18, 19, 25, 27, 29, 47-48, 55
 
-Exercises to turn in (along with those from 7.8): 26, 46
+Exercises to turn in (along with those from 7.8): 26, 46, 56, 58
 
 ## L'Hopital's Rule
 

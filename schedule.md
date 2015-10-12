@@ -78,21 +78,21 @@ Day 3
   ~ [L'Hospital's Rule (7.7)](notes/lhopital.md)
 
 Day 4
-  ~ Comparative growth of functions (7.7)
+  ~ [L'Hospital's Rule (7.7) cont](notes/lhopital.md)
 
 ## Week  6 (10/12-10/16)
 
 Day 1
-  ~ Inverse Trigonometric Functions (7.8)
+  ~ [Comparative growth of functions (7.7)](notes/growth.md)
 
 Day 2
-  ~ Hyperbolic Functions (7.9)
+  ~ [Inverse Trigonometric Functions (7.8)](notes/inverse_trig.md)
 
 Day 3
-  ~ Integration by parts (8.1)
+  ~ Hyperbolic Functions (7.9)
 
 Day 4
-  ~ Trigonometric Integrals (8.2)
+  ~ Integration by parts (8.1)
 
 ## Week  7 (10/19-10/23)
 
@@ -100,38 +100,38 @@ Day 1
   ~ Fall Break
 
 Day 2
-  ~ Trigonometric Substitution (8.3)
+  ~ Trigonometric Integrals (8.2)
 
 Day 3
-  ~ Method of Partial Fractions (8.5)
+  ~ Trigonometric Substitution (8.3)
 
 Day 4
-  ~ Improper Integrals (8.6)
+  ~ Method of Partial Fractions (8.5)
 
 ## Week  8 (10/26-10/30)
 
 Day 1
-  ~ Improper Integrals (cont) (8.6)
+  ~ Improper Integrals (8.6)
 
 Day 2
-  ~ Special functions: Gamma
+  ~ Improper Integrals (cont) (8.6)
 
 Day 3
-  ~ Special functions: Beta?
+  ~ Special functions: Gamma
 
 Day 4
-  ~ Numerical Integration (8.8)
+  ~ Special functions: Beta?
 
 ## Week  9 (11/02-11/06)
 
 Day 1
-  ~ Taylor Polynomials (9.4)
+  ~ Numerical Integration (8.8)
 
 Day 2
-  ~ Arc Length (9.1)
+  ~ Taylor Polynomials (9.4)
 
 Day 3
-  ~ Parametric Equations (12.1)
+  ~ Arc Length (9.1)
 
 Day 4
   ~ Review
@@ -142,24 +142,24 @@ Day 1
   ~ **MIDTERM**
 
 Day 2
-  ~ Arc Length and Area (12.2)
+  ~ Parametric Equations (12.1)
 
 Day 3
-  ~ Polar Coordinates (12.3)
+  ~ Arc Length and Area (12.2)
 
 Day 4
-  ~ Area and Arc Length in polar coordinates (12.4)
+  ~ Polar Coordinates (12.3)
 
 ## Week 11 (11/16-11/20)
 
 Day 1
-  ~ Conic sections (12.5)
+  ~ Area and Arc Length in polar coordinates (12.4)
 
 Day 2
-  ~ Conic sections (cont) (12.5)
+  ~ Conic sections (12.5)
 
 Day 3
-  ~ TBA
+  ~ Conic sections (cont) (12.5)
 
 Day 4
   ~ TBA

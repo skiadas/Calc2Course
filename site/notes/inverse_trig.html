@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="inverse-trigonometric-functions">Inverse Trigonometric Functions</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 7.8</p>
+<h2 id="problems">Problems</h2>
+<p>Practice Exercises: 7.8 1-6, 7-12, 17, 18, 21, 23, 29, 30, 33, 35, 37, 53, 57, 59, 61, 63, 70, 71</p>
+<p>Exercises to turn in (along with those from 7.9): 7.8 22, 38, 60</p>
+<h2 id="inverse-trigonometric-functions-1">Inverse Trigonometric Functions</h2>
+<p>As you know, trigonometric functions are periodic, with period <span class="math">\(2\pi\)</span>, i.e. their values repeat every <span class="math">\(2\pi\)</span>. This prevents the function from being one-to-one.</p>
+<p>In order to obtain an invertible function we must restrict to an interval:</p>
+<blockquote>
+<p>The function <span class="math">\[\sin\colon \left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\to [-1, 1]\]</span> is invertible. Its inverse is the inverse sine function: <span class="math">\[\sin^{-1}\colon[-1,1]\to\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\]</span></p>
+<p>In other words, <span class="math">\(\sin^{-1}(x)\)</span> is the unique <span class="math">\(y\in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\)</span> such that <span class="math">\(\sin(y) = x\)</span>.</p>
+</blockquote>
+<p>In order to remember the basic trigonometric numbers, it is good to keep the following two triangles in mind:</p>
+<div class="figure">
+<img src="images/trigTriangles.png" alt="Triangles for trig numbers" />
+<p class="caption">Triangles for trig numbers</p>
+</div>
+<p>For example, <span class="math">\(\sin\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2}\)</span>. We can read this conversely to say that <span class="math">\(\sin^{-1}\left(\frac{\sqrt{3}}{2}\right) = \frac{\pi}{6}\)</span>.</p>
+<p>Note that in general <span class="math">\(\sin^{-1}\left(\sin(x)\right)\neq x\)</span>. This is only true if <span class="math">\(x\)</span> is in the specific interval <span class="math">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\)</span>. If it is not, we have to convert it, using the periodicity if <span class="math">\(\sin\)</span>, turning every angle into the range <span class="math">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\)</span>.</p>
+<p>For instance, consider <span class="math">\(\sin^{-1}(\sin(\frac{5\pi}{3}))\)</span>. since <span class="math">\(\frac{5\pi}{3} = \frac{6\pi}{3} - \frac{\pi}{3} = 2\pi - \frac{\pi}{3}\)</span>, we have that <span class="math">\(\sin\left(\frac{5\pi}{3}\right) = \sin\left(\frac{-\pi}{3}\right)\)</span>. Therefore that would be the answer: <span class="math">\[\sin^{-1}(\sin(\frac{5\pi}{3})) = \frac{-\pi}{3}\]</span></p>
+<p>We have similar definitions for <span class="math">\(\cos^{-1}\)</span> and <span class="math">\(\tan^{-1}\)</span>:</p>
+<blockquote>
+<p>The function <span class="math">\[\cos\colon \left[0, \pi\right]\to [-1, 1]\]</span> is invertible. Its inverse is the inverse cosine function: <span class="math">\[\cos^{-1}\colon[-1,1]\to\left[0, \pi\right]\]</span></p>
+<p>In other words, <span class="math">\(\cos^{-1}(x)\)</span> is the unique <span class="math">\(y\in\left[0, \pi\right]\)</span> such that <span class="math">\(\cos(y) = x\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>The function <span class="math">\[\tan\colon \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)\to (-\infty,\infty)\]</span> is invertible. Its inverse is the inverse tangent function: <span class="math">\[\tan^{-1}\colon (-\infty,\infty)\to\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)\]</span></p>
+<p>In other words, <span class="math">\(\tan^{-1}(x)\)</span> is the unique <span class="math">\(y\in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)\)</span> such that <span class="math">\(\tan(y) = x\)</span>.</p>
+</blockquote>
+<p>An important question is how to combine for instance <span class="math">\(\cos\)</span> and <span class="math">\(\sin^{-1}\)</span>. We have the following result:</p>
+<blockquote>
+<p><span class="math">\[\cos\left(\sin^{-1}(x)\right) = \sqrt{1-x^2}\]</span> <span class="math">\[\tan\left(\sin^{-1}(x)\right) = \frac{x}{\sqrt{1-x^2}}\]</span></p>
+</blockquote>
+<p>The idea for this result is as follows: Draw a right angle triangle where the hypotenuse is equal to <span class="math">\(1\)</span> and a side is <span class="math">\(x\)</span>. Then the angle opposite that side is exactly <span class="math">\(\sin^{-1}(x)\)</span>. Now by the pythagorean theorem, the third side of that triangle has to have length <span class="math">\(\sqrt{1-x^2}\)</span>.</p>
+<p>From that triangle we can now read the cosine and tangent of that angle. This gives us the above formulas. It also gives us the following:</p>
+<blockquote>
+<p><span class="math">\[\sin^{-1}(x) + \cos^{-1}(x) = \frac{\pi}{2}\]</span></p>
+</blockquote>
+<p>This is because the same triangle that gives us the sine as <span class="math">\(x\)</span> for one of the non-right angles, gives us the cosine as <span class="math">\(x\)</span> for the other non-right angle, and those two need to add up to <span class="math">\(\frac{\pi}{2}\)</span>.</p>
+<p>A consequence of these formulas is that we can figure out the derivatives of the inverse trigonometric functions:</p>
+<blockquote>
+<p><strong>Derivatives of inverse trigonometric functions</strong> <span class="math">\[\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\sqrt{1-x^2}}\]</span> <span class="math">\[\frac{d}{dx}\cos^{-1}(x) = -\frac{1}{\sqrt{1-x^2}}\]</span> <span class="math">\[\frac{d}{dx}\tan^{-1}(x) = \frac{1}{1+x^2}\]</span></p>
+</blockquote>
+<p>Let us prove these using the formula for the derivative of the inverse of a function:</p>
+<p><span class="math">\[\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\sin&#39;\left(\sin^{-1}(x)\right)} = \frac{1}{\cos\left(\sin^{-1}(x)\right)} = \frac{1}{\sqrt{1-x^2}}\]</span></p>
+<p>And a similar formula works for the inverse tangent:</p>
+<p><span class="math">\[\frac{d}{dx}\tan^{-1}(x) = \frac{1}{\tan&#39;\left(\tan^{-1}(x)\right)} = \frac{1}{\sec^2\left(\tan^{-1}(x)\right)} =\frac{1}{1+x^2}\]</span></p>
+<p>The last step follows by considering a right-angle triangle with one side <span class="math">\(x\)</span> and another <span class="math">\(1\)</span>, and hence the hypotenuse is <span class="math">\(\sqrt{1+x^2}\)</span>. The secant of the angle with tangent <span class="math">\(x\)</span> would then be exactly <span class="math">\(\sqrt{1+x^2}\)</span>.</p>
+<h3 id="basic-integral-formulas">Basic Integral Formulas</h3>
+<p>These derivatives can be read backwards as facts about integrals. The two most relevant to us are:</p>
+<blockquote>
+<p><span class="math">\[\frac{dx}{\sqrt{1-x^2}} = \sin^{-1}(x) + C\]</span> <span class="math">\[\frac{dx}{1+x^2} = \tan^{-1}(x) + C\]</span></p>
+</blockquote>
+<p>These are often preceded by a <span class="math">\(u\)</span> substitution. For example, suppose we want to compute: <span class="math">\[\int{-3/4}^0\frac{dx}{\sqrt{9-16x^2}}\]</span> Looking at that denominator, it looks a bit like a <span class="math">\(\sqrt{1-u^2}\)</span>, except it’s got some extra numbers all around. Let us rewrite it a bit: <span class="math">\[\int_{-3/4}^0\frac{dx}{\sqrt{9}\sqrt{1-\left(\frac{4x}{3}\right)^2}}\]</span> So it makes sense to set <span class="math">\(u=\frac{4x}{3}\)</span>. Then <span class="math">\(du = \frac{4}{3}dx\)</span>, and the interval becomes: <span class="math">\[\int_{-1}^0\frac{\frac{3}{4}du}{3\sqrt{1-u^2}} \frac{1}{4}\left(\sin^{-1}(0)-\sin^{-1}(-1)\right) = -\frac{1}{4}\left(-\frac{\pi}{2}\right) = \frac{\pi}{8}\]</span></p>
+</body>
+</html>
