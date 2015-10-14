@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="hyperbolic-functions">Hyperbolic Functions</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 7.9</p>
+<h2 id="problems">Problems</h2>
+<p>Practice Exercises: 7.9 2-4, 6-8, 9-13, 17, 35-38, 41, 42, 45, 61-63, 73, 74</p>
+<p>Exercises to turn in (along with those from 7.8): 7.9 8, 44</p>
+<h2 id="hyperbolic-functions-1">Hyperbolic Functions</h2>
+<p>The hyperbolic functions are special combinations of <span class="math">\(e^x\)</span> and <span class="math">\(e^{-x}\)</span>, and their names are meant to suggest relations to the trigonometric functions.</p>
+<blockquote>
+<p>The hyperbolic sine, cosine and tangent and secant are defined for all <span class="math">\(x\)</span> as: <span class="math">\[\sinh(x) = \frac{e^x - e^{-x}}{2}\]</span> <span class="math">\[\cosh(x) = \frac{e^x + e^{-x}}{2}\]</span> <span class="math">\[\tanh(x) = \frac{\sinh(x)}{\cosh(x)} = \frac{e^x - e^{-x}}{e^x+e^{-x}}\]</span> <span class="math">\[\textrm{sech}(x) = \frac{1}{\cosh(x)} = \frac{2}{e^x+e^{-x}}\]</span></p>
+</blockquote>
+<p>These functions satisfy a number of identities that are similar to the trigonometric identities:</p>
+<blockquote>
+<p><strong>Hyperbolic identities</strong> <span class="math">\[\sinh(-x) = - \sinh(x)\textrm{ (sinh is an odd function)}\]</span> <span class="math">\[\cosh(-x) = \cosh(x)\textrm{ (cosh is an even function)}\]</span> <span class="math">\[\cosh^2(x) - \sinh^2(x) = 1\]</span> <span class="math">\[\sinh(x+y) = \sinh(x)\cosh(y) + \cosh(x)\sinh(y)\]</span> <span class="math">\[\cosh(x+y) = \cosh(x)\cosh(y) - \sinh(x)\sinh(y)\]</span></p>
+</blockquote>
+<p>The hyperbolic functions have derivative formulas very similar to the trigonometric ones:</p>
+<blockquote>
+<p><span class="math">\[\sinh&#39;(x) = \cosh(x)\]</span> <span class="math">\[\cosh&#39;(x) = \sinh(x)\]</span> <span class="math">\[\tanh&#39;(x) = \textrm{sech}^2(x)\]</span> <span class="math">\[\textrm{sech}&#39;(x) = -\textrm{sech}(x)\tanh(x)\]</span></p>
+</blockquote>
+<h3 id="inverse-hyperbolic-functions">Inverse hyperbolic functions</h3>
+<p>We can also define the inverse hyperbolic functions. For that we need to figure out the ranges for the various hyberbolic functions. There are two approaches we can take to the subject in general: One is to figure out what the derivatives would need to be based on the formula for the derivative of the inverse; the other is to solve the equations <span class="math">\(y=f(x)\)</span> for <span class="math">\(x\)</span>.</p>
+<p>We start with the derivative approach:</p>
+<blockquote>
+<p><span class="math">\[\sinh^{-1}(x)&#39; = \frac{1}{\sqrt{x^2+1}}\]</span> <span class="math">\[\cosh^{-1}(x)&#39; = \frac{1}{\sqrt{x^2-1}}\]</span> <span class="math">\[\tanh^{-1}(x)&#39; = \frac{1}{1-x^2}\]</span> <span class="math">\[\textrm{sech}^{-1}(x)&#39; = -\frac{1}{x\sqrt{1-x^2}}\]</span></p>
+</blockquote>
+<p>Let us figure one of these out. The book shows the <span class="math">\(\tanh\)</span> case, and we will leave the <span class="math">\(\cosh\)</span> and <span class="math">\(\textrm{sech}\)</span> cases as exercises for the student. We will work out the <span class="math">\(\sinh\)</span> case here:</p>
+<p><span class="math">\[\sinh^{-1}(x)&#39; = \frac{1}{\sinh&#39;\left(\sinh^{-1}(x)\right)} = \frac{1}{\cosh\left(\sinh^{-1}(x)\right)}\]</span></p>
+<p>If we let <span class="math">\(t = \sinh^{-1}(x)\)</span>, then we would have <span class="math">\(\sinh(t) = x\)</span>. Now since <span class="math">\(\cosh^2(t) - \sinh^2(t) = 1\)</span>, so <span class="math">\(\cosh^2(t) = 1 + x^2\)</span>. Since <span class="math">\(\cosh(t)\)</span> is always positive, we get <span class="math">\(\cosh(t) = \sqrt{1+x^2}\)</span>, and plugging that in the derivative computation we get our result.</p>
+<p>Exercise: Do the same work for <span class="math">\(\cosh\)</span> and <span class="math">\(\textrm{sech}\)</span>.</p>
+<p>The above formulas suggest some restrictions on the domains of the inverse trigonometric functions. We will arrive at similar conclusions by trying to directly compute the inverse by solving the <span class="math">\(y=f(x)\)</span> equations for <span class="math">\(x\)</span>. First, here are the formulas we would end up with:</p>
+<blockquote>
+<p><span class="math">\[\sinh^{-1}(y) = \ln\left(y+\sqrt{y^2+1}\right)\textrm{ for }y\in(-\infty,\infty)\]</span> <span class="math">\[\cosh^{-1}(y) = \ln\left(y+\sqrt{y^2-1}\right)\textrm{ for }y &gt; 1\]</span> <span class="math">\[\tanh^{-1}(y) = \frac{1}{2}\ln\left(\frac{1+y}{1-y}\right)\textrm{ for }|y| &lt; 1\]</span> <span class="math">\[\textrm{sech}^{-1}(y) = \ln\left(\frac{1+\sqrt{1-y^2}}{y}\right)\textrm{ for }0&lt; y\leq 1\]</span></p>
+</blockquote>
+<p>Let us see how to figure out one of these: Say <span class="math">\(y=\sinh(x)\)</span>, and we want to solve it for <span class="math">\(x\)</span>. We start with the definition of <span class="math">\(\sinh\)</span>: <span class="math">\[y = \frac{e^x - e^{-x}}{2}\]</span> We want to express everything in terms of <span class="math">\(w=e^x\)</span>. We would then have: <span class="math">\[y = \frac{w - \frac{1}{w}}{2} = \frac{w^2 - 1}{2w}\]</span> We rewrite this equation as a quadratic in <span class="math">\(w\)</span>: <span class="math">\[w^2 -2yw - 1 = 0\]</span> The solution to this equation would be: <span class="math">\[w = \frac{2y\pm\sqrt{4y^2 + 4}}{2} = y\pm\sqrt{y^2+1}\]</span> Since <span class="math">\(w\)</span> is an exponential, it must be positive, so we can reject one of the two solutions: <span class="math">\[e^x = w = y + \sqrt{y^2+1}\]</span> Taking logarithms we find: <span class="math">\[\sinh^{-1}(y) = x = \ln\left(y + \sqrt{y^2+1}\right)\]</span> And there were no restrictions on <span class="math">\(y\)</span> along the way.</p>
+<p>Exercise: Do the same for the other 3 trigonometric functions.</p>
+</body>
+</html>

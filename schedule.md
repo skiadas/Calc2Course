@@ -89,7 +89,7 @@ Day 2
   ~ [Inverse Trigonometric Functions (7.8)](notes/inverse_trig.md)
 
 Day 3
-  ~ Hyperbolic Functions (7.9)
+  ~ [Hyperbolic Functions (7.9)](notes/hyperbolic.md)
 
 Day 4
   ~ Integration by parts (8.1)
