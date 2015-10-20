@@ -76,4 +76,4 @@ Taking logarithms we find:
 $$\sinh^{-1}(y) = x = \ln\left(y + \sqrt{y^2+1}\right)$$
 And there were no restrictions on $y$ along the way.
 
-Exercise: Do the same for the other 3 trigonometric functions.
+Exercise: Do the same for the other 3 hyperbolic functions.

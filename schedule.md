@@ -86,13 +86,12 @@ Day 1
   ~ [Comparative growth of functions (7.7)](notes/growth.md)
 
 Day 2
-  ~ [Inverse Trigonometric Functions (7.8)](notes/inverse_trig.md)
+  ~ [Comparative growth of functions (7.7)](notes/growth.md)
 
 Day 3
-  ~ [Hyperbolic Functions (7.9)](notes/hyperbolic.md)
+  ~ [Inverse Trigonometric Functions (7.8)](notes/inverse_trig.md)
 
 Day 4
-  ~ Integration by parts (8.1)
 
 ## Week  7 (10/19-10/23)
 
@@ -100,38 +99,38 @@ Day 1
   ~ Fall Break
 
 Day 2
-  ~ Trigonometric Integrals (8.2)
+  ~ [Inverse Trigonometric Functions (7.8, cont)](notes/inverse_trig.md)
 
 Day 3
-  ~ Trigonometric Substitution (8.3)
+  ~ [Hyperbolic Functions (7.9)](notes/hyperbolic.md)
 
 Day 4
-  ~ Method of Partial Fractions (8.5)
+  ~ Integration by parts (8.1)
 
 ## Week  8 (10/26-10/30)
 
 Day 1
-  ~ Improper Integrals (8.6)
+  ~ Trigonometric Integrals (8.2)
 
 Day 2
-  ~ Improper Integrals (cont) (8.6)
+  ~ Trigonometric Substitution (8.3)
 
 Day 3
-  ~ Special functions: Gamma
+  ~ Method of Partial Fractions (8.5)
 
 Day 4
-  ~ Special functions: Beta?
+  ~ Improper Integrals (8.6)
 
 ## Week  9 (11/02-11/06)
 
 Day 1
-  ~ Numerical Integration (8.8)
+  ~ Improper Integrals (cont) (8.6)
 
 Day 2
-  ~ Taylor Polynomials (9.4)
+  ~ Special functions: Gamma
 
 Day 3
-  ~ Arc Length (9.1)
+  ~ Numerical Integration (8.8)
 
 Day 4
   ~ Review
@@ -142,33 +141,32 @@ Day 1
   ~ **MIDTERM**
 
 Day 2
-  ~ Parametric Equations (12.1)
+  ~ Taylor Polynomials (9.4)
 
 Day 3
-  ~ Arc Length and Area (12.2)
+  ~ Arc Length (9.1)
 
 Day 4
-  ~ Polar Coordinates (12.3)
+  ~ Parametric Equations (12.1)
 
 ## Week 11 (11/16-11/20)
 
 Day 1
-  ~ Area and Arc Length in polar coordinates (12.4)
+  ~ Arc Length and Area (12.2)
 
 Day 2
-  ~ Conic sections (12.5)
+  ~ Polar Coordinates (12.3)
 
 Day 3
-  ~ Conic sections (cont) (12.5)
+  ~ Area and Arc Length in polar coordinates (12.4)
 
 Day 4
-  ~ TBA
-
+  ~ Conic sections (12.5)
 
 ## Week 12 (11/23-11/27)
 
 Day 1
-  ~ TBA
+  ~ Conic sections (cont) (12.5)
 
 Day 2
   ~ THANKSGIVING

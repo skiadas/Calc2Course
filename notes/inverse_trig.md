@@ -27,7 +27,7 @@ In order to remember the basic trigonometric numbers, it is good to keep the fol
 
 ![Triangles for trig numbers](images/trigTriangles.png)
 
-For example, $\sin\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2}$. We can read this conversely to say that $\sin^{-1}\left(\frac{\sqrt{3}}{2}\right) = \frac{\pi}{6}$.
+For example, $\sin\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}$. We can read this conversely to say that $\sin^{-1}\left(\frac{\sqrt{3}}{2}\right) = \frac{\pi}{3}$.
 
 Note that in general $\sin^{-1}\left(\sin(x)\right)\neq x$. This is only true if $x$ is in the specific interval $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$. If it is not, we have to convert it, using the periodicity if $\sin$, turning every angle into the range $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$.
 
