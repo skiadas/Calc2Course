@@ -88,7 +88,7 @@ These derivatives can be read backwards as facts about integrals. The two most r
 > $$\frac{dx}{1+x^2} = \tan^{-1}(x) + C$$
 
 These are often preceded by a $u$ substitution. For example, suppose we want to compute:
-$$\int{-3/4}^0\frac{dx}{\sqrt{9-16x^2}}$$
+$$\int_{-3/4}^0\frac{dx}{\sqrt{9-16x^2}}$$
 Looking at that denominator, it looks a bit like a $\sqrt{1-u^2}$, except it's got some extra numbers all around. Let us rewrite it a bit:
 $$\int_{-3/4}^0\frac{dx}{\sqrt{9}\sqrt{1-\left(\frac{4x}{3}\right)^2}}$$
 So it makes sense to set $u=\frac{4x}{3}$. Then $du = \frac{4}{3}dx$, and the interval becomes:
