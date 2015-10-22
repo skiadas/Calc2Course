@@ -105,7 +105,7 @@ Day 3
   ~ [Hyperbolic Functions (7.9)](notes/hyperbolic.md)
 
 Day 4
-  ~ Integration by parts (8.1)
+  ~ [Integration by parts (8.1)](notes/integration_parts.md)
 
 ## Week  8 (10/26-10/30)
 
