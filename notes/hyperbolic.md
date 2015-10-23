@@ -27,7 +27,7 @@ These functions satisfy a number of identities that are similar to the trigonome
 > $$\cosh(-x) = \cosh(x)\textrm{ (cosh is an even function)}$$
 > $$\cosh^2(x) - \sinh^2(x) = 1$$
 > $$\sinh(x+y) = \sinh(x)\cosh(y) + \cosh(x)\sinh(y)$$
-> $$\cosh(x+y) = \cosh(x)\cosh(y) - \sinh(x)\sinh(y)$$
+> $$\cosh(x+y) = \cosh(x)\cosh(y) + \sinh(x)\sinh(y)$$
 
 The hyperbolic functions have derivative formulas very similar to the trigonometric ones:
 
