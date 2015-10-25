@@ -110,21 +110,21 @@ Day 4
 ## Week  8 (10/26-10/30)
 
 Day 1
-  ~ Trigonometric Integrals (8.2)
+  ~ [Integration by parts (8.1 cont)](notes/integration_parts.md)
 
 Day 2
-  ~ Trigonometric Substitution (8.3)
+  ~ [Trigonometric Integrals (8.2)](notes/integrals_trig.md)
 
 Day 3
-  ~ Method of Partial Fractions (8.5)
+  ~ [Trigonometric Substitution (8.3)](notes/integrals_trig_subst.md)
 
 Day 4
-  ~ Improper Integrals (8.6)
+  ~ Method of Partial Fractions (8.5)
 
 ## Week  9 (11/02-11/06)
 
 Day 1
-  ~ Improper Integrals (cont) (8.6)
+  ~ Improper Integrals (8.6)
 
 Day 2
   ~ Special functions: Gamma

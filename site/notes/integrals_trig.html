@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="trigonometric-integrals">Trigonometric Integrals</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 8.2</p>
+<h2 id="problems">Problems</h2>
+<p>Practice Exercises: 8.2 3, 5, 9, 11, 13, 15, 17, 23, 28, 29, 49, 33, 50, 64, 66, 67, 69</p>
+<p>Exercises to turn in (along with 8.3): 8.2 14, 16</p>
+<p>Challenge (optional): 8.2 78, 79</p>
+<h2 id="trigonometric-integrals-1">Trigonometric Integrals</h2>
+<p>In this section we will consider the general problem of solving integrals of the form:</p>
+<blockquote>
+<p><span class="math">\[\int \sin^m(x)\cos^n(x)dx\]</span></p>
+</blockquote>
+<p>The book also discusses integrals involving tangents and secants, with similar methods for their solution. See the outline on the sidenote of page 422.</p>
+<p>We have 2 distinct cases to consider:</p>
+<h3 id="case-of-one-odd-power">Case of one odd power</h3>
+<p>If one of the powers involved is odd, then we can set up the integral for a <span class="math">\(u\)</span>-substitution:</p>
+<blockquote>
+<p><span class="math">\[\int \sin^{2k+1}(x)\cos^n(x)dx = \int\left(\sin^2(x)\right)^k\cos^n(x)\sin(x)dx =\]</span> <span class="math">\[\int\left(1-\cos^2(x)\right)^k\cos^n(x)\left(\sin(x)dx\right) = -\int\left(1-u^2\right)^k u^n du\]</span> where <span class="math">\(u = \cos(x)\)</span>, <span class="math">\(du = -\sin(x)dx\)</span>.</p>
+</blockquote>
+<p>and</p>
+<blockquote>
+<p><span class="math">\[\int \sin^m(x)\cos^{2k+1}(x)dx = \int\sin^m(x)\left(\cos^2(x)\right)^k\cos(x)dx =\]</span> <span class="math">\[\int\sin^m(x)\left(1-\sin^2(x)\right)^k\left(\cos(x)dx\right) = \int u^m\left(1-u^2\right)^k du\]</span> where <span class="math">\(u = \sin(x)\)</span>, <span class="math">\(du = \cos(x)dx\)</span>.</p>
+</blockquote>
+<p>For example, suppose we look at <span class="math">\(\sin^5(x)\)</span>, i.e. <span class="math">\(m=5\)</span> and <span class="math">\(n=0\)</span>. Then we have:</p>
+<p><span class="math">\[\int \sin^5(x)dx = \int \left(1-\cos^2(x)\right)^2 \sin(x)dx = -\int \left(1-u^2\right)^2du\]</span> where <span class="math">\(u=\cos(x)\)</span>. Expanding that polynomial gives us: <span class="math">\[-\int 1 - 2u^2+u^4du = -u + \frac{2}{3}u^3 - \frac{1}{5}u^5 + C\]</span> Finally, we plug in <span class="math">\(u=\cos(x)\)</span>: <span class="math">\[\int \sin^5(x)dx = -\cos(x) + \frac{2}{3}\cos^3(x) - \frac{1}{5}\cos^5(x) + C\]</span></p>
+<p>Practice: Compute <span class="math">\(\int \sin^3(x)\cos^2(x)dx\)</span>.</p>
+<h3 id="case-of-both-powers-even">Case of both powers even</h3>
+<p>There are two ways to approach these integrals. one is to use the double-angle formulas:</p>
+<blockquote>
+<p><span class="math">\[\cos(2x) = \cos^2(x) - \sin^2(x) = 2\cos^2(x) - 1 = 1 - 2\sin^2(x)\]</span> <span class="math">\[\cos^2(x) = \frac{1 + \cos(2x)}{2}\]</span> <span class="math">\[\sin^2(x) = \frac{1 - \cos(2x)}{2}\]</span></p>
+</blockquote>
+<p>This gives rise to an integral of trigonometric functions of smaller degrees, albeit involving an angle of <span class="math">\(2x\)</span> rather than <span class="math">\(x\)</span> (so be careful when you do <span class="math">\(u=\cos(2x)\)</span>!!).</p>
+<p>For example, let us work out the integral <span class="math">\(\int \sin^2(x)\cos^2(x)dx\)</span> using this method:</p>
+<p><span class="math">\[\int \sin^2(x)\cos^2(x)dx = \int \frac{1 - \cos(2x)}{2} \frac{1 + \cos(2x)}{2}dx = \frac{1}{4} \int 1 - \cos^2(2x)dx = \frac{1}{4} x - \frac{1}{4}\int\cos^2(2x)dx\]</span></p>
+<p>We again have a square of a cosine, so we use the double angle formula a second time: <span class="math">\[\int\cos^2(2x)dx = \int \frac{1 + \cos(4x)}{2}dx = \frac{1}{2}x + \frac{1}{8}\sin(4x) + C\]</span></p>
+<p>Substituting back in the original equation we get: <span class="math">\[\int \sin^2(x)\cos^2(x)dx = \frac{1}{4}x -\frac{1}{8}x - \frac{1}{32}\sin(4x) + C = \frac{1}{8}x - \frac{1}{32}\sin(4x) + C\]</span></p>
+<p>An alternative way for these integrals is to convert them all into integrals of various powers of <span class="math">\(\sin^m(x)\)</span> (or equivalently of <span class="math">\(\cos^m(x)\)</span>). So for our example we would do:</p>
+<p><span class="math">\[\int \sin^2(x)\cos^2(x)dx = \int \sin^2(x)\left(1-\sin^2(x)\right)dx = \int \sin^2(x) - \sin^4(x) dx\]</span></p>
+<p>We would then use the following reduction formulas:</p>
+<blockquote>
+<p><span class="math">\[\int \sin^n(x) dx = - \frac{1}{n} \sin^{n-1}(x)\cos(x) + \frac{n-1}{n}\int \sin^{n-2}(x)dx\]</span> <span class="math">\[\int \cos^n(x) dx = \frac{1}{n} \cos^{n-1}(x)\sin(x) + \frac{n-1}{n}\int \cos^{n-2}(x) dx\]</span></p>
+</blockquote>
+<p>This brings it all down to the integrals <span class="math">\(\sin^2(x)\)</span>, <span class="math">\(\cos^2(x)\)</span>, <span class="math">\(\sin(x)\)</span>, <span class="math">\(\cos(x)\)</span>.</p>
+<p>The above reduction formulas can be proven using integration by parts, and are left as exercises.</p>
+<h3 id="integral-of-secant-power">Integral of secant power</h3>
+<p>In this section we deduce the useful formula:</p>
+<blockquote>
+<p><span class="math">\[\int \sec^n(x)dx= \frac{1}{m-1}\tan(x)\sec^{n-2}(x) + \frac{n-2}{n-1}\int\sec^{n-2}(x)dx\]</span></p>
+</blockquote>
+<p>This is a somewhat tricky integration by parts:</p>
+<p><span class="math">\[\int \sec^n(x)dx = \int\sec^{n-2}(x)\sec^2(x)dx = \int\sec^{n-2}(x)\tan&#39;(x)dx=\]</span> <span class="math">\[=\sec^{n-2}(x)\tan(x) - (n-2)\int\sec^{n-3}(x)\sec&#39;(x)\tan(x)dx =\]</span> <span class="math">\[=\sec^{n-2}(x)\tan(x) - (n-2)\int\sec^{n-3}(x)\sec(x)\tan^2(x)dx =\]</span> <span class="math">\[=\sec^{n-2}(x)\tan(x) - (n-2)\int\sec^{n-2}(x)\left(\sec^2(x) - 1\right)dx =\]</span> <span class="math">\[=\sec^{n-2}(x)\tan(x) - (n-2)\int\sec^{n}(x) + (n-2)\int\sec^{n-2}(x)dx\]</span></p>
+<p>If we move the middle term to the left side, we get:</p>
+<p><span class="math">\[(n-1)\int\sec^n(x)dx = \sec^{n-2}(x)\tan(x) + (n-2)\int\sec^{n-2}(x)dx\]</span></p>
+<p>Dividing by <span class="math">\(n-1\)</span> gives us the desired formula.</p>
+<p>A similar method gives us a reduction formula for tangent (left as exercise):</p>
+<blockquote>
+<p><span class="math">\[\int\tan^n(x)dx = \frac{1}{n-1}\tan^{n-1}(x) - \int\tan^{n-2}(x)dx\]</span></p>
+</blockquote>
+</body>
+</html>
