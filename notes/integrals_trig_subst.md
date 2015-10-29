@@ -26,7 +26,7 @@ The sine transform is used to handle integrals involving $\sqrt{a^2 - x^2}$. It 
 
 > $$x = a\sin(\theta)$$
 > $$dx = a\cos(\theta)d\theta$$
-> $$\sqrt{a^2-x^2} = \sqrt{a^2\cos^2(x)} = a\cos(x)$$
+> $$\sqrt{a^2-x^2} = \sqrt{a^2\cos^2(\theta)} = a\cos(\theta)$$
 
 where we assume $a > 0$, and we can assume that $\cos(x) > 0$ because the variable $\theta$ is basically restricted to the domain of $\sin^{-1}(x)$.
 
