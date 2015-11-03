@@ -23,12 +23,12 @@
 <p>The main goal of this section is to learn the techniques involved in computing integrals of the form: <span class="math">\[\int\frac{P(x)}{Q(x)}dx\]</span> where <span class="math">\(P(x)\)</span> and <span class="math">\(Q(x)\)</span> are polynomials.</p>
 <p>We will outline here the main ideas. There are plenty of examples in the book.</p>
 <p>The method of computing such integrals follows 4 steps:</p>
-<ul>
+<ol style="list-style-type: decimal">
 <li>If the degree of <span class="math">\(P(x)\)</span> is at least as much as the degree of <span class="math">\(Q(x)\)</span>, first do polynomial division.</li>
 <li>Break the denominator <span class="math">\(Q(x)\)</span> into factors. We need linear factors <span class="math">\(x-a\)</span> as well as quadratic factors <span class="math">\(x^2+bx+c\)</span> where the quadratic has no real roots.</li>
 <li>Perform partial fraction decomposition, where the quotient <span class="math">\(\frac{P(x)}{Q(x)}\)</span> breaks down into a sum of terms with denominators those factors from the previous step.</li>
 <li>Compute the integrals of each of these smaller pieces.</li>
-</ul>
+</ol>
 <p>We will now look at each of these steps.</p>
 <h3 id="polynomial-division">Polynomial Division</h3>
 <blockquote>
@@ -38,10 +38,14 @@
 <p>To find <span class="math">\(R\)</span> and <span class="math">\(S\)</span> we use <strong>long division</strong>. An example would be: <span class="math">\[\frac{x^3 + 1}{x^2-4} = x + \frac{4x+1}{x^2-4}\]</span></p>
 <p>You can find many examples of long division online.</p>
 <h3 id="factoring-out-the-denominator">Factoring out the denominator</h3>
-<p>The fact that we can factor out the denominator is an important theorem in algebra:</p>
+<p>The fact that we can break down the denominator into a product of simple factors is an important theorem in algebra:</p>
 <blockquote>
 <p><strong>Fundamental Theorem of Algebra</strong> (for real polynomials)</p>
-<p>Every non-constant polynomial can be written as a product of terms of two types: - Linear terms <span class="math">\(x-a\)</span>. - Quadratic terms <span class="math">\(x^2+bx+c\)</span> with no real roots (irreducible).</p>
+<p>Every non-constant polynomial can be written as a product of terms of two types:</p>
+<ul>
+<li>Linear terms <span class="math">\(x-a\)</span>.</li>
+<li>Quadratic terms <span class="math">\(x^2+bx+c\)</span> with no real roots (irreducible).</li>
+</ul>
 </blockquote>
 <p>We will not prove this theorem here, but we will discuss how to find at least linear terms.</p>
 <blockquote>
@@ -70,11 +74,11 @@
 <h3 id="computing-the-resulting-integrals">Computing the resulting integrals</h3>
 <p>All remaining integrals fall into one of two forms:</p>
 <blockquote>
-<p><span class="math">\[\int\frac{A}{(x-a)^k}\]</span></p>
+<p><span class="math">\[\int\frac{A}{(x-a)^k}dx\]</span></p>
 </blockquote>
 <p>If <span class="math">\(k=1\)</span>, this integral is simply a logarithm <span class="math">\(A\ln|x-a|\)</span>. If <span class="math">\(k &gt; 1\)</span>, we can integrate directly to <span class="math">\(\frac{A}{k+1}\frac{1}{(x-a)^{k+1}}\)</span></p>
 <blockquote>
-<p><span class="math">\[\int\frac{Ax+B}{\left(ax^2+bx+c\right)^k}\]</span></p>
+<p><span class="math">\[\int\frac{Ax+B}{\left(ax^2+bx+c\right)^k}dx\]</span></p>
 </blockquote>
 <p>where the quadratic has no real roots. These integrals can be solved by an appropriate trigonometric substitution using <span class="math">\(\tan t\)</span>, using the techniques we have examined in previous sections.</p>
 </body>

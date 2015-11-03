@@ -20,10 +20,10 @@ We will outline here the main ideas. There are plenty of examples in the book.
 
 The method of computing such integrals follows 4 steps:
 
-- If the degree of $P(x)$ is at least as much as the degree of $Q(x)$, first do polynomial division.
-- Break the denominator $Q(x)$ into factors. We need linear factors $x-a$ as well as quadratic factors $x^2+bx+c$ where the quadratic has no real roots.
-- Perform partial fraction decomposition, where the quotient $\frac{P(x)}{Q(x)}$ breaks down into a sum of terms with denominators those factors from the previous step.
-- Compute the integrals of each of these smaller pieces.
+1. If the degree of $P(x)$ is at least as much as the degree of $Q(x)$, first do polynomial division.
+2. Break the denominator $Q(x)$ into factors. We need linear factors $x-a$ as well as quadratic factors $x^2+bx+c$ where the quadratic has no real roots.
+3. Perform partial fraction decomposition, where the quotient $\frac{P(x)}{Q(x)}$ breaks down into a sum of terms with denominators those factors from the previous step.
+4. Compute the integrals of each of these smaller pieces.
 
 We will now look at each of these steps.
 
@@ -43,11 +43,12 @@ You can find many examples of long division online.
 
 ### Factoring out the denominator
 
-The fact that we can factor out the denominator is an important theorem in algebra:
+The fact that we can break down the denominator into a product of simple factors is an important theorem in algebra:
 
 > **Fundamental Theorem of Algebra** (for real polynomials)
 >
 > Every non-constant polynomial can be written as a product of terms of two types:
+>
 > - Linear terms $x-a$.
 > - Quadratic terms $x^2+bx+c$ with no real roots (irreducible).
 
@@ -108,10 +109,10 @@ $$\frac{2x+1}{(x-1)^2(x+2)} = \frac{-2}{x-1} + \frac{3}{(x-1)^2} + \frac{2}{x+2}
 
 All remaining integrals fall into one of two forms:
 
-> $$\int\frac{A}{(x-a)^k}$$
+> $$\int\frac{A}{(x-a)^k}dx$$
 
 If $k=1$, this integral is simply a logarithm $A\ln|x-a|$. If $k > 1$, we can integrate directly to $\frac{A}{k+1}\frac{1}{(x-a)^{k+1}}$
 
-> $$\int\frac{Ax+B}{\left(ax^2+bx+c\right)^k}$$
+> $$\int\frac{Ax+B}{\left(ax^2+bx+c\right)^k}dx$$
 
 where the quadratic has no real roots. These integrals can be solved by an appropriate trigonometric substitution using $\tan t$, using the techniques we have examined in previous sections.
