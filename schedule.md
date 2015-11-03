@@ -138,7 +138,7 @@ Day 4
 ## Week 10 (11/09-11/13)
 
 Day 1
-  ~ **MIDTERM**
+  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 2
   ~ Special functions: Gamma
