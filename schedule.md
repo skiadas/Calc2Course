@@ -133,7 +133,7 @@ Day 3
   ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
 
 Day 4
-  ~ Improper Integrals (8.6)
+  ~ [Improper Integrals (8.6)](notes/integrals_improper.md)
 
 ## Week 10 (11/09-11/13)
 

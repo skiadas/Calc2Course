@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="improper-integrals">Improper Integrals</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 8.6</p>
+<h2 id="problems">Problems</h2>
+<p>Practice Exercises: 8.6 1, 2, 3, 4, 9, 11, 19, 21, 27, 37, 41, 47, 53, 61</p>
+<p>Exercises to turn in: 8.6 12, 16, 26, 38</p>
+<p>Challenge: 86-89, 99, 100</p>
+<h2 id="improper-integrals-1">Improper Integrals</h2>
+<p>There are two types of “improper integrals”:</p>
+<ul>
+<li>Integrals where at least one of the endpoints is <span class="math">\(\pm\infty\)</span>.</li>
+<li>Integrals that cross over a point where the integrand becomes infinite.</li>
+</ul>
+<p>We will consider both cases, starting with the case of infinite endpoints.</p>
+<h3 id="improper-integrals-at-infinity">Improper Integrals at infinity</h3>
+<p>So integrals in this category will fall into one of the following forms:</p>
+<blockquote>
+<p><span class="math">\[\int_a^\infty f(t) dt\]</span> <span class="math">\[\int_{-\infty}^a f(t) dt\]</span> <span class="math">\[\int_{-\infty}^\infty f(t) dt\]</span></p>
+</blockquote>
+<p>The idea in each of these cases is simple: We interpret the integral as a limit of definite integrals with finite endpoints, as one of those endpoints goes to infinity. So:</p>
+<blockquote>
+<p><span class="math">\[\int_a^\infty f(t)dt = \lim_{R\to\infty}\int_a^R f(t)dt\]</span> <span class="math">\[\int_{-\infty}^a f(t)dt = \lim_{R\to -\infty}\int_R^a f(t)dt\]</span> <span class="math">\[\int_{-\infty}^\infty f(t) dt = \int_{-\infty}^0 f(t) dt + \int_0^\infty f(t) dt\]</span></p>
+</blockquote>
+<p>Here is perhaps the most elementary example: <span class="math">\[\int_0^\infty e^{-x}dx\]</span> In order to compute it, we would first compute: <span class="math">\[\int_0^R e^{-x}dx = \left.\left(-e^{-x}\right)\right|_0^R = 1-e^{-R}\]</span> We then take the limit as <span class="math">\(R\to\infty\)</span>: <span class="math">\[\int_0^\infty e^{-x}dx = \lim_{R\to\infty}\int_0^R e^{-x}dx = \lim_{R\to\infty}1-e^{-R} = 1-e^{-\infty} = 1\]</span></p>
+<p>So in this case the limit exists and is a finite number. We then say that the integral <strong>converges</strong>. It is worth pondering that for a minute: The area represented by this integral spans all the way to infinity. Yet it is actually a finite amount, namely <span class="math">\(1\)</span>.</p>
+<p>Let us look at another example: <span class="math">\[\int_0^\infty\frac{1}{x}dx = \lim_{R\to\infty}\int_1^R\frac{1}{x}dx = \lim_{R\to\infty}\ln R = \infty\]</span> So in this case we say that the integral <strong>diverges</strong>.</p>
+<p>This last example generalizes:</p>
+<blockquote>
+<p><strong>p-integral at infinity</strong>. For <span class="math">\(a &gt; 0\)</span>, we have:</p>
+<ul>
+<li><span class="math">\(\int_a^\infty \frac{1}{x^p}dx = \frac{a^{1-p}}{p-1}\)</span> if <span class="math">\(p &gt; 1\)</span>.</li>
+<li><span class="math">\(\int_a^\infty \frac{1}{x^p}dx\)</span> diverges if <span class="math">\(p &lt;= 1\)</span>.</li>
+</ul>
+</blockquote>
+<p>So the case of <span class="math">\(\frac{1}{x}\)</span> is kind of an edge case: functions that are any “smaller” (<span class="math">\(p &gt; 1\)</span>) go to <span class="math">\(0\)</span> fast enough as <span class="math">\(x\)</span> approaches infinity to have their integral converge, functions that are any like <span class="math">\(\frac{1}{x}\)</span> or “bigger” (<span class="math">\(p&lt;=1\)</span>) go to <span class="math">\(0\)</span> too slow and end up accumulating too much area, resulting in a divergent integral.</p>
+<p>Exercise: Prove the above theorem.</p>
+<p>Here is another general example:</p>
+<blockquote>
+<p>The integral <span class="math">\[\int_0^\infty x^n e^{-x}dx\]</span> converges for all natural numbers <span class="math">\(n\)</span>, and equals <span class="math">\(n! = n(n-1)(n-2)\cdots 2\cdot 1\)</span>.</p>
+</blockquote>
+<p>Let us start with some base cases. <span class="math">\[\int_0^\infty xe^{-x}dx = \lim_{R\to\infty}\int_0^R xe^{-x}dx\]</span> Now we do integration by parts: <span class="math">\[\int_0^R xe^{-x}dx = \left.-xe^{-x}\right|_0^R + \int_0^Re^{-x}dx=-Re^{-R} + \int_0^Re^{-x}dx\]</span> Now taking limits as <span class="math">\(R\to\infty\)</span>, we have the integral we already did before, whose value is <span class="math">\(1\)</span>, and also: <span class="math">\[\lim_{R\to\infty}Re^{-R} = \lim_{R\to\infty}\frac{R}{e^R} = \lim_{R\to\infty}\frac{1}{e^R} = 0\]</span></p>
+<p>Let’s consider the more general case: <span class="math">\[\int_0^R x^ne^{-x} = -\left.(x^ne^{-x})\right|_0^R + \int_0^R nx^{n-1}e^{-x}dx = -R^ne^{-R} + n\int_0^R x^{n-1}e^{-x}dx\]</span></p>
+<p>We now want to take limits at infinity on both sides of this equation. The key observation would be that: <span class="math">\[\lim_{R\to\infty}\frac{R^n}{e^R} = 0\]</span> So we have in general: <span class="math">\[\int_0^\infty x^ne^{-x}dx = n\int_0^\infty x^{n-1}e^{-x}dx\]</span> By using this formula repeatedly, we would end up with: <span class="math">\[\int_0^\infty x^ne^{-x}dx = n(n-1)\cdots \cdot 2\cdot 1\]</span></p>
+<p>There are a lot of interesting functions that can be defined as improper integrals. For instance the Gamma function:</p>
+<blockquote>
+<p>Gamma function <span class="math">\[\Gamma(t) = \int_0^\infty x^{t - 1} e^{-x}dx\]</span></p>
+</blockquote>
+<p>This turns out to converge as long as <span class="math">\(t &gt; 0\)</span>, and we already have seen its value when <span class="math">\(t\)</span> is an integer. It is a differentiable function with a number of interesting properties, whose examination is likely mostly beyond the scope of this course.</p>
+<h3 id="improper-integrals-at-finite-points">Improper Integrals at finite points</h3>
+<p>Instead of having <span class="math">\(x\)</span> go to infinity, we now consider cases where the value of the function goes to infinity, but at a finite point. There are many variations on this:</p>
+<blockquote>
+<p>Improper Integrals of the form: <span class="math">\[\int_a^b f(x)dx\]</span> where we assume that <span class="math">\(a &lt; b\)</span> and:</p>
+<ul>
+<li><span class="math">\(\lim_{x\to b^-}f(x) = \pm\infty\)</span>, or</li>
+<li><span class="math">\(\lim_{x\to a^+}f(x) = \pm\infty\)</span>, or</li>
+<li><span class="math">\(f\)</span> becomes infinity at some point inbetween <span class="math">\(a\)</span> and <span class="math">\(b\)</span>.</li>
+</ul>
+</blockquote>
+<p>We approach such cases in similar vein as before: We integrate up to a point before the bad part, then take the limit. And for the third case we break the integral in two separate integrals belonging to the other two cases.</p>
+<p>An example will make this clearer: <span class="math">\[\int_0^1\frac{1}{\sqrt{x}}dx\]</span></p>
+<p>So in this case the function that we are trying to integrate becomes infinity at <span class="math">\(0\)</span>. We therefore would instead compute: <span class="math">\[\int_b^1\frac{1}{\sqrt{x}}dx\]</span> for some generic <span class="math">\(b&gt;0\)</span> that is close to <span class="math">\(0\)</span>. We will then take the limit as <span class="math">\(b\to 0\)</span>. So effectively we say that we define: &gt; <span class="math">\[\int_0^1\frac{1}{\sqrt{x}}dx = \lim_{b\to 0^+}\int_b^1\frac{1}{\sqrt{x}}dx\]</span></p>
+<p>Let us now compute this integral: <span class="math">\[\int_b^1\frac{1}{\sqrt{x}}dx = \int_b^1 x^{-1/2}dx = \left. 2 x^{1/2}\right|_b^1 = 2\left(1 - b^{1/2}\right)\]</span> We now take the limit as <span class="math">\(b\to 0^+\)</span>, resulting in a limit of <span class="math">\(2\)</span>. So we have: <span class="math">\[\int_0^1\frac{1}{\sqrt{x}}dx = 2\]</span></p>
+<p>We can generalize this to various powers:</p>
+<blockquote>
+<p><strong>p-integral at infinity</strong>. For <span class="math">\(a &gt; 0\)</span>, we have:</p>
+<ul>
+<li><span class="math">\(\int_0^a \frac{1}{x^p}dx = \frac{a^{1-p}}{1-p}\)</span> if <span class="math">\(p &lt; 1\)</span>.</li>
+<li><span class="math">\(\int_0^a \frac{1}{x^p}dx\)</span> diverges if <span class="math">\(p &gt;= 1\)</span>.</li>
+</ul>
+</blockquote>
+<p>Exercise: Show this!</p>
+<h3 id="the-comparison-test-for-improper-integrals">The Comparison Test for Improper Integrals</h3>
+<p>When dealing with improper integrals, some times explicitly computing the integral is not actually possible. In such cases, it is often worth it to simply know that it converges, i.e. so that there is in fact a number corresponding to it. The comparison test helps with that:</p>
+<blockquote>
+<p><strong>Comparison Test for Improper Integrals</strong></p>
+<p>If <span class="math">\(f(x)\geq g(x)\geq 0\)</span> for <span class="math">\(x \geq a\)</span>, then:</p>
+<ul>
+<li>If <span class="math">\(\int_a^\infty f(x)dx\)</span> converges, then <span class="math">\(\int_a^\infty g(x)dx\)</span> also converges.</li>
+<li>If <span class="math">\(\int_a^\infty g(x)dx\)</span> diverges, then <span class="math">\(\int_a^\infty f(x)dx\)</span> also diverges.</li>
+</ul>
+<p>Similar results hold for improper integrals with infinite discontinuities at endpoints.</p>
+</blockquote>
+<p>Let us look at an important example of this, which we discussed earlier as the Gamma function:</p>
+<blockquote>
+<p>The integral <span class="math">\[\int_0^\infty x^{t-1}e^{-x}dx\]</span> converges for all <span class="math">\(t &gt; 0\)</span>.</p>
+</blockquote>
+<p>This integral is interesting, among other reasons, because it actually exhibits both types of improper-ness: One of the endpoints is infinity, and the other endpoint may be a discontinuity of the function (as the <span class="math">\(x^{t-1}\)</span> might actually be a negative power if <span class="math">\(0 &lt; t &lt; 1\)</span>).</p>
+<p>There are two very different cases to consider: If <span class="math">\(t\geq 1\)</span> and if <span class="math">\(0 &lt; t &lt; 1\)</span>. And in either case, we will want to further break our integral as the sum of two integrals: <span class="math">\[\int_0^\infty x^{t-1}e^{-x}dx = \int_0^1 x^{t-1}e^{-x}dx + \int_1^\infty x^{t-1}e^{-x}dx\]</span></p>
+<p>Now let us examine the case where <span class="math">\(t\geq 1\)</span>. Then the first integral is just a normal integral of a continuous function, so it is going to be some (unknown) number. But it is definitely going to converge.</p>
+<p>The second integral requires more work: The idea is simple however. Let us pick a natural number <span class="math">\(n \geq t-1\)</span>. Then we have for <span class="math">\(x \geq 1\)</span> that: <span class="math">\[0 \leq x^{t-1}e^{-x}\leq x^n e^{-x}\]</span> This is now set up perfectly for use of the comparison test. We know from our earlier work that when <span class="math">\(n\)</span> is an integer we can actually use integration by parts to directly compute: <span class="math">\[\int_1^\infty x^n e^{-x}dx\]</span> and it converged to a number. Therefore, by the comparison theorem, we have that the integral: <span class="math">\[\int_1^\infty x^{t-1} e^{-x}dx\]</span> also converges.</p>
+<p>The reason we had to break this in two integrals is that the fact that <span class="math">\(x^{t-1}\leq x^n\)</span> only holds if <span class="math">\(x\geq 1\)</span>.</p>
+<p>Now let us consider the case where <span class="math">\(0 &lt; t &lt; 1\)</span>. In this case <span class="math">\(t-1\)</span> is a negative power. We again look at the two integrals, now starting with: <span class="math">\[\int_1^\infty x^{t-1} e^{-x}dx\]</span> Since that power is negative, we have that <span class="math">\(x^{t-1}\leq 1\)</span> for all <span class="math">\(x\geq 1\)</span>. So we can compare that integral with the integral: <span class="math">\[\int_1^\infty e^{-x}dx\]</span> which we know converges. Then since <span class="math">\(x^{t-1}e^{-x}\leq e^{-x}\)</span> when <span class="math">\(x\geq 1\)</span>, we have by the comparison test that the integral <span class="math">\(\int_1^\infty x^{t-1} e^{-x}dx\)</span> would also have to converge.</p>
+<p>We are now left with showing that when <span class="math">\(0 &lt; t &lt; 1\)</span> then the integral <span class="math">\(\int_0^1 x^{t-1}e^{-x}dx\)</span> converges. We can do this by comparing it to the integral <span class="math">\(\int_0^1 x^{t-1}dx\)</span>, since when <span class="math">\(x\geq 0\)</span> then <span class="math">\(e^{-x}\leq e^0 = 1\)</span>, and so <span class="math">\(x^{t-1}e^{-x}\leq x^{t-1}\)</span>. So our integral would converge if the integral <span class="math">\[\int_0^1 x^{t-1}dx\]</span> converges. This integral has the <span class="math">\(p\)</span>-integral form we discussed earlier, with <span class="math">\(p=1-t\)</span>. Those integrals converge when <span class="math">\(p &lt; 1\)</span>, or <span class="math">\(1-t &lt; 1\)</span>, i.e. <span class="math">\(t &gt; 0\)</span>. This is indeed the case.</p>
+</body>
+</html>
