@@ -116,15 +116,29 @@ Day 2
   ~ [Trigonometric Integrals (8.2)](notes/integrals_trig.md)
 
 Day 3
-  ~ [Trigonometric Substitution (8.3)](notes/integrals_trig_subst.md)
+  ~ [Trigonometric Integrals (8.2)](notes/integrals_trig.md)
 
 Day 4
-  ~ [Trigonometric Substitution (8.3) cont](notes/integrals_trig_subst.md)
+  ~ [Trigonometric Substitution (8.3)](notes/integrals_trig_subst.md)
 
 ## Week  9 (11/02-11/06)
 
 Day 1
-  ~ [Trigonometric Substitution (8.3) cont 2](notes/integrals_trig_subst.md)
+  ~ [Trigonometric Substitution (8.3) cont](notes/integrals_trig_subst.md)
+
+Day 2
+  ~ [Trigonometric Substitution (8.3) cont](notes/integrals_trig_subst.md)
+
+Day 3
+  ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
+
+Day 4
+  ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
+
+## Week 10 (11/09-11/13)
+
+Day 1
+  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 2
   ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
@@ -135,38 +149,24 @@ Day 3
 Day 4
   ~ [Improper Integrals (8.6)](notes/integrals_improper.md)
 
-## Week 10 (11/09-11/13)
-
-Day 1
-  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
-
-Day 2
-  ~ Special functions: Gamma
-
-Day 3
-  ~ Numerical Integration (8.8)
-
-Day 4
-  ~ Taylor Polynomials (9.4)
-
 ## Week 11 (11/16-11/20)
 
 Day 1
-  ~ Arc Length (9.1)
+  ~ [Improper Integrals (8.6)](notes/integrals_improper.md)
 
 Day 2
-  ~ Parametric Equations (12.1)
+  ~ [Improper Integrals (8.6)](notes/integrals_improper.md)
 
 Day 3
-  ~ Arc Length and Area (12.2)
+  ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
 
 Day 4
-  ~ Polar Coordinates (12.3)
+  ~ Numerical Integration (8.8)
 
 ## Week 12 (11/23-11/27)
 
 Day 1
-  ~ Area and Arc Length in polar coordinates (12.4)
+  ~ Taylor Polynomials (9.4)
 
 Day 2
   ~ THANKSGIVING
@@ -181,27 +181,27 @@ Day 4
 ## Week 13 (12/01-12/04)
 
 Day 1
-  ~ Conic sections (12.5)
+  ~ Taylor Polynomials (9.4)
 
 Day 2
-  ~ Conic sections (cont) (12.5)
+  ~ Arc Length (9.1)
 
 Day 3
-  ~ TBA
+  ~ Parametric Equations (12.1)
 
 Day 4
-  ~ TBA
+  ~ Arc Length and Area (12.2)
 
 ## Week 14 (12/07-12/11)
 
 Day 1
-  ~ TBA
+  ~ Polar Coordinates (12.3)
 
 Day 2
-  ~ TBA
+  ~ Area and Arc Length in polar coordinates (12.4)
 
 Day 3
-  ~ TBA
+  ~ Conic sections (12.5)
 
 Day 4
-  ~ TBA
+  ~ Catchup
