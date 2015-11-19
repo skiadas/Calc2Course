@@ -40,7 +40,7 @@ $$\int_0^1 \sqrt{1-x^2}dx$$
 This is simply the area in the first quadrant under the unit circle, so it should equal $\frac{\pi}{4}$. So we will use this method to try to approximate $4$.
 
 We need to first decide to break the interval $[0,1]$ in smaller intervals. We will go with $N=8$, so then the points $x_0$, $x_1$, \ldots are:
-$$0,\,0.125,\,0.25,\,0.375,\,0.5,\,0.625,\,0.75,\,0.875$$
+$$0,\,0.125,\,0.25,\,0.375,\,0.5,\,0.625,\,0.75,\,0.875, 1$$
 We start by computing the corresponding $y$ values, using $y=f(x) = \sqrt{1-x^2}$:
 $$1,\,0.992,\,0.968,\,0.927,\,0.866,\,0.7806,\,0.6614,\,0.484,\,0$$
 Now the trapezoid rule would say:
