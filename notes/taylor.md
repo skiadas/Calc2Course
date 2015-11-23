@@ -54,7 +54,7 @@ Taylor's theorem gives us a more precise formulation of this remainder:
 
 Using Taylor's Theorem, we can obtain the following error bound:
 
-> **Error Bound**. If $f^{(n+1)}(x)$ exists and is continuous, and $K$ is such that $\left|f^{(n+1)}(u)\right|\leq K$ for $ all $u$ between $a$ and $x$, then:
+> **Error Bound**. If $f^{(n+1)}(x)$ exists and is continuous, and $K$ is such that $\left|f^{(n+1)}(u)\right|\leq K$ for all $u$ between $a$ and $x$, then:
 > $$\left|f(x) - T_n(x)\right| = \left|R_n(x)\right|\leq K \frac{|x-a|^{n+1}}{(n+1)!}$$
 
 Practice: Compute the error bound where $f(x) = sin(x)$, $a=0$, $n=5$, and at the point $x=0.4$.
