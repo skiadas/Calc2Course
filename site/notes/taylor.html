@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="taylor-polynomials">Taylor Polynomials</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 9.4</p>
+<h2 id="problems">Problems</h2>
+<p>Practice Exercises: 9.4 1, 3, 9, 11, 21, 23, 33</p>
+<p>Exercises to turn in: 9.4 6, 24, 36, 48, 52</p>
+<h2 id="taylor-polynomials-1">Taylor Polynomials</h2>
+<h3 id="taylor-polynomials-2">Taylor Polynomials</h3>
+<p>Taylor Polynomials stem from a desire to approximate a function near a point via polynomials. We have already seen this idea when we studied derivatives and the idea of linearization: <span class="math">\[L(x) = f(a) + f&#39;(a)(x-a)\]</span> This is in effect a polynomial of degree 1 that is fairly similar to the function near <span class="math">\(x=a\)</span>.</p>
+<p>We will extend this idea further:</p>
+<blockquote>
+<p>The <strong>Taylor Polynomial</strong> of degree <span class="math">\(n\)</span> <strong>centered at</strong> <span class="math">\(x=a\)</span> is defined as the unique polynomial of degree <span class="math">\(n\)</span> that <strong>agrees with <span class="math">\(f\)</span> to order <span class="math">\(n\)</span> at <span class="math">\(x=a\)</span></strong>.</p>
+<p>Two functions <span class="math">\(f\)</span>, <span class="math">\(g\)</span> are said to agree to order <span class="math">\(n\)</span> at <span class="math">\(x=a\)</span> if their derivatives at <span class="math">\(x=a\)</span> match up to the <span class="math">\(n\)</span>-th derivative, so if <span class="math">\(f^{(k)}(a) = g^{(k)}(a)\)</span> for all <span class="math">\(k=0,\ldots,n\)</span>.</p>
+<p>The Taylor polynomial has formula: <span class="math">\[T_n(x) = f(a) + \frac{f&#39;(a)}{1!}(x-a) + \frac{f&#39;&#39;(a)}{2!}(x-a)^2+\cdots + \frac{f^{(n)}}{n!}(x-a)^n\]</span></p>
+</blockquote>
+<p>We often abreviate this as: <span class="math">\[T_n(x) = \sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\]</span></p>
+<blockquote>
+<p>The <strong>Maclaurin polynomial</strong> is the Taylor polynomial centered at <span class="math">\(x=0\)</span>.</p>
+</blockquote>
+<p>Practice:</p>
+<ol style="list-style-type: decimal">
+<li>Compute the Maclaurin polynomial of degree <span class="math">\(5\)</span> for <span class="math">\(f(x) = x^4\)</span>. Use it to estimate <span class="math">\(e^{0.1}\)</span> and <span class="math">\(e=e^1\)</span>.</li>
+<li>Compute the Maclaurin polynomial of degree <span class="math">\(4\)</span> for <span class="math">\(f(x) = \tan^{-1}x\)</span>, and use it to estimate <span class="math">\(\frac{\pi}{4} = f(1)\)</span>.</li>
+<li>Compute the Maclaurin polynomial of degree <span class="math">\(3\)</span> for <span class="math">\(f(x) = \sin x\)</span>, and use it to estimate <span class="math">\(\sin 0.2\)</span>.</li>
+<li>Compute the Taylor polynomial of degree <span class="math">\(4\)</span> for <span class="math">\(f(x) = \sqrt x\)</span> at <span class="math">\(x=1\)</span>, and use it to estimate <span class="math">\(\sqrt{1.2}\)</span>.</li>
+<li>Compute the Maclaurin polynomial of degree <span class="math">\(5\)</span> for <span class="math">\(f(x) = \ln(1+x)\)</span> and use it to estimate <span class="math">\(\ln 1.2\)</span>.</li>
+</ol>
+<h3 id="the-taylor-remainder">The Taylor remainder</h3>
+<p>In order to use Taylor polynomials effectively, we need a way to measure the error. The first step in that is the Taylor remainder: <span class="math">\[R_n(x) = f(x) - T_n(x)\]</span></p>
+<p>So the Taylor remainder measures how far the Taylor polynomial is from <span class="math">\(f\)</span>.</p>
+<p>Taylor’s theorem gives us a more precise formulation of this remainder:</p>
+<blockquote>
+<p><strong>Taylor’s Theorem</strong>. If <span class="math">\(f^{(n+1)}(x)\)</span> exists and is continuous, then: <span class="math">\[R_n(x) = \frac{1}{n!}\int_a^x (x-u)^n f^{(n+1)}(u)du\]</span></p>
+</blockquote>
+<p>Using Taylor’s Theorem, we can obtain the following error bound:</p>
+<blockquote>
+<p><strong>Error Bound</strong>. If <span class="math">\(f^{(n+1)}(x)\)</span> exists and is continuous, and <span class="math">\(K\)</span> is such that <span class="math">\(\left|f^{(n+1)}(u)\right|\leq K\)</span> for $ all <span class="math">\(u\)</span> between <span class="math">\(a\)</span> and <span class="math">\(x\)</span>, then: <span class="math">\[\left|f(x) - T_n(x)\right| = \left|R_n(x)\right|\leq K \frac{|x-a|^{n+1}}{(n+1)!}\]</span></p>
+</blockquote>
+<p>Practice: Compute the error bound where <span class="math">\(f(x) = sin(x)\)</span>, <span class="math">\(a=0\)</span>, <span class="math">\(n=5\)</span>, and at the point <span class="math">\(x=0.4\)</span>.</p>
+</body>
+</html>

@@ -161,12 +161,12 @@ Day 3
   ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
 
 Day 4
-  ~ Numerical Integration (8.8)
+  ~ [Taylor Polynomials (9.4)](notes/taylor.md)
 
 ## Week 12 (11/23-11/27)
 
 Day 1
-  ~ Taylor Polynomials (9.4)
+  ~ [Taylor Polynomials (9.4)](notes/taylor.md)
 
 Day 2
   ~ THANKSGIVING
@@ -181,7 +181,7 @@ Day 4
 ## Week 13 (12/01-12/04)
 
 Day 1
-  ~ Taylor Polynomials (9.4)
+  ~ Arc Length (9.1)
 
 Day 2
   ~ Arc Length (9.1)
