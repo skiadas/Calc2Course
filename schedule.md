@@ -181,10 +181,10 @@ Day 4
 ## Week 13 (12/01-12/04)
 
 Day 1
-  ~ Arc Length (9.1)
+  ~ [Taylor Polynomials (9.4). Taylor's Theorem](notes/taylor.md)
 
 Day 2
-  ~ Arc Length (9.1)
+  ~ [Arc Length (9.1)](notes/arc_length.md)
 
 Day 3
   ~ Parametric Equations (12.1)

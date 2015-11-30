@@ -59,3 +59,24 @@ Using Taylor's Theorem, we can obtain the following error bound:
 
 Practice: Compute the error bound where $f(x) = \sin(x)$, $a=0$, $n=5$, and at the point $x=0.4$.
 
+### Proof of Taylor's Theorem
+
+Taylor's theorem essentially follows from integration by parts. We start with the following simple observation:
+
+$$f(x) = f(a) + \int_a^x f'(u)du$$
+This is valid as long as $f'(u)$ exists and is continuous, and follows straight for the fundamental theorem of Calculus. We can in fact rewrite this as saying
+$$f(x) = T_0(x) + R_0(x)$$
+where
+$$R_0(x) = \int_a^x f'(u)du = \frac{1}{0!}\int_a^x(x-u)^0 f^{(0+1)}(u)du$$
+is exactly what is required by Taylor's theorem for $n=0$.
+
+From that point on, we perform integration by parts on the previous term. We use as a second term the constant $1$, which we choose to integrate as **a function of $u$** to $-(x-u)$.
+$$\int_a^x f'(u)du = \int_a^x f'(u)\cdot 1 du = \left.-f'(u)(x-u)\right|_a^x + \int_a^x f''(u)(x-u)du = f'(a)(x-a) + \int_a^x f''(u)(x-u)du$$
+Putting this back in the original equation we find:
+$$f(x) = f(a) + f'(a)(x-a) + \int_a^x f''(u)(x-u)du$$
+This is exactly the formula in Taylor's theorem for $n=1$.
+
+To obtain the next iteration of the theorem, we each time integrate the $(x-u)^k$ term:
+$$\int_a^x f''(u)(x-u)du = \left.-\frac{1}{2}f''(u)(x-u)^2\right|_a^x + \frac{1}{2}\int_a^x f'''(u)(x-u)^2 du = \frac{1}{2}f''(a)(x-a)^2 + \frac{1}{2}\int_a^x f'''(u)(x-u)^2 du$$
+
+Practice: Try the next step of this iteration.
