@@ -187,21 +187,21 @@ Day 2
   ~ [Arc Length (9.1)](notes/arc_length.md)
 
 Day 3
-  ~ Parametric Equations (12.1)
+  ~ [Arc Length (9.1)](notes/arc_length.md)
 
 Day 4
-  ~ Arc Length and Area (12.2)
+  ~ [Parametric Equations (12.1)](notes/parametric.md)
 
 ## Week 14 (12/07-12/11)
 
 Day 1
-  ~ Polar Coordinates (12.3)
+  ~ Arc Length and Area (12.2)
 
 Day 2
-  ~ Area and Arc Length in polar coordinates (12.4)
-
-Day 3
   ~ Conic sections (12.5)
 
+Day 3
+  ~ Review
+
 Day 4
-  ~ Catchup
+  ~ Review
