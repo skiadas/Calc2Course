@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -21,42 +21,42 @@
 <p>Exercises to turn in: 9.4 6, 24, 36, 48, 52</p>
 <h2 id="taylor-polynomials-1">Taylor Polynomials</h2>
 <h3 id="taylor-polynomials-2">Taylor Polynomials</h3>
-<p>Taylor Polynomials stem from a desire to approximate a function near a point via polynomials. We have already seen this idea when we studied derivatives and the idea of linearization: <span class="math">\[L(x) = f(a) + f&#39;(a)(x-a)\]</span> This is in effect a polynomial of degree 1 that is fairly similar to the function near <span class="math">\(x=a\)</span>.</p>
+<p>Taylor Polynomials stem from a desire to approximate a function near a point via polynomials. We have already seen this idea when we studied derivatives and the idea of linearization: <span class="math display">\[L(x) = f(a) + f&#39;(a)(x-a)\]</span> This is in effect a polynomial of degree 1 that is fairly similar to the function near <span class="math inline">\(x=a\)</span>.</p>
 <p>We will extend this idea further:</p>
 <blockquote>
-<p>The <strong>Taylor Polynomial</strong> of degree <span class="math">\(n\)</span> <strong>centered at</strong> <span class="math">\(x=a\)</span> is defined as the unique polynomial of degree <span class="math">\(n\)</span> that <strong>agrees with <span class="math">\(f\)</span> to order <span class="math">\(n\)</span> at <span class="math">\(x=a\)</span></strong>.</p>
-<p>Two functions <span class="math">\(f\)</span>, <span class="math">\(g\)</span> are said to agree to order <span class="math">\(n\)</span> at <span class="math">\(x=a\)</span> if their derivatives at <span class="math">\(x=a\)</span> match up to the <span class="math">\(n\)</span>-th derivative, so if <span class="math">\(f^{(k)}(a) = g^{(k)}(a)\)</span> for all <span class="math">\(k=0,\ldots,n\)</span>.</p>
-<p>The Taylor polynomial has formula: <span class="math">\[T_n(x) = f(a) + \frac{f&#39;(a)}{1!}(x-a) + \frac{f&#39;&#39;(a)}{2!}(x-a)^2+\cdots + \frac{f^{(n)}}{n!}(x-a)^n\]</span></p>
+<p>The <strong>Taylor Polynomial</strong> of degree <span class="math inline">\(n\)</span> <strong>centered at</strong> <span class="math inline">\(x=a\)</span> is defined as the unique polynomial of degree <span class="math inline">\(n\)</span> that <strong>agrees with <span class="math inline">\(f\)</span> to order <span class="math inline">\(n\)</span> at <span class="math inline">\(x=a\)</span></strong>.</p>
+<p>Two functions <span class="math inline">\(f\)</span>, <span class="math inline">\(g\)</span> are said to agree to order <span class="math inline">\(n\)</span> at <span class="math inline">\(x=a\)</span> if their derivatives at <span class="math inline">\(x=a\)</span> match up to the <span class="math inline">\(n\)</span>-th derivative, so if <span class="math inline">\(f^{(k)}(a) = g^{(k)}(a)\)</span> for all <span class="math inline">\(k=0,\ldots,n\)</span>.</p>
+<p>The Taylor polynomial has formula: <span class="math display">\[T_n(x) = f(a) + \frac{f&#39;(a)}{1!}(x-a) + \frac{f&#39;&#39;(a)}{2!}(x-a)^2+\cdots + \frac{f^{(n)}}{n!}(x-a)^n\]</span></p>
 </blockquote>
-<p>We often abreviate this as: <span class="math">\[T_n(x) = \sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\]</span></p>
+<p>We often abreviate this as: <span class="math display">\[T_n(x) = \sum_{j=0}^n \frac{f^{(j)}(a)}{j!}(x-a)^j\]</span></p>
 <blockquote>
-<p>The <strong>Maclaurin polynomial</strong> is the Taylor polynomial centered at <span class="math">\(x=0\)</span>.</p>
+<p>The <strong>Maclaurin polynomial</strong> is the Taylor polynomial centered at <span class="math inline">\(x=0\)</span>.</p>
 </blockquote>
 <p>Practice:</p>
 <ol style="list-style-type: decimal">
-<li>Compute the Maclaurin polynomial of degree <span class="math">\(5\)</span> for <span class="math">\(f(x) = x^4\)</span>. Use it to estimate <span class="math">\(e^{0.1}\)</span> and <span class="math">\(e=e^1\)</span>.</li>
-<li>Compute the Maclaurin polynomial of degree <span class="math">\(4\)</span> for <span class="math">\(f(x) = \tan^{-1}x\)</span>, and use it to estimate <span class="math">\(\frac{\pi}{4} = f(1)\)</span>.</li>
-<li>Compute the Maclaurin polynomial of degree <span class="math">\(3\)</span> for <span class="math">\(f(x) = \sin x\)</span>, and use it to estimate <span class="math">\(\sin 0.2\)</span>.</li>
-<li>Compute the Taylor polynomial of degree <span class="math">\(4\)</span> for <span class="math">\(f(x) = \sqrt x\)</span> at <span class="math">\(x=1\)</span>, and use it to estimate <span class="math">\(\sqrt{1.2}\)</span>.</li>
-<li>Compute the Maclaurin polynomial of degree <span class="math">\(5\)</span> for <span class="math">\(f(x) = \ln(1+x)\)</span> and use it to estimate <span class="math">\(\ln 1.2\)</span>.</li>
+<li>Compute the Maclaurin polynomial of degree <span class="math inline">\(5\)</span> for <span class="math inline">\(f(x) = x^4\)</span>. Use it to estimate <span class="math inline">\(e^{0.1}\)</span> and <span class="math inline">\(e=e^1\)</span>.</li>
+<li>Compute the Maclaurin polynomial of degree <span class="math inline">\(4\)</span> for <span class="math inline">\(f(x) = \tan^{-1}x\)</span>, and use it to estimate <span class="math inline">\(\frac{\pi}{4} = f(1)\)</span>.</li>
+<li>Compute the Maclaurin polynomial of degree <span class="math inline">\(3\)</span> for <span class="math inline">\(f(x) = \sin x\)</span>, and use it to estimate <span class="math inline">\(\sin 0.2\)</span>.</li>
+<li>Compute the Taylor polynomial of degree <span class="math inline">\(4\)</span> for <span class="math inline">\(f(x) = \sqrt x\)</span> at <span class="math inline">\(x=1\)</span>, and use it to estimate <span class="math inline">\(\sqrt{1.2}\)</span>.</li>
+<li>Compute the Maclaurin polynomial of degree <span class="math inline">\(5\)</span> for <span class="math inline">\(f(x) = \ln(1+x)\)</span> and use it to estimate <span class="math inline">\(\ln 1.2\)</span>.</li>
 </ol>
 <h3 id="the-taylor-remainder">The Taylor remainder</h3>
-<p>In order to use Taylor polynomials effectively, we need a way to measure the error. The first step in that is the Taylor remainder: <span class="math">\[R_n(x) = f(x) - T_n(x)\]</span></p>
-<p>So the Taylor remainder measures how far the Taylor polynomial is from <span class="math">\(f\)</span>.</p>
+<p>In order to use Taylor polynomials effectively, we need a way to measure the error. The first step in that is the Taylor remainder: <span class="math display">\[R_n(x) = f(x) - T_n(x)\]</span></p>
+<p>So the Taylor remainder measures how far the Taylor polynomial is from <span class="math inline">\(f\)</span>.</p>
 <p>Taylor’s theorem gives us a more precise formulation of this remainder:</p>
 <blockquote>
-<p><strong>Taylor’s Theorem</strong>. If <span class="math">\(f^{(n+1)}(x)\)</span> exists and is continuous, then: <span class="math">\[R_n(x) = \frac{1}{n!}\int_a^x (x-u)^n f^{(n+1)}(u)du\]</span></p>
+<p><strong>Taylor’s Theorem</strong>. If <span class="math inline">\(f^{(n+1)}(x)\)</span> exists and is continuous, then: <span class="math display">\[R_n(x) = \frac{1}{n!}\int_a^x (x-u)^n f^{(n+1)}(u)du\]</span></p>
 </blockquote>
 <p>Using Taylor’s Theorem, we can obtain the following error bound:</p>
 <blockquote>
-<p><strong>Error Bound</strong>. If <span class="math">\(f^{(n+1)}(x)\)</span> exists and is continuous, and <span class="math">\(K\)</span> is such that <span class="math">\(\left|f^{(n+1)}(u)\right|\leq K\)</span> for all <span class="math">\(u\)</span> between <span class="math">\(a\)</span> and <span class="math">\(x\)</span>, then: <span class="math">\[\left|f(x) - T_n(x)\right| = \left|R_n(x)\right|\leq K \frac{|x-a|^{n+1}}{(n+1)!}\]</span></p>
+<p><strong>Error Bound</strong>. If <span class="math inline">\(f^{(n+1)}(x)\)</span> exists and is continuous, and <span class="math inline">\(K\)</span> is such that <span class="math inline">\(\left|f^{(n+1)}(u)\right|\leq K\)</span> for all <span class="math inline">\(u\)</span> between <span class="math inline">\(a\)</span> and <span class="math inline">\(x\)</span>, then: <span class="math display">\[\left|f(x) - T_n(x)\right| = \left|R_n(x)\right|\leq K \frac{|x-a|^{n+1}}{(n+1)!}\]</span></p>
 </blockquote>
-<p>Practice: Compute the error bound where <span class="math">\(f(x) = \sin(x)\)</span>, <span class="math">\(a=0\)</span>, <span class="math">\(n=5\)</span>, and at the point <span class="math">\(x=0.4\)</span>.</p>
+<p>Practice: Compute the error bound where <span class="math inline">\(f(x) = \sin(x)\)</span>, <span class="math inline">\(a=0\)</span>, <span class="math inline">\(n=5\)</span>, and at the point <span class="math inline">\(x=0.4\)</span>.</p>
 <h3 id="proof-of-taylors-theorem">Proof of Taylor’s Theorem</h3>
 <p>Taylor’s theorem essentially follows from integration by parts. We start with the following simple observation:</p>
-<p><span class="math">\[f(x) = f(a) + \int_a^x f&#39;(u)du\]</span> This is valid as long as <span class="math">\(f&#39;(u)\)</span> exists and is continuous, and follows straight for the fundamental theorem of Calculus. We can in fact rewrite this as saying <span class="math">\[f(x) = T_0(x) + R_0(x)\]</span> where <span class="math">\[R_0(x) = \int_a^x f&#39;(u)du = \frac{1}{0!}\int_a^x(x-u)^0 f^{(0+1)}(u)du\]</span> is exactly what is required by Taylor’s theorem for <span class="math">\(n=0\)</span>.</p>
-<p>From that point on, we perform integration by parts on the previous term. We use as a second term the constant <span class="math">\(1\)</span>, which we choose to integrate as <strong>a function of <span class="math">\(u\)</span></strong> to <span class="math">\(-(x-u)\)</span>. <span class="math">\[\int_a^x f&#39;(u)du = \int_a^x f&#39;(u)\cdot 1 du = \left.-f&#39;(u)(x-u)\right|_a^x + \int_a^x f&#39;&#39;(u)(x-u)du = f&#39;(a)(x-a) + \int_a^x f&#39;&#39;(u)(x-u)du\]</span> Putting this back in the original equation we find: <span class="math">\[f(x) = f(a) + f&#39;(a)(x-a) + \int_a^x f&#39;&#39;(u)(x-u)du\]</span> This is exactly the formula in Taylor’s theorem for <span class="math">\(n=1\)</span>.</p>
-<p>To obtain the next iteration of the theorem, we each time integrate the <span class="math">\((x-u)^k\)</span> term: <span class="math">\[\int_a^x f&#39;&#39;(u)(x-u)du = \left.-\frac{1}{2}f&#39;&#39;(u)(x-u)^2\right|_a^x + \frac{1}{2}\int_a^x f&#39;&#39;&#39;(u)(x-u)^2 du = \frac{1}{2}f&#39;&#39;(a)(x-a)^2 + \frac{1}{2}\int_a^x f&#39;&#39;&#39;(u)(x-u)^2 du\]</span></p>
+<p><span class="math display">\[f(x) = f(a) + \int_a^x f&#39;(u)du\]</span> This is valid as long as <span class="math inline">\(f&#39;(u)\)</span> exists and is continuous, and follows straight for the fundamental theorem of Calculus. We can in fact rewrite this as saying <span class="math display">\[f(x) = T_0(x) + R_0(x)\]</span> where <span class="math display">\[R_0(x) = \int_a^x f&#39;(u)du = \frac{1}{0!}\int_a^x(x-u)^0 f^{(0+1)}(u)du\]</span> is exactly what is required by Taylor’s theorem for <span class="math inline">\(n=0\)</span>.</p>
+<p>From that point on, we perform integration by parts on the previous term. We use as a second term the constant <span class="math inline">\(1\)</span>, which we choose to integrate as <strong>a function of <span class="math inline">\(u\)</span></strong> to <span class="math inline">\(-(x-u)\)</span>. <span class="math display">\[\int_a^x f&#39;(u)du = \int_a^x f&#39;(u)\cdot 1 du = \left.-f&#39;(u)(x-u)\right|_a^x + \int_a^x f&#39;&#39;(u)(x-u)du = f&#39;(a)(x-a) + \int_a^x f&#39;&#39;(u)(x-u)du\]</span> Putting this back in the original equation we find: <span class="math display">\[f(x) = f(a) + f&#39;(a)(x-a) + \int_a^x f&#39;&#39;(u)(x-u)du\]</span> This is exactly the formula in Taylor’s theorem for <span class="math inline">\(n=1\)</span>.</p>
+<p>To obtain the next iteration of the theorem, we each time integrate the <span class="math inline">\((x-u)^k\)</span> term: <span class="math display">\[\int_a^x f&#39;&#39;(u)(x-u)du = \left.-\frac{1}{2}f&#39;&#39;(u)(x-u)^2\right|_a^x + \frac{1}{2}\int_a^x f&#39;&#39;&#39;(u)(x-u)^2 du = \frac{1}{2}f&#39;&#39;(a)(x-a)^2 + \frac{1}{2}\int_a^x f&#39;&#39;&#39;(u)(x-u)^2 du\]</span></p>
 <p>Practice: Try the next step of this iteration.</p>
 </body>
 </html>

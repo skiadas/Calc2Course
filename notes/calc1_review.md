@@ -22,7 +22,9 @@ When the behavior near a point agrees with the value at the point, we have conti
 > The function $f(x)$ is **continuous** at the point $a$ exactly when the limit at $a$ agrees with the value there:
 > $$\lim_{x\to a}f(x) = f(a)$$
 
-Intuitively, the value at the point $a$ is what is *expected* by looking at the behavior of the function nearby.
+Intuitively, the value at the point $a$ is what is *expected* by looking at the behavior of the function nearby. In practice, when dealing with continuous functions we can compute a limit by **plugging in**.
+
+Example: Find the limit of $\lim_{x\to 2}\frac{x^2-4}{x-2}$.
 
 > Various types of discontinuities:
 >
@@ -41,9 +43,11 @@ This has tremendous consequences, amongst them the fact that the square roots of
 ## Derivatives
 
 > The **derivative** of a function $f(x)$ at a point $a$ is defined as a *limit of slopes of secant lines*:
-> $$\frac{df}{dx} = f'(x) = \lim_{x\to a} \frac{f(x) - f(a)}{x - a} = \lim_{h\to 0}\frac{f(a+h) - f(a)}{h}$$
+> $$\left.\frac{df}{dx}\right|_{x=a} = f'(a) = \lim_{x\to a} \frac{f(x) - f(a)}{x - a} = \lim_{h\to 0}\frac{f(a+h) - f(a)}{h}$$
 
-When computing derivatives, we typically rely on a number of rules:
+If we do this at each point $a$, we build a new *function*, $f'(x)$.
+
+When computing derivatives, we rarely have to rely on the above definition, and we typically rely instead on a number of rules:
 
 > **Derivative Rules:**
 >
@@ -61,10 +65,14 @@ Derivatives tell us about the behavior of a function near a point, approximated 
 > **Tangent Line** for $f(x)$ at a point $x=a$:
 > $$y - f(a) = f'(a)(x-a)$$
 
+Example: Find the tangent line to the function $f(x) = \sqrt{x}$ at the point $a=25$.
+
 This can in particular be used to obtain an approximation for $f(x)$ near a point $a$:
 
 > Approximation for $x=a$:
 > $$f(x) \approx f(a) + f'(a)(x-a)$$
+
+Example: Find an approximate value to $\sqrt{27}$ by using $a=25$ and $f(x) = \sqrt{x}$.
 
 One of the main applications of derivatives is in locating **maxima and minima for functions**:
 
@@ -78,6 +86,8 @@ One of the main applications of derivatives is in locating **maxima and minima f
 >     - points, if any, where $f'(c)$ does not exist.
 >
 >     These last two categories are called **critical points**
+
+Example: Find the minimum and maximum of $f(x) = x^3-x$ from $0$ to $1$.
 
 The mean value theorem for derivatives is one of the main results, with important consequences:
 

@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -20,42 +20,42 @@
 <p>Practice Exercises: 8.1 9, 11, 13, 16, 27, 28, 33, 41, 42, 43, 51, 53, 55, 57, 67, 71</p>
 <p>Exercises to turn in: 8.1 10, 14, 36, 38, 52</p>
 <h2 id="integration-by-parts-1">Integration by Parts</h2>
-<p>The overall theme of this chapter is various techniques of integration, that are used to reach the more complex integrals. We have already seen one such technique, the <span class="math">\(u\)</span>-substitution:</p>
+<p>The overall theme of this chapter is various techniques of integration, that are used to reach the more complex integrals. We have already seen one such technique, the <span class="math inline">\(u\)</span>-substitution:</p>
 <blockquote>
 <p><strong>u-substitution</strong></p>
-<p><span class="math">\[\int f(g(x))g&#39;(x)dx = \int f(u)du\]</span> where <span class="math">\(u = g(x)\)</span>.</p>
-<p><span class="math">\[\int_a^b f(g(x))g&#39;(x)dx = \int_{g(a)}^{g(b)} f(u)du\]</span></p>
-<p>This follows directly from the chain rule: If <span class="math">\(F&#39;(u) = f(u)\)</span>, then <span class="math">\(F(g(x))&#39; = F&#39;(g(x))g&#39;(x) = f(g(x))g&#39;(x)\)</span> and we have an antiderivative for <span class="math">\(f(g(x))g&#39;(x)\)</span>.</p>
+<p><span class="math display">\[\int f(g(x))g&#39;(x)dx = \int f(u)du\]</span> where <span class="math inline">\(u = g(x)\)</span>.</p>
+<p><span class="math display">\[\int_a^b f(g(x))g&#39;(x)dx = \int_{g(a)}^{g(b)} f(u)du\]</span></p>
+<p>This follows directly from the chain rule: If <span class="math inline">\(F&#39;(u) = f(u)\)</span>, then <span class="math inline">\(F(g(x))&#39; = F&#39;(g(x))g&#39;(x) = f(g(x))g&#39;(x)\)</span> and we have an antiderivative for <span class="math inline">\(f(g(x))g&#39;(x)\)</span>.</p>
 </blockquote>
-<p>Just as the <span class="math">\(u\)</span>-substitution is based on the chain rule, the technique we will see here is based on another derivative rule, namely the product rule:</p>
+<p>Just as the <span class="math inline">\(u\)</span>-substitution is based on the chain rule, the technique we will see here is based on another derivative rule, namely the product rule:</p>
 <blockquote>
-<p><span class="math">\[\left(u(x)v(x)\right)&#39; = u&#39;(x) v(x) + u(x) v&#39;(x)\]</span></p>
+<p><span class="math display">\[\left(u(x)v(x)\right)&#39; = u&#39;(x) v(x) + u(x) v&#39;(x)\]</span></p>
 </blockquote>
 <p>If we integrate both sides, we get:</p>
 <blockquote>
-<p><span class="math">\[u(x)v(x) = \int u&#39;(x) v(x) + \int u(x) v&#39;(x)\]</span></p>
+<p><span class="math display">\[u(x)v(x) = \int u&#39;(x) v(x) + \int u(x) v&#39;(x)\]</span></p>
 </blockquote>
 <p>Moving things around leads us to:</p>
 <blockquote>
 <p><strong>Integration by parts</strong></p>
-<p><span class="math">\[\int u(x) v&#39;(x) dx = u(x) v(x) - \int u&#39;(x) v(x) dx\]</span> <span class="math">\[\int_a^b u(x) v&#39;(x) dx = \left.\left(u(x) v(x)\right)\right|_a^b - \int_a^b u&#39;(x) v(x) dx\]</span></p>
+<p><span class="math display">\[\int u(x) v&#39;(x) dx = u(x) v(x) - \int u&#39;(x) v(x) dx\]</span> <span class="math display">\[\int_a^b u(x) v&#39;(x) dx = \left.\left(u(x) v(x)\right)\right|_a^b - \int_a^b u&#39;(x) v(x) dx\]</span></p>
 </blockquote>
 <p>We use this method when:</p>
 <ul>
-<li>Our integrand can be naturally written as the product of a function <span class="math">\(u(x)\)</span> and the derivative of a function <span class="math">\(v(x)\)</span>, and</li>
-<li>Integrating <span class="math">\(\int_a^b u&#39;(x) v(x) dx\)</span> is easier than <span class="math">\(\int_a^b u(x) v&#39;(x) dx\)</span>.</li>
+<li>Our integrand can be naturally written as the product of a function <span class="math inline">\(u(x)\)</span> and the derivative of a function <span class="math inline">\(v(x)\)</span>, and</li>
+<li>Integrating <span class="math inline">\(\int_a^b u&#39;(x) v(x) dx\)</span> is easier than <span class="math inline">\(\int_a^b u(x) v&#39;(x) dx\)</span>.</li>
 </ul>
-<p>Let us look at an example. Say we want to compute: <span class="math">\[\int_0^\pi x\sin(x)dx\]</span></p>
-<p>Here we have two terms, <span class="math">\(x\)</span> and <span class="math">\(\sin(x)\)</span>. We will make one of them the <span class="math">\(u(x)\)</span> and the other the <span class="math">\(v&#39;(x)\)</span>. Let’s let <span class="math">\(u(x) = x\)</span> and <span class="math">\(v(x) = -\cos(x)\)</span>. Then <span class="math">\(v&#39;(x) = \sin(x)\)</span>. So we have: <span class="math">\[\int_0^\pi x\sin(x)dx = \left.\left(x(-\cos(x))\right)\right|_0^\pi - \int_0^\pi (x)&#39;(-\cos(x))dx = -\pi\cos(\pi) + 0 \cos(0)  + \int_0^\pi \cos(x)dx\]</span></p>
-<p>Now the <span class="math">\(x\)</span> is gone and all we have left is integrating the cosine, which is easy to do: <span class="math">\[\int_0^\pi\cos(x)dx = \sin(\pi) - \sin(0) = 0 - 0 = 0\]</span></p>
-<p>So the overall integral is: <span class="math">\[-\pi\cos(\pi) + 0 \cos(0)  + 0 = \pi\]</span></p>
-<p>Exercise: Use the same idea to compute <span class="math">\(\int_0^1 x e^x dx\)</span> and <span class="math">\(\int_0^1 xe^{-x}dx\)</span>.</p>
-<p>In general, this allows us to deal with any situation where we have the product of a polynomial with some function like <span class="math">\(e^x\)</span> or <span class="math">\(\cos(x)\)</span> whose integral is easy to work with (so we can think of them as the <span class="math">\(v&#39;\)</span> part). Then integration by parts gives us a problem where the polynomial involved has a lower degree.</p>
+<p>Let us look at an example. Say we want to compute: <span class="math display">\[\int_0^\pi x\sin(x)dx\]</span></p>
+<p>Here we have two terms, <span class="math inline">\(x\)</span> and <span class="math inline">\(\sin(x)\)</span>. We will make one of them the <span class="math inline">\(u(x)\)</span> and the other the <span class="math inline">\(v&#39;(x)\)</span>. Let’s let <span class="math inline">\(u(x) = x\)</span> and <span class="math inline">\(v(x) = -\cos(x)\)</span>. Then <span class="math inline">\(v&#39;(x) = \sin(x)\)</span>. So we have: <span class="math display">\[\int_0^\pi x\sin(x)dx = \left.\left(x(-\cos(x))\right)\right|_0^\pi - \int_0^\pi (x)&#39;(-\cos(x))dx = -\pi\cos(\pi) + 0 \cos(0)  + \int_0^\pi \cos(x)dx\]</span></p>
+<p>Now the <span class="math inline">\(x\)</span> is gone and all we have left is integrating the cosine, which is easy to do: <span class="math display">\[\int_0^\pi\cos(x)dx = \sin(\pi) - \sin(0) = 0 - 0 = 0\]</span></p>
+<p>So the overall integral is: <span class="math display">\[-\pi\cos(\pi) + 0 \cos(0)  + 0 = \pi\]</span></p>
+<p>Exercise: Use the same idea to compute <span class="math inline">\(\int_0^1 x e^x dx\)</span> and <span class="math inline">\(\int_0^1 xe^{-x}dx\)</span>.</p>
+<p>In general, this allows us to deal with any situation where we have the product of a polynomial with some function like <span class="math inline">\(e^x\)</span> or <span class="math inline">\(\cos(x)\)</span> whose integral is easy to work with (so we can think of them as the <span class="math inline">\(v&#39;\)</span> part). Then integration by parts gives us a problem where the polynomial involved has a lower degree.</p>
 <h3 id="special-cases">Special cases</h3>
-<p>There some special cases where we use integration by parts even though we don’t have two terms. A good example is the integral <span class="math">\(\int\ln(x)dx\)</span>, which you can see in the book. We will do a similar example here, namely: <span class="math">\[\int \tan^{-1}(x)dx\]</span></p>
-<p>The idea is this: we can always artificially create a <span class="math">\(v&#39;(x)\)</span> by using the number <span class="math">\(1\)</span>, so <span class="math">\(v(x) = x\)</span> and <span class="math">\(v&#39;(x) = 1\)</span>. This can be beneficial if differentiating the remaining expression makes things easier. So in this case we would do: <span class="math">\[\int \tan^{-1}(x)\cdot 1 dx = \int \tan^{-1}(x)\cdot (x)&#39; dx = x\tan^{-1}(x) - \int\left(\tan^{-1}(x)\right)&#39; x dx = x\tan^{-1}(x) - \int \frac{x}{1+x^2}dx\]</span></p>
-<p>The advantage we gained is that we do not have to worry about <span class="math">\(\tan^{-1}\)</span> any more, it went away when we differentiated. In the process however we obtained an extra <span class="math">\(x\)</span> in the numerator. We are now left with computing this new integral, which we can do with a <span class="math">\(u=1+x^2\)</span> substitution: <span class="math">\[\int \frac{x}{1+x^2}dx = \frac{1}{2} \int \frac{1}{u}du = \frac{1}{2} \ln(u) = \frac{1}{2} \ln\left(1+x^2\right)\]</span></p>
-<p>So overall we have: <span class="math">\[\int \tan^{-1}(x)dx = x\tan^{-1}(x) - \frac{1}{2}\ln\left(1+x^2\right)\]</span></p>
-<p>Compute the derivative of this expression and verify that you do end up with <span class="math">\(\tan^{-1}(x)\)</span>.</p>
+<p>There some special cases where we use integration by parts even though we don’t have two terms. A good example is the integral <span class="math inline">\(\int\ln(x)dx\)</span>, which you can see in the book. We will do a similar example here, namely: <span class="math display">\[\int \tan^{-1}(x)dx\]</span></p>
+<p>The idea is this: we can always artificially create a <span class="math inline">\(v&#39;(x)\)</span> by using the number <span class="math inline">\(1\)</span>, so <span class="math inline">\(v(x) = x\)</span> and <span class="math inline">\(v&#39;(x) = 1\)</span>. This can be beneficial if differentiating the remaining expression makes things easier. So in this case we would do: <span class="math display">\[\int \tan^{-1}(x)\cdot 1 dx = \int \tan^{-1}(x)\cdot (x)&#39; dx = x\tan^{-1}(x) - \int\left(\tan^{-1}(x)\right)&#39; x dx = x\tan^{-1}(x) - \int \frac{x}{1+x^2}dx\]</span></p>
+<p>The advantage we gained is that we do not have to worry about <span class="math inline">\(\tan^{-1}\)</span> any more, it went away when we differentiated. In the process however we obtained an extra <span class="math inline">\(x\)</span> in the numerator. We are now left with computing this new integral, which we can do with a <span class="math inline">\(u=1+x^2\)</span> substitution: <span class="math display">\[\int \frac{x}{1+x^2}dx = \frac{1}{2} \int \frac{1}{u}du = \frac{1}{2} \ln(u) = \frac{1}{2} \ln\left(1+x^2\right)\]</span></p>
+<p>So overall we have: <span class="math display">\[\int \tan^{-1}(x)dx = x\tan^{-1}(x) - \frac{1}{2}\ln\left(1+x^2\right)\]</span></p>
+<p>Compute the derivative of this expression and verify that you do end up with <span class="math inline">\(\tan^{-1}(x)\)</span>.</p>
 </body>
 </html>

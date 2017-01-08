@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -22,28 +22,28 @@
 <h2 id="volumes-of-revolution-1">Volumes of Revolution</h2>
 <p>Recall that last time we expressed a volume as an integral of an “area function”:</p>
 <blockquote>
-<p><span class="math">\[V = \int_a^b A(x) dx\]</span></p>
+<p><span class="math display">\[V = \int_a^b A(x) dx\]</span></p>
 </blockquote>
-<p>where <span class="math">\(A(x)\)</span> is the area of the cross section.</p>
+<p>where <span class="math inline">\(A(x)\)</span> is the area of the cross section.</p>
 <p>Volumes of Revolution follow a similar idea, but they are used in a more specialized form:</p>
 <blockquote>
-<p>A solid of revolution is formed by rotating, the region under the graph of a function <span class="math">\(y=f(x)\)</span> around the <span class="math">\(x\)</span> axis. The volume of such a solid can be found as:</p>
-<p><span class="math">\[V = \pi \int_a^b f(x)^2dx\]</span></p>
+<p>A solid of revolution is formed by rotating, the region under the graph of a function <span class="math inline">\(y=f(x)\)</span> around the <span class="math inline">\(x\)</span> axis. The volume of such a solid can be found as:</p>
+<p><span class="math display">\[V = \pi \int_a^b f(x)^2dx\]</span></p>
 </blockquote>
-<p>This follows directly from the methods in the previous section, as the region of the cross-section in this case will be a circle with radius <span class="math">\(\left|f(x)\right|\)</span> and therefore its area would be <span class="math">\(\pi f(x)^2\)</span>.</p>
-<p>For example, the sphere of radius <span class="math">\(R\)</span> can be thought of as a solid of revolution, where the function <span class="math">\(f(x)\)</span> is <span class="math">\(\sqrt{R^2 - x^2}\)</span>. So we can compute the volume of the sphere via the integral:</p>
-<p><span class="math">\[\pi\int_{-R}^{R}\left(\sqrt{R^2 - x^2}\right)^2 dx = \pi \int_{-R}^R R^2 - x^2 dx\]</span></p>
-<p>If you finish the computation you will find the result to be the well known formula <span class="math">\(V =\frac{4}{3}\pi R^3\)</span>.</p>
+<p>This follows directly from the methods in the previous section, as the region of the cross-section in this case will be a circle with radius <span class="math inline">\(\left|f(x)\right|\)</span> and therefore its area would be <span class="math inline">\(\pi f(x)^2\)</span>.</p>
+<p>For example, the sphere of radius <span class="math inline">\(R\)</span> can be thought of as a solid of revolution, where the function <span class="math inline">\(f(x)\)</span> is <span class="math inline">\(\sqrt{R^2 - x^2}\)</span>. So we can compute the volume of the sphere via the integral:</p>
+<p><span class="math display">\[\pi\int_{-R}^{R}\left(\sqrt{R^2 - x^2}\right)^2 dx = \pi \int_{-R}^R R^2 - x^2 dx\]</span></p>
+<p>If you finish the computation you will find the result to be the well known formula <span class="math inline">\(V =\frac{4}{3}\pi R^3\)</span>.</p>
 <p>This is often called the <strong>disc method</strong>.</p>
-<p>A slight variation of it, called the <strong>washer method</strong>, describe the solid created by the revolution of the area <em>between</em> two functions <span class="math">\(f(x)\)</span> and <span class="math">\(g(x)\)</span>. You can think of it as the volume of the solid produced by <span class="math">\(f(x)\)</span> alone, with the volume of the solid produced by <span class="math">\(g\)</span> removed. The formula would be:</p>
+<p>A slight variation of it, called the <strong>washer method</strong>, describe the solid created by the revolution of the area <em>between</em> two functions <span class="math inline">\(f(x)\)</span> and <span class="math inline">\(g(x)\)</span>. You can think of it as the volume of the solid produced by <span class="math inline">\(f(x)\)</span> alone, with the volume of the solid produced by <span class="math inline">\(g\)</span> removed. The formula would be:</p>
 <blockquote>
-<p><span class="math">\[V = \pi \int_a^b f(x)^2 - g(x)^2 dx\]</span></p>
+<p><span class="math display">\[V = \pi \int_a^b f(x)^2 - g(x)^2 dx\]</span></p>
 </blockquote>
-<p>Take note of the integrand!! We do not take the difference of <span class="math">\(f\)</span> and <span class="math">\(g\)</span>, and then square it. We first square them, then take the difference.</p>
-<p>Special care needs to be taken when rotating around an axis other than the <span class="math">\(x\)</span> axis itself. For instance one might want to rotate around the axis <span class="math">\(y = 1\)</span> or the axis <span class="math">\(y = -3\)</span>. In all cases the rule is:</p>
+<p>Take note of the integrand!! We do not take the difference of <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span>, and then square it. We first square them, then take the difference.</p>
+<p>Special care needs to be taken when rotating around an axis other than the <span class="math inline">\(x\)</span> axis itself. For instance one might want to rotate around the axis <span class="math inline">\(y = 1\)</span> or the axis <span class="math inline">\(y = -3\)</span>. In all cases the rule is:</p>
 <blockquote>
-<p><span class="math">\[ V = \pi \int_a^b R_{\textrm{outer}}^2 - R_{\textrm{inner}}^2 dx\]</span></p>
+<p><span class="math display">\[ V = \pi \int_a^b R_{\textrm{outer}}^2 - R_{\textrm{inner}}^2 dx\]</span></p>
 </blockquote>
-<p>So take the “largest radius”, namely the distance from your function to the axis of rotation, and substract the “smallest radius”, which may be <span class="math">\(0\)</span> or may be the distance of another function <span class="math">\(g\)</span> from the axis of rotation.</p>
+<p>So take the “largest radius”, namely the distance from your function to the axis of rotation, and substract the “smallest radius”, which may be <span class="math inline">\(0\)</span> or may be the distance of another function <span class="math inline">\(g\)</span> from the axis of rotation.</p>
 </body>
 </html>

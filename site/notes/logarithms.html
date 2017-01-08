@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -23,109 +23,109 @@
 <h2 id="logarithms-1">Logarithms</h2>
 <p>The logarithm function is the inverse of the exponential:</p>
 <blockquote>
-<p>The base-<span class="math">\(b\)</span> <strong>logarithm</strong> <span class="math">\(\log_b\colon (0,+\infty)\to\mathbb{R}\)</span> is the inverse to the exponential function <span class="math">\(b^x\)</span>, namely:</p>
-<p><span class="math">\[b^{\log_b x} = x,\qquad \log_b\left(b^x\right) = x\]</span></p>
-<p>When <span class="math">\(b=e\)</span>, this is called the <strong>natural logarithm</strong> and denoted <span class="math">\(\ln(x)\)</span>.</p>
+<p>The base-<span class="math inline">\(b\)</span> <strong>logarithm</strong> <span class="math inline">\(\log_b\colon (0,+\infty)\to\mathbb{R}\)</span> is the inverse to the exponential function <span class="math inline">\(b^x\)</span>, namely:</p>
+<p><span class="math display">\[b^{\log_b x} = x,\qquad \log_b\left(b^x\right) = x\]</span></p>
+<p>When <span class="math inline">\(b=e\)</span>, this is called the <strong>natural logarithm</strong> and denoted <span class="math inline">\(\ln(x)\)</span>.</p>
 </blockquote>
 <p>Many properties of the logarithm can be derived from those of the exponential. For now however, we start with the derivative, and for the time being we focus on the natural logarithm:</p>
 <blockquote>
-<p><span class="math">\[\ln&#39;(x) = \frac{1}{x}\]</span></p>
+<p><span class="math display">\[\ln&#39;(x) = \frac{1}{x}\]</span></p>
 </blockquote>
-<p>We also know that <span class="math">\(\ln(1) = 0\)</span> (because <span class="math">\(e^0=1\)</span>). We could therefore now formally define the natural logarithm:</p>
+<p>We also know that <span class="math inline">\(\ln(1) = 0\)</span> (because <span class="math inline">\(e^0=1\)</span>). We could therefore now formally define the natural logarithm:</p>
 <blockquote>
-<p>The natural logarithm is defined as the interval <span class="math">\[\ln(x)=\int_1^x\frac{1}{t}dt\]</span> which makes sense for all <span class="math">\(x&gt;0\)</span>.</p>
+<p>The natural logarithm is defined as the interval <span class="math display">\[\ln(x)=\int_1^x\frac{1}{t}dt\]</span> which makes sense for all <span class="math inline">\(x&gt;0\)</span>.</p>
 </blockquote>
-<p>Question: Why does this integral not make sense when <span class="math">\(x&lt; 0\)</span>?</p>
+<p>Question: Why does this integral not make sense when <span class="math inline">\(x&lt; 0\)</span>?</p>
 <p>We can now establish a proper order of proving everything we need:</p>
 <ol style="list-style-type: decimal">
-<li>We define <span class="math">\(\ln(x)\)</span> via an integral.</li>
-<li>We prove key formulas for <span class="math">\(\ln(x)\)</span>, like <span class="math">\(\ln(xy) = \ln(x) + \ln(y)\)</span>.</li>
-<li>We prove <span class="math">\(\ln(x)\)</span> is one-to-one and onto the real line. It is therefore invertible.</li>
-<li>We define the exponentinal <span class="math">\(\exp(x)\)</span> as its inverse.</li>
-<li>We prove that for <span class="math">\(x\)</span> an integer it then has its usual meaning.</li>
+<li>We define <span class="math inline">\(\ln(x)\)</span> via an integral.</li>
+<li>We prove key formulas for <span class="math inline">\(\ln(x)\)</span>, like <span class="math inline">\(\ln(xy) = \ln(x) + \ln(y)\)</span>.</li>
+<li>We prove <span class="math inline">\(\ln(x)\)</span> is one-to-one and onto the real line. It is therefore invertible.</li>
+<li>We define the exponentinal <span class="math inline">\(\exp(x)\)</span> as its inverse.</li>
+<li>We prove that for <span class="math inline">\(x\)</span> an integer it then has its usual meaning.</li>
 <li>We compute its derivative.</li>
-<li>We establish other properties of <span class="math">\(\exp(x)\)</span> from those of its inverse, <span class="math">\(\ln(x)\)</span>.</li>
-<li>We define <span class="math">\(b^x\)</span> and <span class="math">\(\log_b(x)\)</span> using <span class="math">\(\exp(x)\)</span> and <span class="math">\(\ln(x)\)</span>.</li>
+<li>We establish other properties of <span class="math inline">\(\exp(x)\)</span> from those of its inverse, <span class="math inline">\(\ln(x)\)</span>.</li>
+<li>We define <span class="math inline">\(b^x\)</span> and <span class="math inline">\(\log_b(x)\)</span> using <span class="math inline">\(\exp(x)\)</span> and <span class="math inline">\(\ln(x)\)</span>.</li>
 </ol>
-<p>During this section, until the very end, we will solely use the notation <span class="math">\(a^x\)</span> to denote the usual meaning of power, which makes sense for integers (and maybe if we push it a bit to rational numbers).</p>
+<p>During this section, until the very end, we will solely use the notation <span class="math inline">\(a^x\)</span> to denote the usual meaning of power, which makes sense for integers (and maybe if we push it a bit to rational numbers).</p>
 <p>Let us begin!</p>
 <h3 id="logarithm-as-an-integral">Logarithm as an integral</h3>
-<p>We already mentioned above the definition of <span class="math">\(\ln(x)\)</span> as the integral <span class="math">\(\int_1^x\frac{1}{t}dt\)</span>. The fundamental theorem of arithmetic then immediately tells us that <span class="math">\(\ln&#39;(x) = \frac{1}{x}\)</span>. From this we know that it must be an increasing function. Also the second derivative is <span class="math">\(\ln&#39;&#39;(x) = -\frac{1}{x^2} &lt; 0\)</span>, so the logarithm is always concave down.</p>
+<p>We already mentioned above the definition of <span class="math inline">\(\ln(x)\)</span> as the integral <span class="math inline">\(\int_1^x\frac{1}{t}dt\)</span>. The fundamental theorem of arithmetic then immediately tells us that <span class="math inline">\(\ln&#39;(x) = \frac{1}{x}\)</span>. From this we know that it must be an increasing function. Also the second derivative is <span class="math inline">\(\ln&#39;&#39;(x) = -\frac{1}{x^2} &lt; 0\)</span>, so the logarithm is always concave down.</p>
 <p>We now use the properties of integrals to prove the most important property of logarithms: They turn multiplication to addition:</p>
 <blockquote>
-<p><span class="math">\[\ln(xy) = \ln(x) + \ln(y)\]</span></p>
+<p><span class="math display">\[\ln(xy) = \ln(x) + \ln(y)\]</span></p>
 </blockquote>
 <p>The proof is very instructive. We break the interval up in 2 parts:</p>
-<p><span class="math">\[\ln(xy) = \int_1^{xy}\frac{1}{t}dt=\int_1^{x}\frac{1}{t}dt + \int_x^{xy}\frac{1}{t}dt\]</span></p>
-<p>We can now perform integration by parts on the second integral, by setting <span class="math">\(u=\frac{t}{x}\)</span>. Then <span class="math">\(du=\frac{dt}{x}\)</span>, and the second integral becomes:</p>
-<p><span class="math">\[\int_x^{xy}\frac{1}{t}dt = \int_1^y\frac{1}{u}du\]</span></p>
+<p><span class="math display">\[\ln(xy) = \int_1^{xy}\frac{1}{t}dt=\int_1^{x}\frac{1}{t}dt + \int_x^{xy}\frac{1}{t}dt\]</span></p>
+<p>We can now perform integration by parts on the second integral, by setting <span class="math inline">\(u=\frac{t}{x}\)</span>. Then <span class="math inline">\(du=\frac{dt}{x}\)</span>, and the second integral becomes:</p>
+<p><span class="math display">\[\int_x^{xy}\frac{1}{t}dt = \int_1^y\frac{1}{u}du\]</span></p>
 <p>Putting the two together we get:</p>
-<p><span class="math">\[\ln(xy) = \int_1^{xy}\frac{1}{t}dt = \int_1^{x}\frac{1}{t}dt + \int_1^y\frac{1}{u}du = \ln(x) + \ln(y)\]</span></p>
-<p>From this we can easily deduce what happens to powers: <span class="math">\[\ln(x^2) = \ln(xx) = \ln(x) + \ln(x) = 2\ln(x)\]</span> <span class="math">\[\ln(x^3) = \ln(x^2x) = \ln(x^2) + \ln(x) = 2\ln(x) + \ln(x) = 3\ln(x)\]</span> and so on. The Principle of mathematical induction then shows us that for all natural numbers <span class="math">\(n\)</span>: <span class="math">\[\ln(x^n) = n\ln(x)\]</span></p>
-<p>Also if we put in <span class="math">\(y=\frac{1}{x}\)</span> in the formula above we would obtain:</p>
-<p><span class="math">\[\ln(1/x) = -\ln(x)\]</span> and from it <span class="math">\[\ln(x/y) = \ln(x) - \ln(y)\]</span></p>
+<p><span class="math display">\[\ln(xy) = \int_1^{xy}\frac{1}{t}dt = \int_1^{x}\frac{1}{t}dt + \int_1^y\frac{1}{u}du = \ln(x) + \ln(y)\]</span></p>
+<p>From this we can easily deduce what happens to powers: <span class="math display">\[\ln(x^2) = \ln(xx) = \ln(x) + \ln(x) = 2\ln(x)\]</span> <span class="math display">\[\ln(x^3) = \ln(x^2x) = \ln(x^2) + \ln(x) = 2\ln(x) + \ln(x) = 3\ln(x)\]</span> and so on. The Principle of mathematical induction then shows us that for all natural numbers <span class="math inline">\(n\)</span>: <span class="math display">\[\ln(x^n) = n\ln(x)\]</span></p>
+<p>Also if we put in <span class="math inline">\(y=\frac{1}{x}\)</span> in the formula above we would obtain:</p>
+<p><span class="math display">\[\ln(1/x) = -\ln(x)\]</span> and from it <span class="math display">\[\ln(x/y) = \ln(x) - \ln(y)\]</span></p>
 <p>Let us pause for a second and list the properties that we have so far:</p>
 <blockquote>
 <ul>
-<li><span class="math">\(\ln(x) = \int_1^x\frac{1}{t}dt\)</span>.</li>
-<li><span class="math">\(\ln\)</span> is an increasing function and concave down.</li>
-<li><span class="math">\(\ln(xy) = \ln(x) + \ln(y)\)</span>.</li>
-<li><span class="math">\(\ln(1) = 0\)</span>.</li>
-<li><span class="math">\(\ln(1/x) = -\ln(x)\)</span>.</li>
-<li><span class="math">\(\ln(x/y) = \ln(x) - \ln(y)\)</span>.</li>
-<li><span class="math">\(\ln(x^n) = n\ln(x)\)</span>.</li>
+<li><span class="math inline">\(\ln(x) = \int_1^x\frac{1}{t}dt\)</span>.</li>
+<li><span class="math inline">\(\ln\)</span> is an increasing function and concave down.</li>
+<li><span class="math inline">\(\ln(xy) = \ln(x) + \ln(y)\)</span>.</li>
+<li><span class="math inline">\(\ln(1) = 0\)</span>.</li>
+<li><span class="math inline">\(\ln(1/x) = -\ln(x)\)</span>.</li>
+<li><span class="math inline">\(\ln(x/y) = \ln(x) - \ln(y)\)</span>.</li>
+<li><span class="math inline">\(\ln(x^n) = n\ln(x)\)</span>.</li>
 </ul>
 </blockquote>
 <h3 id="the-range-of-the-logarithm">The range of the logarithm</h3>
-<p>Our next goal would be to find the range of the logarithm function. We start by the following simple observation, that holds for all integers <span class="math">\(n\)</span>:</p>
-<p><span class="math">\[\ln\left(2^n\right) = n\ln(2)\]</span></p>
-<p>Now <span class="math">\(\ln(2)\)</span> is a positive number (it is the integral from <span class="math">\(1\)</span> to <span class="math">\(2\)</span> of a positive function). So <span class="math">\(n\ln(2)\)</span> can be made as large as we want it to be for positive integers <span class="math">\(n\)</span>, and as negative as we want it to be for all negative integers <span class="math">\(n\)</span>.</p>
-<p>What this means is that the function <span class="math">\(\ln(x)\)</span> can take arbitrarily large positive and negative values, as we adjust the value of <span class="math">\(x=2^n\)</span>. Because it is also a continuous function, the <em>Intermediate Value Theorem</em> tells us that all numbesr inbetween are also values of the function. In other words we get all of the following:</p>
+<p>Our next goal would be to find the range of the logarithm function. We start by the following simple observation, that holds for all integers <span class="math inline">\(n\)</span>:</p>
+<p><span class="math display">\[\ln\left(2^n\right) = n\ln(2)\]</span></p>
+<p>Now <span class="math inline">\(\ln(2)\)</span> is a positive number (it is the integral from <span class="math inline">\(1\)</span> to <span class="math inline">\(2\)</span> of a positive function). So <span class="math inline">\(n\ln(2)\)</span> can be made as large as we want it to be for positive integers <span class="math inline">\(n\)</span>, and as negative as we want it to be for all negative integers <span class="math inline">\(n\)</span>.</p>
+<p>What this means is that the function <span class="math inline">\(\ln(x)\)</span> can take arbitrarily large positive and negative values, as we adjust the value of <span class="math inline">\(x=2^n\)</span>. Because it is also a continuous function, the <em>Intermediate Value Theorem</em> tells us that all numbesr inbetween are also values of the function. In other words we get all of the following:</p>
 <blockquote>
 <ul>
-<li><span class="math">\(\lim_{x\to+\infty}\ln(x) = +\infty\)</span>.</li>
-<li><span class="math">\(\lim_{x\to 0^+}\ln(x) = -\infty\)</span>.</li>
-<li>The range of values of <span class="math">\(\ln(x)\)</span> is <span class="math">\(\mathbb{R} = (-\infty,\infty)\)</span>.</li>
-<li>In particular there must be a number <span class="math">\(e\)</span> such that <span class="math">\(\ln(e) = 1\)</span>.</li>
+<li><span class="math inline">\(\lim_{x\to+\infty}\ln(x) = +\infty\)</span>.</li>
+<li><span class="math inline">\(\lim_{x\to 0^+}\ln(x) = -\infty\)</span>.</li>
+<li>The range of values of <span class="math inline">\(\ln(x)\)</span> is <span class="math inline">\(\mathbb{R} = (-\infty,\infty)\)</span>.</li>
+<li>In particular there must be a number <span class="math inline">\(e\)</span> such that <span class="math inline">\(\ln(e) = 1\)</span>.</li>
 </ul>
 </blockquote>
 <h3 id="the-exponential-properly">The exponential properly</h3>
 <p>Since the logarithm is an onto function over the entire real line, and it is also one-to-one (it is increasing because of its positive derivative), we can define its inverse:</p>
 <blockquote>
-<p><span class="math">\[\exp\colon \mathbb{R} -&gt; (0,+\infty)\]</span> <span class="math">\[y=\exp(x)\textrm{ if and only if }x = \ln(y)\]</span> <span class="math">\[\exp(\ln(y)) = y\]</span> <span class="math">\[\ln(\exp(x)) = x\]</span></p>
+<p><span class="math display">\[\exp\colon \mathbb{R} -&gt; (0,+\infty)\]</span> <span class="math display">\[y=\exp(x)\textrm{ if and only if }x = \ln(y)\]</span> <span class="math display">\[\exp(\ln(y)) = y\]</span> <span class="math display">\[\ln(\exp(x)) = x\]</span></p>
 </blockquote>
-<p>Based on this fact, we can derive basic properties of the exponential from the corresponding properties of the logarithm. For example, take <span class="math">\(x_1,x_2\)</span>, and we want to show that <span class="math">\(\exp(x_1+x_2) = \exp(x_1)\exp(x_2)\)</span>. Let’s see:</p>
+<p>Based on this fact, we can derive basic properties of the exponential from the corresponding properties of the logarithm. For example, take <span class="math inline">\(x_1,x_2\)</span>, and we want to show that <span class="math inline">\(\exp(x_1+x_2) = \exp(x_1)\exp(x_2)\)</span>. Let’s see:</p>
 <ul>
-<li>Define <span class="math">\(y_1 = \exp(x_1)\)</span>, and so <span class="math">\(x_1 = \ln(y_1)\)</span>.</li>
-<li>Define <span class="math">\(y_2 = \exp(x_2)\)</span>, and so <span class="math">\(x_2 = \ln(y_2)\)</span>.</li>
-<li>Now we can say that <span class="math">\(\ln(y_1y_2) = \ln(y_1) + \ln(y_2) = x_1 + x_2\)</span>.</li>
-<li>But if <span class="math">\(\ln(y_1y_2) = x_1+x_2\)</span>, this must mean that <span class="math">\(\exp(x_1+x_2) = y_1y_2\)</span>.</li>
+<li>Define <span class="math inline">\(y_1 = \exp(x_1)\)</span>, and so <span class="math inline">\(x_1 = \ln(y_1)\)</span>.</li>
+<li>Define <span class="math inline">\(y_2 = \exp(x_2)\)</span>, and so <span class="math inline">\(x_2 = \ln(y_2)\)</span>.</li>
+<li>Now we can say that <span class="math inline">\(\ln(y_1y_2) = \ln(y_1) + \ln(y_2) = x_1 + x_2\)</span>.</li>
+<li>But if <span class="math inline">\(\ln(y_1y_2) = x_1+x_2\)</span>, this must mean that <span class="math inline">\(\exp(x_1+x_2) = y_1y_2\)</span>.</li>
 <li>This is in fact the formula we were trying to establish.</li>
 </ul>
-<p>A similar logic can help us show for example that <span class="math">\(\exp(nx) = (\exp(x))^n\)</span>, or that <span class="math">\(\exp(-x) = 1 / \exp(x)\)</span>.</p>
-<p>Finally, let us compute the derivative of <span class="math">\(\exp(x)\)</span>. Recall the general rule: If <span class="math">\(g\)</span> was the function that is inverse to <span class="math">\(f\)</span>, then its derivative is: <span class="math">\[g&#39;(x) = \frac{1}{f&#39;(g(x))}\]</span> In our case, this means that: <span class="math">\[\exp&#39;(x) = \frac{1}{\ln&#39;(\exp(x))} = \frac{1}{1/\exp(x)} = \exp(x)\]</span></p>
+<p>A similar logic can help us show for example that <span class="math inline">\(\exp(nx) = (\exp(x))^n\)</span>, or that <span class="math inline">\(\exp(-x) = 1 / \exp(x)\)</span>.</p>
+<p>Finally, let us compute the derivative of <span class="math inline">\(\exp(x)\)</span>. Recall the general rule: If <span class="math inline">\(g\)</span> was the function that is inverse to <span class="math inline">\(f\)</span>, then its derivative is: <span class="math display">\[g&#39;(x) = \frac{1}{f&#39;(g(x))}\]</span> In our case, this means that: <span class="math display">\[\exp&#39;(x) = \frac{1}{\ln&#39;(\exp(x))} = \frac{1}{1/\exp(x)} = \exp(x)\]</span></p>
 <p>So the exponential is its own derivative!. We obtained the result this time by using its definition as the inverse of the logarithm, and the definition of the logarithm as an integral.</p>
 <h3 id="other-bases-for-logarithms-and-exponentials">Other bases for logarithms and exponentials</h3>
 <p>Let us establish a relation between logarithms, exponentials and actually powers of elements. Let us write some such relations down:</p>
 <ul>
-<li><span class="math">\(\ln(b^n) = n\ln(b)\)</span>. This gives:</li>
-<li><span class="math">\(b^n = \exp(n\ln(b))\)</span>. For <span class="math">\(b=e\)</span> and since <span class="math">\(\ln(e)=1\)</span> we have:</li>
-<li><span class="math">\(e^n = \exp(n)\)</span>.</li>
-<li>It therefore makes sense to in general define: <span class="math">\[b^x =\exp(\ln(b)x)\]</span> and <span class="math">\[e^x = \exp(x)\]</span>.</li>
-<li>In particular <span class="math">\(b^x = e^{\ln(b) x}\)</span>.</li>
-<li><span class="math">\(\log_b(x)\)</span> is the inverse of <span class="math">\(b^x\)</span>.</li>
-<li><span class="math">\(y=\log_b(x)\)</span> if and only if <span class="math">\(x = b^y = e^{\ln(b)y}\)</span>, if and only if <span class="math">\(\ln(b)y = \ln(x)\)</span>.</li>
-<li>So we could define: <span class="math">\[\log_b(x) = \frac{\ln(x)}{\ln(b)}\]</span></li>
-<li>More generally we have the formula: <span class="math">\[\log_b x = \frac{\log_a x}{\log_a b}\]</span></li>
-<li>The derivative of the generic logarithm is now straighforward: <span class="math">\[\log_b&#39;(x) = \left(\frac{\ln(x)}{\ln(b)}\right)&#39; = \frac{1}{\ln(b) x}\]</span></li>
+<li><span class="math inline">\(\ln(b^n) = n\ln(b)\)</span>. This gives:</li>
+<li><span class="math inline">\(b^n = \exp(n\ln(b))\)</span>. For <span class="math inline">\(b=e\)</span> and since <span class="math inline">\(\ln(e)=1\)</span> we have:</li>
+<li><span class="math inline">\(e^n = \exp(n)\)</span>.</li>
+<li>It therefore makes sense to in general define: <span class="math display">\[b^x =\exp(\ln(b)x)\]</span> and <span class="math display">\[e^x = \exp(x)\]</span>.</li>
+<li>In particular <span class="math inline">\(b^x = e^{\ln(b) x}\)</span>.</li>
+<li><span class="math inline">\(\log_b(x)\)</span> is the inverse of <span class="math inline">\(b^x\)</span>.</li>
+<li><span class="math inline">\(y=\log_b(x)\)</span> if and only if <span class="math inline">\(x = b^y = e^{\ln(b)y}\)</span>, if and only if <span class="math inline">\(\ln(b)y = \ln(x)\)</span>.</li>
+<li>So we could define: <span class="math display">\[\log_b(x) = \frac{\ln(x)}{\ln(b)}\]</span></li>
+<li>More generally we have the formula: <span class="math display">\[\log_b x = \frac{\log_a x}{\log_a b}\]</span></li>
+<li>The derivative of the generic logarithm is now straighforward: <span class="math display">\[\log_b&#39;(x) = \left(\frac{\ln(x)}{\ln(b)}\right)&#39; = \frac{1}{\ln(b) x}\]</span></li>
 </ul>
 <p>This wraps up our main overview of the logarithm and exponential functions and their properties. There is however one more cool topic to explore:</p>
 <h3 id="the-logarithmic-derivative-of-a-function">The “logarithmic derivative” of a function</h3>
 <p>A commonly used concept is that of the logarithmic derivative of a function, which is simply the derivative of the logarithm of the function, which makes sense for positive-valued functions:</p>
 <blockquote>
-<p>The logarithmic derivative of <span class="math">\(f\)</span> is: <span class="math">\[\frac{d}{dx}\ln(f(x)) = \frac{f&#39;(x)}{f(x)}\]</span></p>
+<p>The logarithmic derivative of <span class="math inline">\(f\)</span> is: <span class="math display">\[\frac{d}{dx}\ln(f(x)) = \frac{f&#39;(x)}{f(x)}\]</span></p>
 </blockquote>
 <p>One convenient property of the logarithmic derivative is that it is easy to compute for a product of functions:</p>
-<p><span class="math">\[\frac{d}{dx}\ln(f(x)g(x)) = \frac{f&#39;(x)}{f(x)} + \frac{g&#39;(x)}{g(x)}\]</span></p>
+<p><span class="math display">\[\frac{d}{dx}\ln(f(x)g(x)) = \frac{f&#39;(x)}{f(x)} + \frac{g&#39;(x)}{g(x)}\]</span></p>
 </body>
 </html>

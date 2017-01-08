@@ -9,22 +9,22 @@ Instructor
   ~ Charilaos Skiadas (skiadas at hanover dot edu)
 
 Term
-  ~ Fall 2015-2016
+  ~ Winter 2016-2017
 
 Office
   ~ SCH 121C
 
 Office Hours
-  ~ MW 2pm-4pm, R 2pm-3pm, and by appointment.
+  ~ MWF 1:00pm-2:30pm, and by appointment.
 
 Book
   ~ *Calculus*, 3rd ed, by Jon Rogawski
 
 Websites
-  ~ [for notes](skiadas.github.io/Calc2Course/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=1077).
+  ~ [for notes](skiadas.github.io/Calc2Course/site/)
 
 Class times
-  ~ MWRF 12pm-1pm in CFA111.
+  ~ MWF 9:20pm-10:30pm in CFA106.
 
 ## Course Description
 
@@ -39,7 +39,7 @@ By the end of this course:
 - You will have mastered the techniques employed in the computation of integrals for various functions.
 - You will be familiar with how the various special functions are defined and their properties.
 - You will develop an appreciation for abstract mathematical concepts by seeing how all the properties of the various special functions are rooted in their definitions as integrals and inverses.
-- You will have seen how these abstract mathematical concepts can help solve real world problems related to exponential growth and decay and compound interest, to name a few.
+- You will have seen how these abstract mathematical concepts can help solve real world problems in areas such as exponential growth and decay and compound interest, to name a few.
 
 ## Course Components
 
@@ -57,7 +57,7 @@ There will be regular homework assignments about 2 per week. There will also be 
 
 ### Exams
 
-There will be two midterms, on Wednesday, October 7th and Monday, November 9th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
+There will be two midterms, on Monday, February 10th and Monday, March 20th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
 
 ### Getting Help
 
