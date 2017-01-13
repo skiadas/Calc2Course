@@ -6,9 +6,9 @@ Section 6.1. Pay particular attention to the difference between integrating alon
 
 ## Problems
 
-Practice Exercises: 6.1 1, 3, 6, 16, 19, 21, 28, 33, 59 (will do this one in class)
+Practice Exercises: 6.1 1, 3, 5, 13, 19, 21, 29, 33
 
-Exercises to turn in (on Monday along with those from 6.2): 6.1 14, 20
+Exercises to turn in (due on Wednesday): 6.1 14, 20, 26, 34
 
 ## Area between Graphs
 
@@ -26,15 +26,20 @@ If we follow our standard methodology for integrals, we could:
 >
 > $$\int_a^b \left|f(x) - g(x)\right| dx$$
 
-Example: Write the integral that computes the area between the circle of unit radius centered at $1$ and the line $y + x = 1$.
+**Example 1:** Write the integral that computes the area between the circle of unit radius centered at $1$ and the line $y + x = 1$.
 
-There are two variations that complicate matters. The first is that some times the curves are under consideration are best described as functions of $y$ rather than $x$. Then the formula is essentially the same:
+**Example 2:** Write the integral that computes the area between the curves $y=x^2$ and $y=1-x^2$ and the $y$ axis.
+
+## Variations
+
+There are two variations that complicate matters. The first is that some times the curves under consideration are best described as functions of $y$ rather than $x$. Then the formula is essentially the same:
 
 > $$\int_c^d \left|g(y) - h(y)\right| dy$$
 
 Example: Compute the area of the region enclosed by the curves $y^2 = x + 5$ and $y^2 = 3 - x$.
 
-In some other times yet you have to break the range up into pieces, then compute each piece via one of the aforementioned methods.
+Other times the area surrounded by the curves is more complex and you have to break the range up into pieces, then compute each piece via one of the aforementioned methods.
 
 Example: Compute the area of the region enclosed by the curves $x + y = 4$, $x - y = 0$ and $y + 3x = 4$.
 
+Practice problems in class: 6.1 21, 29, 59

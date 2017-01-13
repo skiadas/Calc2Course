@@ -18,7 +18,7 @@ Office Hours
   ~ MWF 1:00pm-2:30pm, and by appointment.
 
 Book
-  ~ *Calculus*, 3rd ed, by Jon Rogawski
+  ~ *Calculus*, 2nd ed, by Jon Rogawski
 
 Websites
   ~ [for notes](skiadas.github.io/Calc2Course/site/)
