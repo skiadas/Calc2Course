@@ -6,9 +6,8 @@ Section 6.4
 
 ## Problems
 
-Practice Exercises: 7, 9, 10, 15, 16, 21, 22, 23, 39, 41, 42
-
-Exercises to turn in (along with those from 6.3): 6.4 8, 40
+- Practice Exercises: 7, 9, 10, 15, 16, 21, 22, 23, 39, 41, 42
+- Exercises to turn in (on Wednesday): 6.4 8, 40, 44, 46
 
 ## The Shell Method
 
@@ -21,7 +20,7 @@ With the disc method, we need to write our curve, $x+y=1$, as a function of $y$,
 $$\pi\int_0^1 (1-y)^2 dy$$
 which we can compute to equal $\frac{\pi}{3}$.
 
-Now the Shell method is different. It will try to integrating along $x$ instead. To do that, imagine cutting the interval in $x$ into many tiny segments. One such segment would be going from say $x$ to $x+\Delta x$. The solid we are after that corresponds to this segment is the little area above this segment and below the $y=1-x$ line, which is roughly a rectangle with base $\Delta x$ and height $1-x$, but rotated around the $y$ axis. This results in effect in two cylinders, the outer and the inner, and we look at their differences:
+Now the Shell method is different. It will try to integrating along the $x$-axis instead. To do that, imagine cutting the interval in $x$ into many tiny segments. One such segment would be going from say $x$ to $x+\Delta x$. The solid we are after that corresponds to this segment is the little area above this segment and below the $y=1-x$ line, which is roughly a rectangle with base $\Delta x$ and height $1-x$, but rotated around the $y$ axis. This results in effect in two cylinders, the outer and the inner, and we look at their differences:
 
 $$\pi (x+\Delta x)^2 (1-x) - \pi x^2 (1-x) = \pi(1-x)\left((x+\Delta x)^2-x^2\right)$$
 
@@ -48,6 +47,9 @@ In general, the formula for the Shell method would read:
 
 So when to use which method? That depends on which way of the function is easier. In general:
 
-> You can compute a solid of revolution around the $y$ axis either via the Shell method if you have the boundary as a function $y=f(x)$ or via the disc method if you have the boundary as a function $x=g(y)$.
+> You can compute a solid of revolution around the $y$ axis via:
 >
-> The Disc method uses the same variable of integration as the axis of rotation, the Shell method does the opposite.
+> - the shell method if you have the boundary as a function $y=f(x)$, or
+> - the disc method if you have the boundary as a function $x=g(y)$.
+>
+> The Disc method uses the same variable of integration as the axis of rotation, the Shell method uses the other axis.
