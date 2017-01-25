@@ -117,11 +117,11 @@ Let us now see what we can say about the derivative of the exponential function,
 
 $$\frac{d}{dx}b^x = \lim_{h\to 0}\frac{b^{x+h} - b^x}{h} = \lim_{h\to 0}\frac{b^x b^h - b^x}{h}$$
 
-Notice that $b^x$ is a constant that is a common factor in the numerator, so we can take it all the way out of the integral:
+Notice that $b^x$ is a constant that is a common factor in the numerator, so we can take it all the way out of the limit:
 
 $$\frac{d}{dx}b^x = b^x\lim_{h\to 0}\frac{b^h-1}{h}$$
 
-So it all hinges on the integral:
+So it all hinges on the limit:
 
 $$m(b) = \lim_{h\to 0}\frac{b^h-1}{h}$$
 

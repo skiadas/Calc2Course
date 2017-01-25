@@ -44,7 +44,7 @@ But for this section we will be very explicit in our domain and range specificat
 >
 > Another way to think about it is to say that $y=f(x)$ if and only if $x = g(y)$.
 
-**Note** that this is not the same as taking "one over" the function, i.e. $\frac{1}{f(x)}$. This would be denoted by $\left(f(x)\right)^{-1}$, this is $f^{-1}(x)$.
+**Note** that this is not the same as taking "one over" the function, i.e. $\frac{1}{f(x)}$. This would be denoted by $\left(f(x)\right)^{-1}$, while the inverse function would be $f^{-1}(x)$.
 
 Most of the times we find the inverse by solving the equation $y=f(x)$ for $x$. For example:
 
