@@ -39,7 +39,11 @@ Day 3
 ## Week  4 (01/30-02/03)
 
 Day 1
-  ~ [Logarithms (7.3)](notes/logarithms.md)
+  ~ [Inverse functions (cont) (7.2)](notes/inverse_functions.md)
+
+    [Logarithms (7.3)](notes/logarithms.md)
+
+    Homework Due: 7.1 26, 48, 7.2 4, 40
 
 Day 2
   ~ [Logarithms (cont) (7.3)](notes/logarithms.md)

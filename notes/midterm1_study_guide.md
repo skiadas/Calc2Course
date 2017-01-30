@@ -17,13 +17,12 @@ This is meant to be a representative sampling of the key concepts you will need 
 10. How we define $b^x$ in terms of $e^x$ and how we define $\log_b(x)$ in terms of $\ln(x)$.
 11. Computing integrals and derivatives involving $\ln(x)$ and $e^x$.
 12. Computing tangent lines.
-13. Problems involving exponential growth/decay.
-14. How do we find the half-time/doubling-time?
 
 More theoretical questions (I will ask you some of these):
 
-1. How is the logarithm defined as an integral?
-2. How does the integral form help us prove that $\ln(xy) = \ln(x) + \ln(y)$?
-3. If we know the derivative of the exponential is itself, and we know $\ln$ is its inverse, how do we find the derivative of $\ln$? And conversely, from the derivative of $\ln$ and the fact that the exponential is its inverse, how do we find the derivative of the exponential?
-4. Using the property that $b^{x+y} = b^x b^y$, what can we say about the derivative of $b^x$? (It has to be a multiple of $b^x$: $m(b)b^x$, this was early in the 7.1/exponential material)
-5. Explain why the fact that $b^{x+y} = b^x b^y$ holds for all $x,y$ would also force us to say that $b^0=1$ and that $b^{-x} = \frac{1}{b^x}$.
+1. Show that $b^x$ is the only function $f(x)$ with $f(0)=1$ and $f'(x) = m(b)f(x)$.
+2. How is the logarithm defined as an integral?
+3. How does the integral form help us prove that $\ln(xy) = \ln(x) + \ln(y)$?
+4. If we know the derivative of the exponential is itself, and we know $\ln$ is its inverse, how do we find the derivative of $\ln$? And conversely, from the derivative of $\ln$ and the fact that the exponential is its inverse, how do we find the derivative of the exponential?
+5. Using the property that $b^{x+y} = b^x b^y$, what can we say about the derivative of $b^x$? (It has to be a multiple of $b^x$: $m(b)b^x$, this was early in the 7.1/exponential material)
+6. Explain why the fact that $b^{x+y} = b^x b^y$ holds for all $x,y$ would also force us to say that $b^0=1$ and that $b^{-x} = \frac{1}{b^x}$.
