@@ -6,11 +6,9 @@ Section 7.3
 
 ## Problems
 
-Practice Exercises: 7.3 5, 6, 7, 8, 17, 21, 23, 24, 26, 33, 38, 39, 47, 53, 67, 73, 75, 95, 96, 97
-
-Optional: 7.3 118, 120
-
-Exercises to turn in: 7.3 22, 54, 98
+- Practice Exercises: 7.3 5, 6, 7, 8, 17, 21, 23, 24, 26, 33, 38, 39, 47, 53, 67, 73, 75, 95, 96, 97
+- Optional: 7.3 118, 120
+- Exercises to turn in: 7.3 22, 34, 54, 98
 
 ## Logarithms
 

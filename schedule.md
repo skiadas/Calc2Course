@@ -41,17 +41,15 @@ Day 3
 Day 1
   ~ [Inverse functions (cont) (7.2)](notes/inverse_functions.md)
 
-    [Logarithms (7.3)](notes/logarithms.md)
+Day 2
+  ~ [Logarithms (7.3)](notes/logarithms.md)
 
     Homework Due: 7.1 26, 48, 7.2 4, 40
 
-Day 2
+Day 3
   ~ [Logarithms (cont) (7.3)](notes/logarithms.md)
 
-Day 3
-  ~ [Exponential Growth and Decay (7.4)](notes/exponential_growth.md)
-
-    [Compound Interest (7.5)](notes/compound_interest.md)
+    Homework Due: 7.3 22, 34, 54, 98
 
 ## Week  5 (02/06-02/10)
 
@@ -59,10 +57,14 @@ Day 1
   ~ **MIDTERM 1** ([study guide](notes/midterm1_study_guide.md))
 
 Day 2
-  ~ [L'Hospital's Rule (7.7)](notes/lhopital.md)
+  ~ [Exponential Growth and Decay (7.4)](notes/exponential_growth.md)
+
+    [Compound Interest (7.5)](notes/compound_interest.md)
 
 Day 3
-  ~ [Comparative growth of functions (7.7)](notes/growth.md)
+  ~ [L'Hospital's Rule (7.7)](notes/lhopital.md)
+
+    [Comparative growth of functions (7.7)](notes/growth.md)
 
 ## Week  6 (02/13-02/17)
 
