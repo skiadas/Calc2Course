@@ -8,11 +8,11 @@ Section 7.5
 
 Practice Exercises: 7.5 1, 2, 3, 4, 5
 
-Exercises to turn in (along with those from 7.3 and 7.4): 7.5 6
+Exercises to turn in (along with those from 7.4): 7.5 6, 8
 
 ## Compound Interest
 
-In finance there is an interest concept called "compound interest". The basic idea is simple:
+In finance there is an concept called "compound interest". The basic idea is simple:
 
 You have a *principal*, your starting amount of money, $P_0$. Then over time you accrue interest based on a fixed annual *rate* $r$. So after a year the *balance* on the account would be:
 $$P_0 + P_0\times r = P_0(1+r)$$

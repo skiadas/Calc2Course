@@ -71,8 +71,12 @@ Day 3
 Day 1
   ~ [Comparative growth of functions (7.7)](notes/growth.md)
 
+    Homework Due: 7.4 14, 24, 7.5 6, 8
+
 Day 2
   ~ [Inverse Trigonometric Functions (7.8)](notes/inverse_trig.md)
+
+    Homework Due: 7.7 26, 46, 56, 58
 
 Day 3
   ~ [Hyperbolic Functions (7.9)](notes/hyperbolic.md)

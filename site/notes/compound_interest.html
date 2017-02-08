@@ -18,9 +18,9 @@
 <p>Section 7.5</p>
 <h2 id="problems">Problems</h2>
 <p>Practice Exercises: 7.5 1, 2, 3, 4, 5</p>
-<p>Exercises to turn in (along with those from 7.3 and 7.4): 7.5 6</p>
+<p>Exercises to turn in (along with those from 7.4): 7.5 6, 8</p>
 <h2 id="compound-interest-1">Compound Interest</h2>
-<p>In finance there is an interest concept called “compound interest”. The basic idea is simple:</p>
+<p>In finance there is an concept called “compound interest”. The basic idea is simple:</p>
 <p>You have a <em>principal</em>, your starting amount of money, <span class="math inline">\(P_0\)</span>. Then over time you accrue interest based on a fixed annual <em>rate</em> <span class="math inline">\(r\)</span>. So after a year the <em>balance</em> on the account would be: <span class="math display">\[P_0 + P_0\times r = P_0(1+r)\]</span> Now what would happen if the interest is instead accrued every semester? This typically means that you also have an interest amount <span class="math inline">\(\frac{r}{2}\)</span> applied. After the first six months the balance would be: <span class="math display">\[P_0\left(1+\frac{r}{2}\right)\]</span> For the next 6 months, the interest would be accrued on this increased balance, so at the end of the year we would have made: <span class="math display">\[P_0\left(1+\frac{r}{2}\right)\left(1+\frac{r}{2}\right) = P_0\left(1+\frac{r}{2}\right)^2\]</span></p>
 <p>What if we accrue the interest more often, say <span class="math inline">\(M\)</span> times during the year? Then the formula, with very similar logic, becomes: <span class="math display">\[P_0\left(1+\frac{r}{M}\right)^M\]</span></p>
 <p>As <span class="math inline">\(M\)</span> gets larger, this quantity grows. That is not immediately clear, as even though the exponent increases, the base gets closer and closer to <span class="math inline">\(1\)</span>. There must be a certain balance between the two. In fact there is. Turns out that the following is true: <span class="math display">\[e^r = \lim_{n\to +\infty}\left(1+\frac{r}{n}\right)^n\]</span></p>

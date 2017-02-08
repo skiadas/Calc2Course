@@ -8,11 +8,11 @@ Section 7.7
 
 Practice Exercises: 7.7 1-4, 6-7, 9-10, 14-16, 18, 19, 25, 27, 29, 47-48, 55
 
-Exercises to turn in (along with those from 7.8): 26, 46, 56, 58
+Exercises to turn in: 7.7 26, 46, 56, 58
 
 ## L'Hopital's Rule
 
-L'Hopital's Rule is a powerful result that allows us to compute some difficult integrals that belong to the indeterminate forms.
+L'Hopital's Rule is a powerful result that allows us to compute some difficult limits that take one of the indeterminate forms.
 
 > **Indeterminate Forms**
 >
@@ -20,7 +20,7 @@ L'Hopital's Rule is a powerful result that allows us to compute some difficult i
 >
 > $\frac{0}{0}$, $\frac{\pm\infty}{\pm\infty}$, $0\cdot \infty$, $1^{\pm\infty}$, $0^0$, $\infty - \infty$
 
-For example, consider the silly expression $\frac{2x}{x}$. If we take the limit of numerator and denominator, we get $0$, yet the quotient goes to $2$. If we had a different number than $3$ in the numerator, the answer would have been different. So the quotient of two functions that each go to $0$ really depends on more information, and could be any number depending on what the functions are.
+For example, consider the silly expression $\frac{2x}{x}$. If we take the limit of numerator and denominator, then each goes to $0$, yet the quotient goes to $2$. If we had a different number than $3$ in the numerator, the answer would have been different. So the quotient of two functions that each go to $0$ really depends on more information, and could be any number depending on what the functions are.
 
 Take a moment to intuitively think about why the other expressions can have similar problems.
 
