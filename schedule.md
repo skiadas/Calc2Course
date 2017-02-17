@@ -95,6 +95,7 @@ Day 2
 Day 3
   ~ [Trigonometric Integrals (8.2)](notes/integrals_trig.md)
 
+    Homework Due: 7.8 22, 38, 60, 7.9 8, 44
 
 ## Week  8 (02/27-03/03)
 
