@@ -22,6 +22,8 @@ Day 1
 Day 2
   ~ [Volumes of revolution (6.3)](notes/volumes_revolution.md)
 
+    Homework 1 Due: 6.1 14, 20, 26, 34
+
 Day 3
   ~ [Shell method (6.4)](notes/volumes_shell.md)
 
@@ -30,8 +32,12 @@ Day 3
 Day 1
   ~ [The exponential function (7.1)](notes/exponential.md)
 
+    Homework 2 Due: 6.2 10, 56, 6.3 24, 40
+
 Day 2
   ~ [The exponential function (cont) (7.1)](notes/exponential.md)
+
+    Homework 3 Due: 6.4 8, 40, 44, 46
 
 Day 3
   ~ [Inverse functions (7.2)](notes/inverse_functions.md)
@@ -44,12 +50,12 @@ Day 1
 Day 2
   ~ [Logarithms (7.3)](notes/logarithms.md)
 
-    Homework Due: 7.1 26, 48, 7.2 4, 40
+    Homework 4 Due: 7.1 26, 48, 7.2 4, 40
 
 Day 3
   ~ [Logarithms (cont) (7.3)](notes/logarithms.md)
 
-    Homework Due: 7.3 22, 34, 54, 98
+    Homework 5 Due: 7.3 22, 34, 54, 98
 
 ## Week  5 (02/06-02/10)
 
@@ -75,12 +81,12 @@ Day 1
 Day 2
   ~ [Comparative growth of functions (7.7)](notes/growth.md)
 
-    Homework Due: 7.4 14, 24, 7.5 6, 8
+    Homework 6 Due: 7.4 14, 24, 7.5 6, 8
 
 Day 3
   ~ [Inverse Trigonometric Functions (7.8)](notes/inverse_trig.md)
 
-    Homework Due: 7.7 26, 46, 56, 58
+    Homework 7 Due: 7.7 26, 46, 56, 58
 
 ## Week  7 (02/20-02/24)
 
@@ -93,9 +99,9 @@ Day 2
   ~ [Integration by parts (8.1 cont)](notes/integration_parts.md)
 
 Day 3
-  ~ [Trigonometric Integrals (8.2)](notes/integrals_trig.md)
+  ~ [Integration by parts (8.1 cont)](notes/integration_parts.md)
 
-    Homework Due: 7.8 22, 38, 60, 7.9 8, 44
+    Homework 8 Due: 7.8 22, 38, 60, 7.9 8, 44
 
 ## Week  8 (02/27-03/03)
 
@@ -112,7 +118,7 @@ Day 3
 ## Week  9 (03/06-03/10)
 
 Day 1
-  ~ [Trigonometric Substitution (8.3)](notes/integrals_trig_subst.md)
+  ~ [Trigonometric Integrals (8.2)](notes/integrals_trig.md)
 
 Day 2
   ~ (at conference)
@@ -123,12 +129,17 @@ Day 3
 ## Week 10 (03/13-03/17)
 
 Day 1
-  ~ [Trigonometric Substitution (8.3) cont](notes/integrals_trig_subst.md)
+  ~ [Trigonometric Substitution (8.3)](notes/integrals_trig_subst.md)
+
+    Homework 9 Due: 8.1 10, 14, 36, 38, 52
+
 Day 2
   ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
 
 Day 3
   ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
+
+    Homework 10 Due: 8.2 14, 16, 8.3 6, 8
 
 ## Week 11 (03/20-03/24)
 
