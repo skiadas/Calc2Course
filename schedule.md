@@ -134,10 +134,10 @@ Day 1
     Homework 9 Due: 8.1 10, 14, 36, 38, 52
 
 Day 2
-  ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
+  ~ [Trigonometric Substitution (8.3)](notes/integrals_trig_subst.md)
 
 Day 3
-  ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
+  ~ Review
 
     Homework 10 Due: 8.2 14, 16, 8.3 6, 8
 
@@ -150,12 +150,16 @@ Day 2
   ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
 
 Day 3
-  ~ [Improper Integrals (8.6)](notes/integrals_improper.md)
+  ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
+
+    [Improper Integrals (8.6)](notes/integrals_improper.md)
 
 ## Week 12 (03/27-03/31)
 
 Day 1
   ~ [Improper Integrals (8.6)](notes/integrals_improper.md)
+
+    Homework 11 Due: 8.5 4, 8, 16, 30
 
 Day 2
   ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
