@@ -152,8 +152,6 @@ Day 2
 Day 3
   ~ [Method of Partial Fractions (8.5)](notes/integrals_partial.md)
 
-    [Improper Integrals (8.6)](notes/integrals_improper.md)
-
 ## Week 12 (03/27-03/31)
 
 Day 1
@@ -162,15 +160,19 @@ Day 1
     Homework 11 Due: 8.5 4, 8, 16, 30
 
 Day 2
-  ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
+  ~ [Improper Integrals (8.6)](notes/integrals_improper.md)
 
 Day 3
-  ~ [Taylor Polynomials (9.4)](notes/taylor.md)
+  ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
+
+    [Taylor Polynomials (9.4)](notes/taylor.md)
 
 ## Week 13 (04/03-04/07)
 
 Day 1
   ~ [Taylor Polynomials (9.4). Taylor's Theorem](notes/taylor.md)
+
+    8.6 12, 16, 26, 38
 
 Day 2
   ~ [Arc Length (9.1)](notes/arc_length.md)
