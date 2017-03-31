@@ -82,7 +82,7 @@ Simpson's Rule is a certain combination of the two previous methods, weighted ap
 
 > **Simpson's rule**. For $N$ even, the $N$-th approximation to $\int_a^b f(x)dx$ by Simpson's rule is:
 >
-> $$S_N = \frac{1}{3}\Delta x\left(2y_0 + 4y_1 + 2y_2 + 4y_3 + \cdots + 2y_{N-2} + 4y_{N-1} + y_N \right)$$
+> $$S_N = \frac{1}{3}\Delta x\left(y_0 + 4y_1 + 2y_2 + 4y_3 + \cdots + 2y_{N-2} + 4y_{N-1} + y_N \right)$$
 
 Let us try it out in our example, with $N=8$:
 $$S_N = \frac{1}{3}0.125 \left(1+ 4\times 0.9846+ 2\times 0.9412+ 4\times 0.8767+ 2\times 0.8+ 4\times 0.7191+ 2\times 0.64+ 4\times 0.5664+ 0.5\right) = 0.7854$$
