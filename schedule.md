@@ -170,12 +170,10 @@ Day 3
 Day 1
   ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
 
-    [Taylor Polynomials (9.4)](notes/taylor.md)
-
-    8.6 12, 16, 26, 38
+    Homework 11 Due: 8.6 12, 16, 26, 38
 
 Day 2
-  ~ [Taylor Polynomials (9.4). Taylor's Theorem](notes/taylor.md)
+    [Taylor Polynomials (9.4)](notes/taylor.md)
 
 Day 3
   ~ [Arc Length (9.1)](notes/arc_length.md)
