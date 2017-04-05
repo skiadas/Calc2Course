@@ -173,15 +173,21 @@ Day 1
     Homework 11 Due: 8.6 12, 16, 26, 38
 
 Day 2
+  ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
+
     [Taylor Polynomials (9.4)](notes/taylor.md)
 
 Day 3
-  ~ [Arc Length (9.1)](notes/arc_length.md)
+  ~ [Taylor Polynomials (9.4)](notes/taylor.md)
 
 ## Week 14 (04/10-04/14)
 
 Day 1
-  ~ [Parametric Equations (12.1)](notes/parametric.md)
+  ~ [Arc Length (9.1)](notes/arc_length.md)
+
+    [Parametric Equations (12.1)](notes/parametric.md)
+
+    Homework 12 Due: 8.8 10, 12, 14, 18
 
 Day 2
   ~ Arc Length and Area (12.2)
