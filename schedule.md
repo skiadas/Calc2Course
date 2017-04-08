@@ -195,4 +195,4 @@ Day 2
     Homework 13 Due: 9.4 6, 24, 36, 48, 52
 
 Day 3
-  ~ Review
+  ~ Review ([final study guide](notes/midterm3_study_guide.md))
