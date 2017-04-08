@@ -16,27 +16,40 @@
 <h1 id="midterm-3-study-guide">Midterm 3 Study Guide</h1>
 <p>This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with all practice problems and homework assignments.</p>
 <ol style="list-style-type: decimal">
-<li>Trigonometric substitutions, know when to use which.</li>
+<li>Trigonometric substitutions, know when to use which (e.g. <span class="math inline">\(x = 3\tan\theta\)</span> if <span class="math inline">\(x^2+9\)</span>).</li>
 <li>Completing the square as a preparation for a trigonometric substitution.</li>
-<li>All the things related to computations of integrals of partial fractions: long division, partial fraction decomposition, computing the resulting integrals.</li>
+<li>All the things related to computations of integrals of partial fractions:
+<ul>
+<li>long division,</li>
+<li>partial fraction decomposition (choosing which terms to include, and how to determine the A, B, C),</li>
+<li>computing the resulting integrals:
+<ul>
+<li>linears become <span class="math inline">\(\ln\)</span>s,</li>
+<li>quadratics: absorb the numerator’s linear term in the derivative of denominator, for handling part of the integral as <span class="math inline">\(\int\frac{f&#39;}{f} = ln(f)\)</span>. Do tangent sub for the rest.</li>
+</ul></li>
+</ul></li>
 <li>Improper integrals at infinity</li>
-<li>Improper integrals at finite points</li>
+<li>Improper integrals at finite points
+<ul>
+<li>Cases with both endpoints misbehaving</li>
+</ul></li>
 <li>p-power functions and their improper integrals near 0 and near infinity</li>
-<li>Comparison test for improper integrals</li>
+<li>Comparison test for improper integrals
+<ul>
+<li>Use it to prove certain integrals must converge even though we cannot find their answers (e.g. <span class="math inline">\(\int_0^\infty e^{-x^2}dx\)</span>)</li>
+</ul></li>
 <li>Numerical Integration via trapezoid rule, midpoint rule, Simpson’s rule</li>
-<li>Error bounds for numerical integration</li>
-<li>Arc length and Surface area computations (9.1)</li>
 <li>Taylor polynomials and Maclaurin polynomials</li>
 <li>Taylor’s theorem about the Taylor remainder</li>
 <li>Error bounds for Taylor polynomials</li>
-<li>Parametric curves</li>
-<li>Arc length via parametric curves</li>
+<li>Arc length and Surface area computations (9.1)</li>
 </ol>
 <p>More theoretical questions (I will ask you at least one of these):</p>
 <ol style="list-style-type: decimal">
-<li>Describe the derivation of the formula for arc length (9.1)</li>
+<li>Prove the p-power tests (i.e. when <span class="math inline">\(\int_1^\infty\frac{1}{x^p}dx\)</span> and <span class="math inline">\(\int_0^1\frac{1}{x^p}dx\)</span> converge)</li>
 <li>Proof of Taylor’s theorem for the Taylor remainder</li>
-<li>Explanation for the formula for the slope of the tangent line <span class="math inline">\(\frac{dy}{dx}\)</span> when the curve is given in parametric form (12.1).</li>
+<li>Prove the formula for the integral <span class="math inline">\(\int\frac{1}{(x-b)^2 + a^2}dx\)</span></li>
+<li>Define the gamma function <span class="math inline">\(\Gamma(a)\)</span>, prove the integral converges, and show the formula <span class="math inline">\(\Gamma(a+1) = a\Gamma(a)\)</span></li>
 </ol>
 </body>
 </html>

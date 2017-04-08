@@ -192,5 +192,7 @@ Day 1
 Day 2
   ~ Arc Length and Area (12.2)
 
+    Homework 13 Due: 9.4 6, 24, 36, 48, 52
+
 Day 3
   ~ Review
