@@ -185,14 +185,16 @@ Day 3
 Day 1
   ~ [Arc Length (9.1)](notes/arc_length.md)
 
-    [Parametric Equations (12.1)](notes/parametric.md)
-
     Homework 12 Due: 8.8 10, 12, 14, 18
 
 Day 2
-  ~ Arc Length and Area (12.2)
+  ~ [Parametric Equations (12.1)](notes/parametric.md)
+
+    Arc Length and Area (12.2)
 
     Homework 13 Due: 9.4 6, 24, 36, 48, 52
 
 Day 3
   ~ Review ([final study guide](notes/midterm3_study_guide.md))
+
+    Homework 14 Due: 9.1 6, 10, 34, 36
