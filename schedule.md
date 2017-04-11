@@ -170,7 +170,7 @@ Day 3
 Day 1
   ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
 
-    Homework 11 Due: 8.6 12, 16, 26, 38
+    Homework 12 Due: 8.6 12, 16, 26, 38
 
 Day 2
   ~ [Numerical Integration (8.8)](notes/integrals_numerical.md)
@@ -185,16 +185,16 @@ Day 3
 Day 1
   ~ [Arc Length (9.1)](notes/arc_length.md)
 
-    Homework 12 Due: 8.8 10, 12, 14, 18
+    Homework 13 Due: 8.8 10, 12, 14, 18
 
 Day 2
   ~ [Parametric Equations (12.1)](notes/parametric.md)
 
     Arc Length and Area (12.2)
 
-    Homework 13 Due: 9.4 6, 24, 36, 48, 52
+    Homework 14 Due: 9.4 6, 24, 36, 48, 52
 
 Day 3
   ~ Review ([final study guide](notes/midterm3_study_guide.md))
 
-    Homework 14 Due: 9.1 6, 10, 34, 36
+    Homework 15 Due: 9.1 6, 10, 34, 36
